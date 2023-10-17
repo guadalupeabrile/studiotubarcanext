@@ -5,6 +5,8 @@ type PostType = {
   title: string
   date: string
   coverImage: string
+  nameImage: string
+  nameVideo: string
   author: Author
   excerpt: string
   ogImage: {

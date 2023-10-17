@@ -1,6 +1,5 @@
-import Alert from './alert'
-import Footer from './footer'
-import Meta from './meta'
+
+import Intro from './intro'
 
 type Props = {
   preview?: boolean
@@ -10,12 +9,12 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <Meta />
-      <div className="min-h-screen">
-        <Alert preview={preview} />
-        <main>{children}</main>
+      <div className='bg-custom-background'>
+        < div className="">
+          <main>{children}</main>
+        </div >
       </div>
-      <Footer />
+
     </>
   )
 }

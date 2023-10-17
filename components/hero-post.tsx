@@ -13,38 +13,24 @@ type Props = {
   slug: string
 }
 
-const HeroPost = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}: Props) => {
+const HeroPost = () => {
   return (
-    <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} />
-      </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
-        <div>
-          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
-            <Link
-              as={`/posts/${slug}`}
-              href="/posts/[slug]"
-              className="hover:underline"
-            >
-              {title}
-            </Link>
-          </h3>
-          <div className="mb-4 md:mb-0 text-lg">
-            <DateFormatter dateString={date} />
+    <section className='relative min-h-screen w-full z-10' id='hero-video'>
+      <div className="sticky top-0">
+        <div className="">
+          <video autoPlay loop muted className="absolute inset-0 object-cover h-screen xl:h-auto ">
+            <source
+              src="assets/blog/videos/hero-video-studiotubarca.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div className="absolute inset-0">
+            <div className="sm:text-5xl text-4xl font-thin sm:my-56 my-32 mx-16 text-center text-white">
+              Hola
+            </div>
           </div>
         </div>
-        <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
+
       </div>
     </section>
   )
