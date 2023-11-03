@@ -52,7 +52,7 @@ const CoverImage = ({ title, src, slug, nameI, nameVideo }: Props) => {
       {slug ? (
         <div className='group'>
           <div className='relative'>
-            <Link as={`/posts/${slug}`} href="/posts/[slug]" aria-label={title}>
+            <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
               {image}
               <video id={title} className='shadow absolute h-full w-full flex items-center justify-center -bottom-0 opacity-0 group-hover:opacity-90'>
                 <source src={nameVideo} type="video/mp4" />
