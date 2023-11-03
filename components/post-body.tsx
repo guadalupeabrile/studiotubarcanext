@@ -1,4 +1,4 @@
-
+import Carousel from "./Carousel";
 
 const PostBody = () => {
   const url1 = '/assets/blog/igiardini/igiardini-1.jpg';
@@ -12,10 +12,17 @@ const PostBody = () => {
   const url11 = '/assets/blog/igiardini/igiardini-11.jpg';
   const url12 = '/assets/blog/igiardini/igiardini-12.jpg';
 
+  let slides = [url1];
+
   return (
     <>
-      <section>
-        <div className="overflow-x-scroll">
+      <section className="overflow-hidden">
+
+        <div className="w-[100%] overflow-x-scroll overflow-y-hidden">
+          <Carousel />
+        </div>
+
+        <div className="">
 
           < div className="grid grid-cols-1 gap-y-10 mb-8 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 flex items-center md:mb-10 " >
             <div className="col-span-2">

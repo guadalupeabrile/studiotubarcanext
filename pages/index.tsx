@@ -12,17 +12,15 @@ type Props = {
 }
 
 export default function Index({ allPosts }: Props) {
-  const morePosts = allPosts.slice(0)
+
   return (
     <>
       <Layout>
         <Head>
           <title>studiotubarca</title>
         </Head>
+        <MoreStories posts={allPosts} />
         <HeroPost></HeroPost>
-        <Container>
-          <MoreStories posts={morePosts} />
-        </Container>
       </Layout>
     </>
   )

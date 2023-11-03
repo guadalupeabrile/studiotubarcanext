@@ -3,7 +3,7 @@ title: 'Casabarbol'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/projects-preview/casabarbol-preview.png'
 nameImage: '/assets/blog/projects-name/casabarbol-name.png'
-nameVideo: '/assets/blog/project-animation/igiardini-logo.mp4'
+nameVideo: '/assets/blog/project-animation/casabarbol-logo.mp4'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Tim Neutkens
