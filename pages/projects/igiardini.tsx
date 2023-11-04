@@ -12,6 +12,7 @@ import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import Post from '../../interfaces/post'
+import Carousel from '../../components/Carousel'
 
 
 type Props = {
@@ -29,13 +30,13 @@ export default function Igiardini({ post, preview }: Props) {
     }
     return (
         <Layout preview={preview}>
-            <Container>
+            <section className='min-h-screen py-20'>
                 <Header />
                 {router.isFallback ? (
                     <PostTitle>Loading…</PostTitle>
                 ) : (
                     <>
-                        <article className="mb-32 w-screen">
+                        <article>
                             <Head>
                                 <title>{title}</title>
                                 <meta property="og:image" content={post.ogImage.url} />
@@ -46,11 +47,13 @@ export default function Igiardini({ post, preview }: Props) {
                                 date={post.date}
                                 author={post.author}
                             />
-                            <PostBody />
+                            <Carousel />
                         </article>
                     </>
                 )}
-            </Container>
+
+            </section>
+
         </Layout>
     )
 }
