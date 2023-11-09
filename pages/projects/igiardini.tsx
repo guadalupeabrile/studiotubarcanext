@@ -30,7 +30,7 @@ export default function Igiardini({ post, preview }: Props) {
         return <ErrorPage statusCode={404} />
     }
     return (
-        <Layout preview={preview}>
+        <Layout>
             <section className='min-h-screen py-20'>
                 <Header />
                 {router.isFallback ? (
@@ -49,7 +49,8 @@ export default function Igiardini({ post, preview }: Props) {
                                 author={post.author}
                             />
                             <Carousel />
-                            <HeroPost></HeroPost>
+                            <ProjectVideo></ProjectVideo>
+
                         </article>
                     </>
                 )}
