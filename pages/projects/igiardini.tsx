@@ -13,7 +13,8 @@ import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import Post from '../../interfaces/post'
 import Carousel from '../../components/Carousel'
-
+import ProjectVideo from '../../components/project-video'
+import HeroPost from '../../components/hero-post'
 
 type Props = {
     post: PostType
@@ -48,6 +49,7 @@ export default function Igiardini({ post, preview }: Props) {
                                 author={post.author}
                             />
                             <Carousel />
+                            <HeroPost></HeroPost>
                         </article>
                     </>
                 )}
@@ -72,6 +74,7 @@ export async function getStaticProps() {
         'ogImage',
         'coverImage',
         'nameImage',
+        'video'
     ])
     const content = await markdownToHtml(post.content || '')
 

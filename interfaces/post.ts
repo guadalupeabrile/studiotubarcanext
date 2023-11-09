@@ -7,6 +7,7 @@ type PostType = {
   coverImage: string
   nameImage: string
   nameVideo: string
+  video: string
   author: Author
   excerpt: string
   ogImage: {

@@ -35,7 +35,7 @@ const CoverImage = ({ title, src, slug, nameI, nameVideo }: Props) => {
   const videoId = title;
 
   useEffect(() => {
-    const anim = document.getElementById(videoId);
+    const anim = document.getElementById(videoId) as HTMLVideoElement;
 
     anim.addEventListener("mouseover", function () {
       anim.play();

@@ -10,9 +10,9 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
       <div className='bg-custom-background'>
-        < div className="">
-          <main>{children}</main>
-        </div >
+
+        <main>{children}</main>
+
       </div>
 
     </>
