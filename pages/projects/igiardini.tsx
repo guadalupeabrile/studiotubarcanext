@@ -48,8 +48,14 @@ export default function Igiardini({ post, preview }: Props) {
                                 date={post.date}
                                 author={post.author}
                             />
-                            <Carousel />
-                            <ProjectVideo></ProjectVideo>
+                            <div>
+                                <div className='sticky top-0'>
+                                    <Carousel />
+                                </div>
+                                <div className='z-10 sticky'>
+                                    <ProjectVideo></ProjectVideo>
+                                </div>
+                            </div>
                             <Footer></Footer>
                             <div className='footer-screen'></div>
                         </article>
