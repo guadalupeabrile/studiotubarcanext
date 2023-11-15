@@ -90,8 +90,7 @@ export default function Carousel() {
 
         //     </div>
         // </div>
-
-        <div className="flex overflow-x-scroll h-screen">
+        <div className="flex overflow-x-scroll h-screen bg-custom-background opacity-100">
             <div className='flex py-10'>
 
                 <div className="w-screen grid grid-cols-1 md:grid-cols-3 ml-10">

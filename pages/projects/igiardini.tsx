@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
@@ -15,13 +16,12 @@ import Post from '../../interfaces/post'
 import Carousel from '../../components/Carousel'
 import ProjectVideo from '../../components/project-video'
 import HeroPost from '../../components/hero-post'
+import Footer from '../../components/footer'
 
 type Props = {
     post: PostType
     preview?: boolean
 }
-
-
 
 export default function Igiardini({ post, preview }: Props) {
     const router = useRouter()
@@ -50,7 +50,8 @@ export default function Igiardini({ post, preview }: Props) {
                             />
                             <Carousel />
                             <ProjectVideo></ProjectVideo>
-
+                            <Footer></Footer>
+                            <div className='footer-screen'></div>
                         </article>
                     </>
                 )}
@@ -60,9 +61,6 @@ export default function Igiardini({ post, preview }: Props) {
         </Layout>
     )
 }
-
-
-
 
 export async function getStaticProps() {
 

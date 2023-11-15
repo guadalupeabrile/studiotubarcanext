@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-custom-background {
-    background-image: url('/assets/blog/texture/bg-texture.png');
+    background-image: url('/assets/blog/texture/bg.jpeg');
     background-size: cover;
     /* Cubre toda la pantalla */
     background-attachment: fixed;
@@ -12,6 +12,17 @@
     /* Evita la repetición de la imagen */
 }
 
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: -10;
+    height: 50vh;
+}
+
+.footer-screen {
+    height: 40vh;
+}
 
 #hero-video {
     margin-top: 101vh;
