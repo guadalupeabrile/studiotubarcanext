@@ -1,5 +1,5 @@
 
-import Intro from './intro'
+import Image from "next/image";
 
 type Props = {
   preview?: boolean
@@ -9,11 +9,16 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <div className='bg-custom-background'>
-
-        <main>{children}</main>
+      <div className='bg'>
+        <Image
+          src='/assets/blog/texture/bg-texture.png'
+          alt='fondo'
+          layout='fill'
+          objectFit="cover"
+        />
 
       </div>
+      <main>{children}</main>
 
     </>
   )

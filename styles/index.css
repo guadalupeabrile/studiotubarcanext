@@ -3,20 +3,28 @@
 @tailwind utilities;
 
 .bg-custom-background {
-    background-image: url('/assets/blog/texture/bg.jpeg');
+    background-image: url('/assets/blog/texture/bg-texture.png');
     background-size: cover;
     /* Cubre toda la pantalla */
     background-attachment: fixed;
     /* Fija la imagen en la ventana gráfica */
     background-repeat: no-repeat;
     /* Evita la repetición de la imagen */
+    z-index: -2;
+}
+
+.bg {
+    z-index: -2;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
 .footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    z-index: -10;
+    z-index: -1;
     height: 50vh;
 }
 

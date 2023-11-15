@@ -20,6 +20,7 @@ export default function Carousel() {
 
     return (
 
+
         // <div className="flex overflow-x-scroll h-screen">
         //     <div className="flex m-0">
         //         <div className="w-screen p-20 grid grid-cols-1 md:grid-cols-3">
@@ -90,7 +91,7 @@ export default function Carousel() {
 
         //     </div>
         // </div>
-        <div className="flex overflow-x-scroll h-screen bg-custom-background opacity-100">
+        <div className="flex overflow-x-scroll h-screen bg-white">
             <div className='flex py-10'>
 
                 <div className="w-screen grid grid-cols-1 md:grid-cols-3 ml-10">
@@ -266,50 +267,6 @@ export default function Carousel() {
                         />
                     </div>
                 </div>
-                {/* 
-
-
-
-                <div className="row-span-2 col-span-5 relative mr-40">
-                    <img
-                        title='Igiardini fuego'
-                        src={url9}
-                        className="object-cover h-full"
-                    />
-                </div>
-
-                <div className="row-span-3 col-span-2 relative">
-                    <img
-                        title='Igiardini Adro cultivando 2'
-                        src={url10}
-                        className="object-cover h-full"
-                    />
-                </div>
-
-                <div className='text-xs text-center md:text-left leading-relaxed  text-gray-800 space-y-4'>
-                    <p>MATERIALIZAMOS CONSCIENCIA, EN HUERTAS DISEÑADAS PARA LOGRAR EL BIENESTAR DEL USUARIO.</p>
-                    <p>UNA ESTRUCTURA DE MADERA TRATADA MEDIANTE "YAKISUGI", MÉTODO ANCESTRAL JAPONÉS.</p>
-                    <p className="md:text-center">¿EN QUÉ ESPACIOS DE TU VIDA TE IMAGINÁS IGIARDINI?</p>
-                    <img
-                        title='Igiardini Adro cultivando 2'
-                        src={url12}
-                        className="object-cover h-full"
-                    />
-                </div >
-
-                <div className="row-span-3 col-span-2 relative">
-                    <img
-                        title='Igiardini Logo Zanahoria'
-                        src={url11}
-                        className="object-cover h-full"
-                    />
-                </div> */}
-
-
-
-
-
-
 
             </div>
 
