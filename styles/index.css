@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-custom-background {
-    background-image: url('/assets/blog/texture/bg.jpeg');
+    background-image: url('/assets/blog/texture/bg-texture.jpg');
     background-size: cover;
     /* Cubre toda la pantalla */
     background-attachment: fixed;

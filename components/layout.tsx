@@ -11,7 +11,7 @@ const Layout = ({ preview, children }: Props) => {
     <>
       <div className='bg'>
         <Image
-          src='/assets/blog/texture/bg-texture.png'
+          src='/assets/blog/texture/bg-texture.jpg'
           alt='fondo'
           layout='fill'
           objectFit="cover"

@@ -32,7 +32,7 @@ export default function Igiardini({ post, preview }: Props) {
     return (
         <Layout>
             <section className='min-h-screen py-20'>
-                <Header />
+                {/* <Header /> */}
                 {router.isFallback ? (
                     <PostTitle>Loading…</PostTitle>
                 ) : (
@@ -42,12 +42,12 @@ export default function Igiardini({ post, preview }: Props) {
                                 <title>{title}</title>
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
-                            <PostHeader
+                            {/* <PostHeader
                                 title={post.title}
                                 coverImage={post.coverImage}
                                 date={post.date}
                                 author={post.author}
-                            />
+                            /> */}
                             <div>
                                 <div className='sticky top-0'>
                                     <Carousel />
