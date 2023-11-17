@@ -4,7 +4,7 @@ const HeroPost = () => {
     <section className='min-h-screen w-full z-10' id='hero-video'>
       <div className="sticky">
         <div className="">
-          <video autoPlay loop muted className="absolute object-cover h-screen">
+          <video autoPlay loop muted className="absolute w-full h-screen object-cover">
             <source
               src="assets/blog/videos/hero-video-studiotubarca.mp4"
               type="video/mp4"

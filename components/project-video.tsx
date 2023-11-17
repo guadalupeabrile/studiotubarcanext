@@ -5,7 +5,7 @@ const ProjectVideo = () => {
         <section className='min-h-screen w-full'>
             <div className="">
                 <div className="">
-                    <video autoPlay loop muted className="object-cover h-screen">
+                    <video autoPlay loop muted className="w-full h-screen object-cover">
                         <source
                             src="/zensilla-video.mp4"
                             type="video/mp4"
