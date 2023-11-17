@@ -31,7 +31,7 @@ export default function Igiardini({ post, preview }: Props) {
     }
     return (
         <Layout>
-            <section className='min-h-screen py-20'>
+            <section className='min-h-screen'>
                 {/* <Header /> */}
                 {router.isFallback ? (
                     <PostTitle>Loading…</PostTitle>
