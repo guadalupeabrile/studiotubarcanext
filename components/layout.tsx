@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import background from '../public/assets/blog/texture/bg-texture.png';
+import background from '../public/assets/blog/texture/bg-texture.webp';
 
 type Props = {
   preview?: boolean
@@ -19,6 +19,7 @@ const Layout = ({ preview, children }: Props) => {
           quality={100}
           sizes="100vw"
           placeholder="blur"
+          priority
         />
 
       </div>
