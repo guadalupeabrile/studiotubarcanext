@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import background from '../public/assets/blog/texture/bg-texture.png';
 
 type Props = {
   preview?: boolean
@@ -11,10 +12,13 @@ const Layout = ({ preview, children }: Props) => {
     <>
       <div className='bg'>
         <Image
-          src='/assets/blog/texture/bg-texture.jpg'
+          src={background}
           alt='fondo'
           layout='fill'
           objectFit="cover"
+          quality={100}
+          sizes="100vw"
+          placeholder="blur"
         />
 
       </div>
