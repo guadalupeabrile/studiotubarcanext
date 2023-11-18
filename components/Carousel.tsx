@@ -92,21 +92,19 @@ export default function Carousel() {
         //     </div>
         // </div>
         <div className="flex overflow-x-scroll h-screen bg-custom-background">
-            <div className='flex py-10'>
+            <div className='flex p-10'>
+                <div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 box-border pr-10">
 
-                <div className="w-screen grid grid-cols-1 md:grid-cols-3 ml-10">
-
-                    <div className="col-span-2 image-container overflow-y-hidden">
+                    <div className="col-span-2 relative">
                         <Image
                             src={url1}
                             alt={`Van Gogh Image`}
                             className={'image'}
                             layout='fill'
-
-
+                            objectFit='cover'
                         />
                     </div>
-                    <div className='text-xs text-center md:text-right md:text-sm text-gray-800 leading-relaxed space-y-5 mr-10 mt-10'>
+                    <div className='text-xs text-center md:text-right md:text-base text-gray-800 leading-relaxed space-y-5 mr-10 mt-10'>
                         <p>
                             Jardines donde cultivar <span className="hidden md:inline"><br /></span> CONSCIENCIA.
                         </p>
@@ -119,69 +117,76 @@ export default function Carousel() {
                 </div>
 
 
-                < div className="w-screen grid grid-cols-1 md:grid-cols-5 md:gap-x-10 lg:gap-x-10 ml-10" >
-                    <div className='col-span-3 text-xs md:text-left text-gray-800 space-y-4 indent-8'>
+                < div className="w-screen grid grid-cols-1 md:grid-cols-5 md:gap-x-10 lg:gap-x-10 box-border px-10" >
+                    <div className='col-span-3 md:text-base md:text-left text-gray-800 space-y-4 '>
                         <p>IGIARDINI HACE FOCO EN LO QUE NO SE VE.</p>
                         <p>UNAS BASES SÓLIDAS, HABITABLES, RESUELVEN EL PROYECTO: UNA HUERTA.</p>
                         <p>EN UN PASEO CONTEMPLATIVO, BAJAMOS, CONECTAMOS CON LAS RAÍCES,</p>
                         <p>Y GENERAMOS INTERCAMBIO CON LA TIERRA.</p>
                         <p>LOS FRUTOS SON EL RESULTADO DE UN TRABAJO CONSCIENTE.</p>
                     </div >
-                    <div className="row-span-2 col-span-2 image-container-vertical mx-20 overflow-y-hidden">
+                    <div className="row-span-6 col-span-2 relative">
 
                         <Image
                             src={url3}
                             alt={`Igiardini parque`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
 
                     </div>
-                    <div className="col-span-3 image-container-xs mt-5 overflow-y-hidden">
+                    <div className="col-span-3 row-span-5 relative">
                         <Image
                             src={url2}
                             alt={`Igiardini parque`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
                     </div>
                 </div >
 
 
-                <div className="image-container-wscreen mr-10 overflow-y-hidden">
-                    <Image
-                        src={url4}
-                        alt={`Igiardini Adro Cultivando`}
-                        className={'image'}
-                        layout='fill'
+                <div className="box-border w-screen grid px-10">
+                    <div className='relative'>
+                        <Image
+                            src={url4}
+                            alt={`Igiardini Adro Cultivando`}
+                            className={'image'}
+                            layout='fill'
+                            objectFit='cover'
 
-                    />
+                        />
+                    </div>
                 </div>
 
-                < div className="w-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 ml-10" >
-                    <div className="row-span-3 image-container-50">
+                < div className="w-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 box-boder px-10" >
+                    <div className="row-span-3 relative">
                         <Image
                             src={url5}
                             alt={`Igiardini plano y pintura`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
                     </div>
-                    <div className="image-container-25">
+                    <div className="relative row-span-2">
                         <Image
                             src={url6}
                             alt={`Igiardini madera`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
                     </div>
 
-                    <div className='flex items-center justify-center mt-20'>
-                        <div className='text-xs text-center md:text-left leading-relaxed  text-gray-800 space-y-4 '>
+                    <div className='flex items-center justify-center'>
+                        <div className='md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4 '>
                             <p>MATERIALIZAMOS CONSCIENCIA, EN HUERTAS DISEÑADAS PARA LOGRAR EL BIENESTAR DEL USUARIO.</p>
                             <p>UNA ESTRUCTURA DE MADERA TRATADA MEDIANTE "YAKISUGI", MÉTODO ANCESTRAL JAPONÉS.</p>
                             <p>ALTURA DE TRABAJO ÓPTIMA, LLEVANDO LA TIERRA Y LA CULTURA AL ALCANCE DE LA MANO.</p>
@@ -191,78 +196,87 @@ export default function Carousel() {
                         </div >
                     </div>
                 </div>
-                < div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 ml-20" >
-                    <div className="image-container-vertical-xs">
+                < div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
+                    <div className="relative">
                         <Image
                             src={url7}
                             alt={`Igiardini techo`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
                     </div>
-                    <div className="image-container-vertical-xs mt-40">
+                    <div className="relative">
                         <Image
                             src={url8}
                             alt={`Igiardini techo 2`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
                     </div>
-                    <div className="image-container-vertical-xs mr-10">
+                    <div className="relative">
                         <Image
                             src={url12}
                             alt={`Igiardini grafico`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
                     </div>
                 </div>
-                <div className="image-container-wscreen mx-10 overflow-y-hidden">
-                    <Image
-                        src={url9}
-                        alt={`Igiardini Fuego`}
-                        className={'image'}
-                        layout='fill'
+                <div className="box-border w-screen grid px-10">
+                    <div className='relative'>
+                        <Image
+                            src={url9}
+                            alt={`Igiardini Fuego`}
+                            className={'image'}
+                            layout='fill'
+                            objectFit='cover'
 
-                    />
+                        />
+                    </div>
                 </div>
-                < div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 ml-20" >
-                    <div className="image-container-vertical">
+                < div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
+                    <div className="relative">
                         <Image
                             src={url10}
                             alt={`Igiardini Adro cultivando 3`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
                     </div>
-                    <div className=''>
-                        <div className='text-xs text-center md:text-left leading-relaxed  text-gray-800 space-y-4'>
+                    <div className='grid'>
+                        <div className='text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4'>
                             <p>IGIARDINI HACE FOCO EN LO QUE NO SE VE.</p>
                             <p>UNAS BASES SÓLIDAS, HABITABLES, RESUELVEN EL PROYECTO: UNA HUERTA.</p>
                             <p>EN UN PASEO CONTEMPLATIVO, BAJAMOS, CONECTAMOS CON LAS RAÍCES,</p>
                             <p>Y GENERAMOS INTERCAMBIO CON LA TIERRA.</p>
                             <p>LOS FRUTOS SON EL RESULTADO DE UN TRABAJO CONSCIENTE.</p>
                         </div>
-                        <div className="image-container-vertical-contain mt-20">
+                        <div className="relative row-span-6">
                             <Image
                                 src={url13}
                                 alt={`Zanahoria Igiardini`}
                                 className={'image'}
                                 layout='fill'
+                                objectFit='contain'
 
                             />
                         </div>
                     </div>
-                    <div className="image-container-vertical mr-10">
+                    <div className="relative">
                         <Image
                             src={url11}
                             alt={`Igiardini Adro cultivando 4`}
                             className={'image'}
                             layout='fill'
+                            objectFit='cover'
 
                         />
                     </div>
