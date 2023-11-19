@@ -94,11 +94,11 @@ export default function Carousel() {
         //     </div>
         // </div>
         <div className="flex overflow-x-scroll h-screen bg-custom-background">
-            <div className='flex p-10'>
-                <div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 box-border pr-10">
+            <div className='flex py-10'>
+                <div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 box-border px-10 m-0">
 
                     <motion.div
-                        className="col-span-2 relative"
+                        className="row-span-4 col-span-2 relative"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <Image
@@ -110,7 +110,7 @@ export default function Carousel() {
                         />
                     </motion.div>
                     <motion.div
-                        className='text-xs text-center md:text-right md:text-base text-gray-800 leading-relaxed space-y-5 mr-10 mt-10'
+                        className='text-xs text-center md:text-right md:text-base text-gray-800 leading-relaxed space-y-5  mt-10'
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <p>
@@ -126,7 +126,7 @@ export default function Carousel() {
 
 
                 < div className="w-screen grid grid-cols-1 md:grid-cols-5 md:gap-x-10 lg:gap-x-10 box-border px-10" >
-                    <div className='col-span-3 md:text-base md:text-left text-gray-800 space-y-4 '>
+                    <div className='col-span-3 text-xs md:text-base md:text-left text-gray-800 space-y-4 '>
                         <p>IGIARDINI HACE FOCO EN LO QUE NO SE VE.</p>
                         <p>UNAS BASES SÓLIDAS, HABITABLES, RESUELVEN EL PROYECTO: UNA HUERTA.</p>
                         <p>EN UN PASEO CONTEMPLATIVO, BAJAMOS, CONECTAMOS CON LAS RAÍCES,</p>
@@ -147,7 +147,7 @@ export default function Carousel() {
                         />
 
                     </motion.div>
-                    <div className="col-span-3 row-span-5 relative">
+                    <div className="hidden md:flex col-span-3 row-span-5 relative">
                         <Image
                             src={url2}
                             alt={`Igiardini parque`}
@@ -184,7 +184,7 @@ export default function Carousel() {
 
                         />
                     </div>
-                    <div className="relative row-span-2">
+                    <div className="hidden md:flex relative row-span-2">
                         <Image
                             src={url6}
                             alt={`Igiardini madera`}
@@ -196,7 +196,7 @@ export default function Carousel() {
                     </div>
 
                     <div className='flex items-center justify-center'>
-                        <div className='md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4 '>
+                        <div className='text-xs md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4 '>
                             <p>MATERIALIZAMOS CONSCIENCIA, EN HUERTAS DISEÑADAS PARA LOGRAR EL BIENESTAR DEL USUARIO.</p>
                             <p>UNA ESTRUCTURA DE MADERA TRATADA MEDIANTE "YAKISUGI", MÉTODO ANCESTRAL JAPONÉS.</p>
                             <p>ALTURA DE TRABAJO ÓPTIMA, LLEVANDO LA TIERRA Y LA CULTURA AL ALCANCE DE LA MANO.</p>
@@ -206,7 +206,7 @@ export default function Carousel() {
                         </div >
                     </div>
                 </div>
-                < div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
+                < div className="w-screen grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
                     <div className="relative">
                         <Image
                             src={url7}
@@ -250,7 +250,7 @@ export default function Carousel() {
                         />
                     </div>
                 </div>
-                < div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
+                < div className="w-screen grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
                     <div className="relative">
                         <Image
                             src={url10}
@@ -262,7 +262,7 @@ export default function Carousel() {
                         />
                     </div>
                     <div className='grid'>
-                        <div className='text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4'>
+                        <div className='text-xs md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4'>
                             <p>IGIARDINI HACE FOCO EN LO QUE NO SE VE.</p>
                             <p>UNAS BASES SÓLIDAS, HABITABLES, RESUELVEN EL PROYECTO: UNA HUERTA.</p>
                             <p>EN UN PASEO CONTEMPLATIVO, BAJAMOS, CONECTAMOS CON LAS RAÍCES,</p>
@@ -280,7 +280,7 @@ export default function Carousel() {
                             />
                         </div>
                     </div>
-                    <div className="relative">
+                    <div className="relative hidden md:flex">
                         <Image
                             src={url11}
                             alt={`Igiardini Adro cultivando 4`}
