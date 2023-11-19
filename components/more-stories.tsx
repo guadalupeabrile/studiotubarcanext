@@ -18,7 +18,7 @@ const MoreStories = ({ posts }: Props) => {
         />
 
       </div>
-      < div className="grid grid-cols-1 md:p-10 md:grid-cols-4 md:gap-x-10 lg:gap-x-10 lg:gap-y-10 md:gap-y-10" >
+      < div className="grid grid-cols-1 flex overflow-x-scroll h-screen items-center justify-content p-5 md:p-10 md:grid-cols-4 md:gap-x-10 lg:gap-x-10 lg:gap-y-10 md:gap-y-10" >
         {
           posts.map((post) => (
             <PostPreview
