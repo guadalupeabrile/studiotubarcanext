@@ -56,13 +56,12 @@ const CoverImage = ({ title, src, slug, nameI, nameVideo }: Props) => {
           <div className='relative'>
             <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
               {image}
-              <motion.div
-                variants={fadeIn('right', 0.9)} initial="hidden" animate="show" exit='hidden'>
 
-                <video id={title} autoPlay loop className='shadow absolute h-full w-full flex items-center justify-center -bottom-0 md:opacity-0 md:group-hover:opacity-90'>
-                  <source src={nameVideo} type="video/mp4" />
-                </video>
-              </motion.div>
+              <video id={title} className='shadow absolute h-full w-full flex items-center justify-center -bottom-0 md:opacity-0 md:group-hover:opacity-90'>
+                <source src={nameVideo} type="video/mp4" />
+              </video>
+
+
             </Link>
           </div>
         </div>
