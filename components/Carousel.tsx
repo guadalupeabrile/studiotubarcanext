@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../utils/motionTransitions';
 
 export default function Carousel() {
 
@@ -95,7 +97,10 @@ export default function Carousel() {
             <div className='flex p-10'>
                 <div className="w-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 box-border pr-10">
 
-                    <div className="col-span-2 relative">
+                    <motion.div
+                        className="col-span-2 relative"
+                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                    >
                         <Image
                             src={url1}
                             alt={`Van Gogh Image`}
@@ -103,8 +108,11 @@ export default function Carousel() {
                             layout='fill'
                             objectFit='cover'
                         />
-                    </div>
-                    <div className='text-xs text-center md:text-right md:text-base text-gray-800 leading-relaxed space-y-5 mr-10 mt-10'>
+                    </motion.div>
+                    <motion.div
+                        className='text-xs text-center md:text-right md:text-base text-gray-800 leading-relaxed space-y-5 mr-10 mt-10'
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
+                    >
                         <p>
                             Jardines donde cultivar <span className="hidden md:inline"><br /></span> CONSCIENCIA.
                         </p>
@@ -113,7 +121,7 @@ export default function Carousel() {
                         <p>Reinterpretamos una obra de arte, <span className="hidden md:inline"><br /></span>en donde somos partícipes,  <span className="hidden md:inline"><br /></span>sembrando, creando y cultivando.</p>
                         <p>Así agudizamos la PRESENCIA <span className="hidden md:inline"><br /></span>y nos conmovemos a diario.</p>
                         <p>Fomentamos lo SENCILLO, <span className="hidden md:inline"><br /></span>a través de experiencias FÉRTILES, <span className="hidden md:inline"><br /></span>que guíen a la CONTEMPLACIÓN <span className="hidden md:inline"><br /></span>y la conexión con la TIERRA. </p >
-                    </div >
+                    </motion.div>
                 </div>
 
 
@@ -125,8 +133,10 @@ export default function Carousel() {
                         <p>Y GENERAMOS INTERCAMBIO CON LA TIERRA.</p>
                         <p>LOS FRUTOS SON EL RESULTADO DE UN TRABAJO CONSCIENTE.</p>
                     </div >
-                    <div className="row-span-6 col-span-2 relative">
-
+                    <motion.div
+                        className="row-span-6 col-span-2 relative"
+                        variants={fadeIn('right', 0.9)} initial="hidden" animate="show" exit='hidden'
+                    >
                         <Image
                             src={url3}
                             alt={`Igiardini parque`}
@@ -136,7 +146,7 @@ export default function Carousel() {
 
                         />
 
-                    </div>
+                    </motion.div>
                     <div className="col-span-3 row-span-5 relative">
                         <Image
                             src={url2}
