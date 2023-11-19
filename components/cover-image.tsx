@@ -18,7 +18,7 @@ const CoverImage = ({ title, src, slug, nameI, nameVideo }: Props) => {
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className="w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0 transition-shadow duration-200"
+      className="w-full object-cover h-auto group-hover:shadow-lg transition-shadow duration-200" //group-hover: opacity-0
       width={1300}
       height={630}
     />
