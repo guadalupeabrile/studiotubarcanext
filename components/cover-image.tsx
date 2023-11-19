@@ -36,18 +36,18 @@ const CoverImage = ({ title, src, slug, nameI, nameVideo }: Props) => {
 
   const videoId = title;
 
-  useEffect(() => {
-    const anim = document.getElementById(videoId) as HTMLVideoElement;
+  // useEffect(() => {
+  //   const anim = document.getElementById(videoId) as HTMLVideoElement;
 
-    anim.addEventListener("mouseover", function () {
-      anim.play();
-    });
+  //   anim.addEventListener("mouseover", function () {
+  //     anim.play();
+  //   });
 
-    anim.addEventListener("mouseout", function () {
-      anim.pause();
-      anim.currentTime = 0; // Reiniciar el video al principio al salir del área del video
-    });
-  }, [])
+  //   anim.addEventListener("mouseout", function () {
+  //     anim.pause();
+  //     anim.currentTime = 0; // Reiniciar el video al principio al salir del área del video
+  //   });
+  // }, [])
 
   return (
     <div className="sm:mx-0">
