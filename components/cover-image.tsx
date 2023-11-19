@@ -57,9 +57,9 @@ const CoverImage = ({ title, src, slug, nameI, nameVideo }: Props) => {
             <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
               {image}
 
-              <video id={title} className='shadow absolute h-full w-full flex items-center justify-center -bottom-0 md:opacity-0 md:group-hover:opacity-90'>
+              {/* <video id={title} className='shadow absolute h-full w-full flex items-center justify-center -bottom-0 md:opacity-0 md:group-hover:opacity-90'>
                 <source src={nameVideo} type="video/mp4" />
-              </video>
+              </video> */}
 
 
             </Link>
