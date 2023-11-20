@@ -147,7 +147,9 @@ export default function Carousel() {
                     </motion.div>
                 </div>
                 < div className="w-screen grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
-                    <div className="relative">
+                    <motion.div
+                        className="relative"
+                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url7}
                             alt={`Igiardini techo`}
@@ -156,8 +158,10 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
-                    <div className="relative">
+                    </motion.div>
+                    <motion.div
+                        className="relative"
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url8}
                             alt={`Igiardini techo 2`}
@@ -166,8 +170,10 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
-                    <div className="relative">
+                    </motion.div>
+                    <motion.div
+                        className="relative"
+                        variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url12}
                             alt={`Igiardini grafico`}
@@ -176,10 +182,12 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="box-border w-screen grid px-10">
-                    <div className='relative'>
+                    <motion.div
+                        className='relative'
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url9}
                             alt={`Igiardini Fuego`}
@@ -188,10 +196,12 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
+                    </motion.div>
                 </div>
                 < div className="w-screen grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
-                    <div className="relative">
+                    <motion.div
+                        className="relative"
+                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url10}
                             alt={`Igiardini Adro cultivando 3`}
@@ -200,16 +210,20 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
+                    </motion.div>
                     <div className='grid'>
-                        <div className='text-xs md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4'>
+                        <motion.div
+                            className='text-xs md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4'
+                            variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                             <p>IGIARDINI HACE FOCO EN LO QUE NO SE VE.</p>
                             <p>UNAS BASES SÓLIDAS, HABITABLES, RESUELVEN EL PROYECTO: UNA HUERTA.</p>
                             <p>EN UN PASEO CONTEMPLATIVO, BAJAMOS, CONECTAMOS CON LAS RAÍCES,</p>
                             <p>Y GENERAMOS INTERCAMBIO CON LA TIERRA.</p>
                             <p>LOS FRUTOS SON EL RESULTADO DE UN TRABAJO CONSCIENTE.</p>
-                        </div>
-                        <div className="relative row-span-6">
+                        </motion.div>
+                        <motion.div
+                            className="relative row-span-6"
+                            variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                             <Image
                                 src={url13}
                                 alt={`Zanahoria Igiardini`}
@@ -218,9 +232,12 @@ export default function Carousel() {
                                 objectFit='contain'
 
                             />
-                        </div>
+                        </motion.div>
+
                     </div>
-                    <div className="relative hidden md:flex">
+                    <motion.div
+                        className="relative hidden md:flex"
+                        variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url11}
                             alt={`Igiardini Adro cultivando 4`}
@@ -229,7 +246,7 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>
