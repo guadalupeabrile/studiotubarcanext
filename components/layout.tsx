@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import background from '../public/assets/blog/texture/bg-texture.webp';
+import background from '../public/assets/blog/texture/bg-texture-min.webp';
 
 type Props = {
   preview?: boolean
