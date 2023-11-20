@@ -1,19 +1,19 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../utils/motionTransitions';
-import url1 from '../public/assets/blog/igiardini/igiardini-1-min.webp';
-import url2 from '../public/assets/blog/igiardini/igiardini-02-min.webp';
-import url3 from '../public/assets/blog/igiardini/igiardini-03-min.webp';
-import url4 from '../public/assets/blog/igiardini/igiardini-04-min.webp';
-import url5 from '../public/assets/blog/igiardini/igiardini-05-min.webp';
-import url6 from '../public/assets/blog/igiardini/igiardini-06-min.webp';
-import url7 from '../public/assets/blog/igiardini/igiardini-07-min.webp';
-import url8 from '../public/assets/blog/igiardini/igiardini-08-min.webp';
-import url9 from '../public/assets/blog/igiardini/igiardini-09-min.webp';
-import url10 from '../public/assets/blog/igiardini/igiardini-10-min.webp';
-import url11 from '../public/assets/blog/igiardini/igiardini-11-min.webp';
-import url12 from '../public/assets/blog/igiardini/igiardini-12-min.webp';
-import url13 from '../public/assets/blog/igiardini/igiardini-13-min.webp';
+import url1 from '../public/assets/blog/igiardini-img/igiardini-1-min.webp';
+import url2 from '../public/assets/blog/igiardini-img/igiardini-02-min.webp';
+import url3 from '../public/assets/blog/igiardini-img/igiardini-03-min.webp';
+import url4 from '../public/assets/blog/igiardini-img/igiardini-04-min.webp';
+import url5 from '../public/assets/blog/igiardini-img/igiardini-05-min.webp';
+import url6 from '../public/assets/blog/igiardini-img/igiardini-06-min.webp';
+import url7 from '../public/assets/blog/igiardini-img/igiardini-07-min.webp';
+import url8 from '../public/assets/blog/igiardini-img/igiardini-08-min.webp';
+import url9 from '../public/assets/blog/igiardini-img/igiardini-09-min.webp';
+import url10 from '../public/assets/blog/igiardini-img/igiardini-10-min.webp';
+import url11 from '../public/assets/blog/igiardini-img/igiardini-11-min.webp';
+import url12 from '../public/assets/blog/igiardini-img/igiardini-12-min.webp';
+import url13 from '../public/assets/blog/igiardini-img/igiardini-13-min.webp';
 
 
 export default function Carousel() {
@@ -53,16 +53,19 @@ export default function Carousel() {
 
 
                 < div className="w-screen grid grid-cols-1 md:grid-cols-5 md:gap-x-10 lg:gap-x-10 box-border px-10" >
-                    <div className='col-span-3 text-xs md:text-base md:text-left text-gray-800 space-y-4 '>
+
+                    <motion.div
+                        className='col-span-3 text-xs md:text-base md:text-left text-gray-800 space-y-4'
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <p>IGIARDINI HACE FOCO EN LO QUE NO SE VE.</p>
                         <p>UNAS BASES SÓLIDAS, HABITABLES, RESUELVEN EL PROYECTO: UNA HUERTA.</p>
                         <p>EN UN PASEO CONTEMPLATIVO, BAJAMOS, CONECTAMOS CON LAS RAÍCES,</p>
                         <p>Y GENERAMOS INTERCAMBIO CON LA TIERRA.</p>
                         <p>LOS FRUTOS SON EL RESULTADO DE UN TRABAJO CONSCIENTE.</p>
-                    </div >
+                    </motion.div >
                     <motion.div
                         className="row-span-6 col-span-2 relative"
-                        variants={fadeIn('right', 0.9)} initial="hidden" animate="show" exit='hidden'
+                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <Image
                             src={url3}
@@ -74,7 +77,9 @@ export default function Carousel() {
                         />
 
                     </motion.div>
-                    <div className="hidden md:flex col-span-3 row-span-5 relative">
+                    <motion.div
+                        className="hidden md:flex col-span-3 row-span-5 relative"
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url2}
                             alt={`Igiardini parque`}
@@ -83,12 +88,14 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
+                    </motion.div>
                 </div >
 
 
                 <div className="box-border w-screen grid px-10">
-                    <div className='relative'>
+                    <motion.div
+                        className='relative'
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url4}
                             alt={`Igiardini Adro Cultivando`}
@@ -97,11 +104,13 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 < div className="w-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 box-boder px-10" >
-                    <div className="row-span-3 relative">
+                    <motion.div
+                        className="row-span-3 relative"
+                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url5}
                             alt={`Igiardini plano y pintura`}
@@ -110,8 +119,10 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
-                    <div className="hidden md:flex relative row-span-2">
+                    </motion.div>
+                    <motion.div
+                        className="hidden md:flex relative row-span-2"
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url6}
                             alt={`Igiardini madera`}
@@ -120,9 +131,11 @@ export default function Carousel() {
                             objectFit='cover'
 
                         />
-                    </div>
+                    </motion.div>
 
-                    <div className='flex items-center justify-center'>
+                    <motion.div
+                        className='flex items-center justify-center'
+                        variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <div className='text-xs md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4 '>
                             <p>MATERIALIZAMOS CONSCIENCIA, EN HUERTAS DISEÑADAS PARA LOGRAR EL BIENESTAR DEL USUARIO.</p>
                             <p>UNA ESTRUCTURA DE MADERA TRATADA MEDIANTE "YAKISUGI", MÉTODO ANCESTRAL JAPONÉS.</p>
@@ -131,7 +144,7 @@ export default function Carousel() {
                             <p>PROCESOS AMIGABLES CON EL MEDIO AMBIENTE, APRENDIZAJE E INTERCAMBIO CONTÍNUO.</p>
                             <p className="md:text-center">¿EN QUÉ ESPACIOS DE TU VIDA TE IMAGINÁS IGIARDINI?</p>
                         </div >
-                    </div>
+                    </motion.div>
                 </div>
                 < div className="w-screen grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10" >
                     <div className="relative">
