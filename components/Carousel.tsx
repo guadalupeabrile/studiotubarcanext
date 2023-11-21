@@ -32,7 +32,7 @@ export default function Carousel() {
             className='h-screen bg-custom-background'
         >
             <SwiperSlide>
-                <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 box-border px-20 py-10 m-0">
+                <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-3 md:gap-x-10 box-border px-10 md:px-20 py-10 m-0">
                     <motion.div
                         className="row-span-4 col-span-2 relative"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
@@ -61,7 +61,7 @@ export default function Carousel() {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                < div className="w-screen h-screen grid grid-cols-1 md:grid-cols-5 md:gap-x-10 lg:gap-x-10 box-border px-20 py-10 bg-custom-background" >
+                < div className="w-screen h-screen grid grid-cols-1 md:grid-cols-5 md:gap-x-10 lg:gap-x-10 box-border px-10 md:px-20 py-10 bg-custom-background" >
                     <motion.div
                         className='col-span-3 text-xs md:text-base md:text-left text-gray-800 space-y-4'
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
@@ -100,7 +100,7 @@ export default function Carousel() {
                 </div >
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-screen box-border w-screen grid px-20 py-10 bg-custom-background">
+                <div className="h-screen box-border w-screen grid px-10 md:px-20 py-10 bg-custom-background">
                     <motion.div
                         className='relative'
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
@@ -116,7 +116,7 @@ export default function Carousel() {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                < div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 box-boder px-20 py-10 bg-custom-background" >
+                < div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 box-boder px-10 md:px-20 py-10 bg-custom-background" >
                     <motion.div
                         className="row-span-3 relative"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
@@ -157,7 +157,7 @@ export default function Carousel() {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                < div className="w-screen h-screen bg-custom-background grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-20 py-10" >
+                < div className="w-screen h-screen bg-custom-background grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10 md:px-20 py-10" >
                     <motion.div
                         className="relative"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
@@ -197,7 +197,7 @@ export default function Carousel() {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="h-screen box-border w-screen grid px-20 py-10 bg-custom-background">
+                <div className="h-screen box-border w-screen grid px-10 md:px-20 py-10 bg-custom-background">
                     <motion.div
                         className='relative'
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
@@ -213,7 +213,7 @@ export default function Carousel() {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                < div className="w-screen h-screen bg-custom-background grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-20 py-10" >
+                < div className="w-screen h-screen bg-custom-background grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-10 md:px-20 py-10" >
                     <motion.div
                         className="relative"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
