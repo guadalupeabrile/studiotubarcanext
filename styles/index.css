@@ -139,3 +139,7 @@
         object-fit: cover;
     }
 }
+
+:root {
+    --swiper-theme-color: grey !important
+}

@@ -1,3 +1,4 @@
+
 export const fadeIn = (direction: string, delay: number) => {
     return {
         hidden: {
@@ -24,3 +25,4 @@ export const fadeIn = (direction: string, delay: number) => {
         }
     }
 }
+
