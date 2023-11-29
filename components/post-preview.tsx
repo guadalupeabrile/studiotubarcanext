@@ -1,9 +1,10 @@
 import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
+import Image from 'next/image'
 import Link from 'next/link'
 import type Author from '../interfaces/author'
-import VideoPlayer from '../utils/VideoPlayer'
+import VideoPlayer from '../components/VideoPlayer';
 
 type Props = {
   title: string
@@ -33,9 +34,15 @@ const PostPreview = ({
         <div className='relative'>
           <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
 
-            <VideoPlayer
-              nameVideo={nameVideo}></VideoPlayer>
+            {/* <Image
+              src={coverImage}
+              alt={`Cover Image for ${title}`}
+              className="w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
+              width={1300}
+              height={630}
+            /> */}
 
+            <VideoPlayer vidPublicId="igiardini-logo" />
 
           </Link>
         </div>
