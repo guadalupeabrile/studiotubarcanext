@@ -55,7 +55,7 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
               </div>
               <div className='md:hidden'>
 
-                <video autoPlay muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
+                <video autoPlay muted loop playsInline className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
                   <source src={nameVideo} type="video/mp4" />
                 </video>
 
