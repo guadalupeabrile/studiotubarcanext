@@ -2,8 +2,6 @@ import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect } from 'react';
-import { AnimationOnScroll } from './animationOnScroll'
-
 
 
 type Props = {
