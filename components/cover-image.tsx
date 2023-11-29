@@ -2,6 +2,7 @@ import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect } from 'react';
+import VideoPlayer from '../components/VideoPlayer';
 
 
 type Props = {
@@ -55,9 +56,7 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
       <div className='group md:hiddden relative'>
         <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
           {image}
-          <video muted autoPlay loop className='shadow  absolute h-full w-full flex items-center justify-center -bottom-0 '>
-            <source src={nameVideo} type="video/mp4" />
-          </video>
+          <VideoPlayer vidPublicId="igiardini-logo" />
         </Link>
       </div>
 
