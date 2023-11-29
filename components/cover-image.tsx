@@ -18,7 +18,7 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className="w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
+      className=" w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
       width={1300}
       height={630}
     />
@@ -47,9 +47,16 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
           <div className='relative'>
             <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
               {image}
-              <video id={title} autoPlay muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
-                <source src={nameVideo} type="video/mp4" />
-              </video>
+              <div className='hidden md:block'>
+                <video id={title} muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
+                  <source src={nameVideo} type="video/mp4" />
+                </video>
+              </div>
+              <div className='md:hidden'>
+                <video autoPlay muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
+                  <source src={nameVideo} type="video/mp4" />
+                </video>
+              </div>
             </Link>
           </div>
         </div>
