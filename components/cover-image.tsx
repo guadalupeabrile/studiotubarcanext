@@ -17,7 +17,7 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className="hidden md:inline w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
+      className="w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
       width={1300}
       height={630}
     />
@@ -41,18 +41,23 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
   return (
     <div className="sm:mx-0">
 
-      <div className='group'>
+      <div className='group hidden md:inline'>
         <div className='relative'>
           <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
             {image}
             <video id={title} muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
               <source src={nameVideo} type="video/mp4" />
             </video>
-
-
-
           </Link>
         </div>
+      </div>
+
+      <div className='group md:hiddden'>
+        <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
+          <video muted autoPlay loop className='shadow -bottom-0 '>
+            <source src={nameVideo} type="video/mp4" />
+          </video>
+        </Link>
       </div>
 
     </div>
