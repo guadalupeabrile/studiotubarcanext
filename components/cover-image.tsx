@@ -23,20 +23,20 @@ const CoverImage = ({ title, src, slug, nameI, nameVideo }: Props) => {
     />
   );
 
-  // const videoId = title;
+  const videoId = title;
 
-  // useEffect(() => {
-  //   const anim = document.getElementById(videoId) as HTMLVideoElement;
+  useEffect(() => {
+    const anim = document.getElementById(videoId) as HTMLVideoElement;
 
-  //   anim.addEventListener("mouseover", function () {
-  //     anim.play();
-  //   });
+    anim.addEventListener("mouseover", function () {
+      anim.play();
+    });
 
-  //   anim.addEventListener("mouseout", function () {
-  //     anim.pause();
-  //     anim.currentTime = 0; // Reiniciar el video al principio al salir del área del video
-  //   });
-  // }, [])
+    anim.addEventListener("mouseout", function () {
+      anim.pause();
+      anim.currentTime = 0; // Reiniciar el video al principio al salir del área del video
+    });
+  }, [])
 
   return (
     <div className="sm:mx-0">
@@ -44,11 +44,11 @@ const CoverImage = ({ title, src, slug, nameI, nameVideo }: Props) => {
       <div className='group'>
         <div className='relative'>
           <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
-            {image}
 
-            <video id={title} autoPlay loop className='shadow absolute h-full w-full flex items-center justify-center -bottom-0 md:opacity-0 md:group-hover:opacity-90'>
+            <video id={title} className='shadow absolute h-full w-full flex items-center justify-center -bottom-0 md:opacity-0 md:group-hover:opacity-90'>
               <source src={nameVideo} type="video/mp4" />
             </video>
+            {image}
 
 
           </Link>
