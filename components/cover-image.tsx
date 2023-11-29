@@ -2,6 +2,7 @@ import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect } from 'react';
+import { AnimationOnScroll } from './animationOnScroll'
 
 
 
@@ -48,14 +49,16 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
             <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
               {image}
               <div className='hidden md:block'>
-                <video id={title} muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
+                <video id={title} preload='none' muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
                   <source src={nameVideo} type="video/mp4" />
                 </video>
               </div>
               <div className='md:hidden'>
+
                 <video autoPlay muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
                   <source src={nameVideo} type="video/mp4" />
                 </video>
+
               </div>
             </Link>
           </div>
