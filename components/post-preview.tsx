@@ -26,10 +26,22 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div>
-      <div className="">
-        <CoverImage slug={slug} title={title} src={coverImage} nameI={nameImage} nameVideo={nameVideo} />
+    <div className="sm:mx-0">
+
+      <div className='group'>
+        <div className='relative'>
+          <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
+
+            <video id={title} autoPlay loop className='shadow'>
+              <source src={nameVideo} type="video/mp4" />
+            </video>
+
+
+
+          </Link>
+        </div>
       </div>
+
     </div>
   )
 }
