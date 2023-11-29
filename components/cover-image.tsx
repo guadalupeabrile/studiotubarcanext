@@ -1,7 +1,6 @@
 import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
-import Video from 'cloudinary-react'
 import { useEffect } from 'react';
 
 
@@ -46,10 +45,10 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
         <div className='relative'>
           <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
 
-            <Video id={title} autoPlay loop className='shadow absolute h-full w-full flex items-center justify-center -bottom-0 '>
+            <video id={title} autoPlay loop className='shadow'>
               <source src={nameVideo} type="video/mp4" />
-            </Video>
-            {/* {image} */}
+            </video>
+
 
 
           </Link>
@@ -60,6 +59,6 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
   )
 }
 
-//md:opacity-0 md:group-hover:opacity-90
+//md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 
 
 export default CoverImage
