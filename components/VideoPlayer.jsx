@@ -10,7 +10,7 @@ const MemoVidPlayer = memo(({ publicId }) => {
     );
 });
 
-const VideoPlayer = ({ vidPublicId = "igiardini-logo" }) => {
+export const VideoPlayer = ({ vidPublicId = "igiardini-logo" }) => {
     const [publicId, setPublicId] = useState("");
     const { ref, inView } = useInView({ threshold: 1 });
 
@@ -27,4 +27,3 @@ const VideoPlayer = ({ vidPublicId = "igiardini-logo" }) => {
     )
 };
 
-export default VideoPlayer;

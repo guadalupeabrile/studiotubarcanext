@@ -2,7 +2,7 @@ import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect } from 'react';
-import VideoPlayer from '../components/VideoPlayer';
+
 
 
 type Props = {
@@ -40,27 +40,24 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
   }, [])
 
   return (
-    <div className="sm:mx-0">
+    <>
+      <div className="sm:mx-0">
 
-      <div className='group hidden md:inline'>
-        <div className='relative'>
-          <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
-            {image}
-            <video id={title} muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
-              <source src={nameVideo} type="video/mp4" />
-            </video>
-          </Link>
+        <div className='group'>
+          <div className='relative'>
+            <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
+              {image}
+              <video id={title} autoPlay muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
+                <source src={nameVideo} type="video/mp4" />
+              </video>
+            </Link>
+          </div>
         </div>
+
+
       </div>
 
-      <div className='group md:hiddden relative'>
-        <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
-          {image}
-          <VideoPlayer vidPublicId="igiardini-logo" />
-        </Link>
-      </div>
-
-    </div>
+    </>
   )
 }
 
