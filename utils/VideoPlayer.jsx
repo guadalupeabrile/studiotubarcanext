@@ -8,8 +8,7 @@ const VidPlayer = React.memo(({ nameVideo }) => {
             <Video
                 publicId='igiardini-logo'
                 width="100%"
-                autoPlay
-                loop
+                controls
 
             />
         </CloudinaryContext>

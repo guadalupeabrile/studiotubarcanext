@@ -15,6 +15,7 @@ const MoreStories = ({ posts }: Props) => {
           alt='fondo'
           layout='fill'
           objectFit="cover"
+          priority
         />
 
       </div>
