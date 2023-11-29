@@ -52,9 +52,10 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
         </div>
       </div>
 
-      <div className='group md:hiddden'>
+      <div className='group md:hiddden relative'>
         <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
-          <video muted autoPlay loop className='shadow -bottom-0 '>
+          {image}
+          <video muted autoPlay loop className='shadow  absolute h-full w-full flex items-center justify-center -bottom-0 '>
             <source src={nameVideo} type="video/mp4" />
           </video>
         </Link>
