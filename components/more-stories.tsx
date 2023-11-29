@@ -1,7 +1,6 @@
 import PostPreview from './post-preview'
 import type Post from '../interfaces/post'
 import Image from 'next/image'
-import Link from 'next/link'
 
 type Props = {
   posts: Post[]
@@ -25,23 +24,17 @@ const MoreStories = ({ posts }: Props) => {
       >
         {
           posts.map((post) => (
-            <div className="sm:mx-0">
-
-              <div className='group'>
-                <div className='relative'>
-                  <Link as={`/projects/${post.slug}`} href={`/projects/${post.slug}`} aria-label={post.title}>
-
-                    <video id={post.title} autoPlay loop className='shadow'>
-                      <source src={post.nameVideo} type="video/mp4" />
-                    </video>
-
-
-
-                  </Link>
-                </div>
-              </div>
-
-            </div>
+            <PostPreview
+              key={post.slug}
+              title={post.title}
+              coverImage={post.coverImage}
+              nameImage={post.nameImage}
+              nameVideo={post.nameVideo}
+              date={post.date}
+              author={post.author}
+              slug={post.slug}
+              excerpt={post.excerpt}
+            />
           ))
         }
       </div >

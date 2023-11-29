@@ -3,6 +3,7 @@ import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import type Author from '../interfaces/author'
+import VideoPlayer from '../utils/VideoPlayer'
 
 type Props = {
   title: string
@@ -32,10 +33,8 @@ const PostPreview = ({
         <div className='relative'>
           <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
 
-            <video id={title} autoPlay loop className='shadow'>
-              <source src={nameVideo} type="video/mp4" />
-            </video>
-
+            <VideoPlayer
+              nameVideo={nameVideo}></VideoPlayer>
 
 
           </Link>
