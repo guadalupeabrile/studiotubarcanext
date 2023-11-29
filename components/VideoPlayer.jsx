@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 const MemoVidPlayer = memo(({ publicId }) => {
     return (
         <CloudinaryContext cloudName='dyu1mlrnv'>
-            <Video publicId={publicId} width="311px" autoPlay loop />
+            <Video publicId={publicId} width="311px" autoPlay loop muted />
         </CloudinaryContext>
     );
 });
