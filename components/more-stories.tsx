@@ -14,8 +14,8 @@ const MoreStories = ({ posts }: Props) => {
         <Image
           src='/assets/blog/texture/bg-texture.png'
           alt='fondo'
-          layout='fill'
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           priority
         />
 
