@@ -9,7 +9,7 @@ type Props = {
 
 const MoreStories = ({ posts }: Props) => {
   return (
-    <section className="fixed top-0 left-0 w-screen flex items-center justify-content h-screen">
+    <section className="bg-amber-50 fixed top-0 left-0 w-screen flex items-center justify-content h-screen">
       <div className='bg'>
         <Image
           src='/assets/blog/texture/bg-texture.png'
