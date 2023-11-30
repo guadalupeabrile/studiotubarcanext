@@ -62,7 +62,9 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
         <div className='group'>
           <div className='relative'>
             <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
+
               {image}
+
               <div className='hidden md:block'>
                 <video id={title} preload='none' muted loop className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
                   <source src={nameVideo} type="video/mp4" />
@@ -70,13 +72,13 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
               </div>
 
               <div ref={myRef} className={`${inView ? 'block' : 'hideen'}   md:hidden`}>
-
-                <video id={title} autoPlay muted loop playsInline className='shadow  absolute h-full w-full flex items-center justify-center -bottom-0 '>
+                <video id={title} autoPlay muted loop playsInline className='absolute h-full w-full flex items-center justify-center -bottom-0 '>
                   <source src={nameVideo} type="video/mp4" />
                 </video>
-
               </div>
+
             </Link>
+
           </div>
         </div>
 
