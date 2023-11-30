@@ -41,7 +41,7 @@ const MoreStories = ({ posts }: Props) => {
                     excerpt={post.excerpt} />
                 </div>
 
-                {/* <div className='md:hidden'>
+                <div className='md:hidden'>
                   <Link as={`/projects/${post.slug}`} href={`/projects/${post.slug}`} aria-label={post.title}>
                     <Image
                       src={post.nameImage}
@@ -52,7 +52,7 @@ const MoreStories = ({ posts }: Props) => {
                       width={1300}
                       height={630} />
                   </Link>
-                </div> */}
+                </div>
               </div>
             </>
           ))
