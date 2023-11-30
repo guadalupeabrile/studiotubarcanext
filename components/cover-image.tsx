@@ -1,7 +1,8 @@
 import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 
 type Props = {
@@ -23,6 +24,8 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
     />
   );
 
+  //Mouseover effect for md and lg screens
+
   const videoId = title;
 
   useEffect(() => {
@@ -38,6 +41,20 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
     });
   }, [])
 
+  //InView autoPlay for mobile 
+
+
+
+  const { ref: myRef, inView } = useInView();
+
+  // useEffect(() => {
+
+  //   const animMob = document.getElementById(videoMobId) as HTMLVideoElement;
+
+  //   inView ? animMob.play() : ""
+
+  // }, [])
+
   return (
     <>
       <div className="sm:mx-0">
@@ -51,9 +68,10 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
                   <source src={nameVideo} type="video/mp4" />
                 </video>
               </div>
-              <div className='md:hidden'>
 
-                <video autoPlay muted loop playsInline className='shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 '>
+              <div ref={myRef} className={`${inView ? 'block' : 'hideen'}   md:hidden`}>
+
+                <video id={title} autoPlay muted loop playsInline className='shadow  absolute h-full w-full flex items-center justify-center -bottom-0 '>
                   <source src={nameVideo} type="video/mp4" />
                 </video>
 
