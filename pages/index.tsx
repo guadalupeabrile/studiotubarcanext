@@ -19,8 +19,18 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>studiotubarca</title>
         </Head>
+        <div className='min-h-screen md:hidden' >
+          <video autoPlay loop muted playsInline className="absolute w-full h-screen object-cover">
+            <source
+              src="assets/blog/videos/hero-video-studiotubarca-mobile.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
         <MoreStories posts={allPosts} />
-        <HeroPost></HeroPost>
+        <div className='hidden md:block'>
+          <HeroPost></HeroPost>
+        </div>
       </Layout>
     </>
   )

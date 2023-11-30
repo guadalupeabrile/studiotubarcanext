@@ -10,7 +10,7 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <div className='bg bg-amber-50'>
+      <div className='bg'>
         <Image
           src={background}
           alt='fondo'
