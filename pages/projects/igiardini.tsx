@@ -56,7 +56,7 @@ export default function Igiardini({ post, preview }: Props) {
                                     <ProjectVideo></ProjectVideo>
                                 </div>
                             </div>
-                            <Footer nextProject={post.nextProject} manifiesto=''></Footer>
+                            <Footer nextProject={post.nextProject} nextProjectImg={post.nextProjectImg} manifiesto=''></Footer>
                             <div className='footer-screen'></div>
                         </article>
                     </>
@@ -79,6 +79,7 @@ export async function getStaticProps() {
         'ogImage',
         'coverImage',
         'nameImage',
+        'nextProjectImg',
         'video',
         'nextProject'
     ])

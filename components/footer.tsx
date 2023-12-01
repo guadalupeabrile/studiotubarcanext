@@ -7,10 +7,11 @@ import Image from 'next/image'
 type Props = {
   nextProject: string
   manifiesto: string
+  nextProjectImg: string
 }
 
-const Footer = ({ nextProject, manifiesto }: Props) => {
-
+const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
+  console.log({ nextProjectImg })
   return (
     <footer className={` z-1 border-t border-neutral-200 footer`} >
       <div className="mt-32 flex flex-col lg:flex-row items-center justify-content place-content-evenly">
@@ -51,7 +52,12 @@ const Footer = ({ nextProject, manifiesto }: Props) => {
         </Link>
 
         <Link as={`/projects/${nextProject}`} href={`/projects/${nextProject}`} aria-label='studiotubarca contact'>
-          <p>Other Proyecto</p>
+          <Image
+            src={nextProjectImg}
+            alt='studiotubarca next project image'
+            width={200}
+            height={200}
+            className='hover:shadow-lg transition-shadow duration-200' />
         </Link>
 
       </div>

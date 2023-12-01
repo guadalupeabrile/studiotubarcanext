@@ -15,6 +15,7 @@ type PostType = {
   }
   content: string
   nextProject: string
+  nextProjectImg: string
 }
 
 export default PostType
