@@ -49,14 +49,14 @@ export default function Igiardini({ post, preview }: Props) {
                                 author={post.author}
                             /> */}
                             <div>
-                                <div className='sticky top-0'>
+                                <div className='z-10 sticky top-0'>
                                     <Carousel />
                                 </div>
-                                <div className='z-10 sticky'>
+                                <div className='z-20 sticky'>
                                     <ProjectVideo></ProjectVideo>
                                 </div>
                             </div>
-                            <Footer></Footer>
+                            <Footer nextProject={post.nextProject} manifiesto=''></Footer>
                             <div className='footer-screen'></div>
                         </article>
                     </>
@@ -79,7 +79,8 @@ export async function getStaticProps() {
         'ogImage',
         'coverImage',
         'nameImage',
-        'video'
+        'video',
+        'nextProject'
     ])
     const content = await markdownToHtml(post.content || '')
 

@@ -1,15 +1,16 @@
 ---
-title: 'L(in)ampara'
+title: 'Lovesther'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/projects-preview/linampara-preview.png'
-nameImage: '/assets/blog/projects-name/linampara-name.png'
-nameVideo: '/assets/blog/project-animation/linampara-logo.mp4'
+coverImage: '/assets/blog/projects-preview/lovesther-preview.png'
+nameImage: '/assets/blog/projects-name/lovesther-name.png'
+nameVideo: '/assets/blog/project-animation/igiardini-logo.mp4'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Tim Neutkens
   picture: '/assets/blog/authors/tim.jpeg'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
+nextProject: 'mesatelite'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

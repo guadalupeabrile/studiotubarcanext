@@ -47,14 +47,6 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
 
   const { ref: myRef, inView } = useInView();
 
-  // useEffect(() => {
-
-  //   const animMob = document.getElementById(videoMobId) as HTMLVideoElement;
-
-  //   inView ? animMob.play() : ""
-
-  // }, [])
-
   return (
     <>
       <div className="sm:mx-0">

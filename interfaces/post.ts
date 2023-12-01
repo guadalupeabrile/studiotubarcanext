@@ -14,6 +14,7 @@ type PostType = {
     url: string
   }
   content: string
+  nextProject: string
 }
 
 export default PostType
