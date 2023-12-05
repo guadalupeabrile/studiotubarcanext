@@ -6,6 +6,7 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
+import Image from 'next/image'
 
 type Props = {
   allPosts: Post[]
@@ -20,12 +21,13 @@ export default function Index({ allPosts }: Props) {
           <title>studiotubarca</title>
         </Head>
         <div className='min-h-screen md:hidden' >
-          <video autoPlay loop muted playsInline className="absolute w-full h-screen object-cover">
-            <source
-              src="assets/blog/videos/hero-video-studiotubarca-mobile.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <Image
+            src="/assets/blog/videos/photo-video-studiotubarca-mobile.webp"
+            alt={`Video studiotubarca`}
+            fill
+            style={{ objectFit: "cover" }}>
+
+          </Image>
         </div>
         <MoreStories posts={allPosts} />
         <div className='hidden md:block'>
