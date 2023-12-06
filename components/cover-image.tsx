@@ -63,13 +63,12 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
                 </video>
               </div>
 
-              <div ref={myRef} className={`${inView ? 'block' : 'hideen'}   md:hidden`}>
-                <video id={title} autoPlay muted loop playsInline className='absolute h-full w-full flex items-center justify-center -bottom-0 '>
-                  <source src={nameVideo} type="video/mp4" />
-                </video>
-              </div>
-
             </Link>
+            <div ref={myRef} className={`${inView ? 'block' : 'hideen'}   md:hidden`}>
+              <video id={title} autoPlay muted loop playsInline className='absolute h-full w-full flex items-center justify-center -bottom-0 '>
+                <source src={nameVideo} type="video/mp4" />
+              </video>
+            </div>
 
           </div>
         </div>

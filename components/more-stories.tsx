@@ -3,11 +3,15 @@ import type Post from '../interfaces/post'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import florImage from '../public/assets/blog/footer/flor-manifiesto.png'
+
 type Props = {
   posts: Post[]
 }
 
 const MoreStories = ({ posts }: Props) => {
+
+
   return (
     <section className="md:fixed md:top-0 md:left-0 w-screen flex items-center justify-content h-screen">
       <div className='bg'>
@@ -44,14 +48,14 @@ const MoreStories = ({ posts }: Props) => {
                 <div className='md:hidden'>
                   <Link as={`/projects/${post.slug}`} href={`/projects/${post.slug}`} aria-label={post.title}>
                     <Image
-                      src={post.nameImage}
+                      src={florImage}
                       alt='nombre de proyecto'
-
                       objectFit='cover'
-                      className="shadow w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
+                      className=" w-full object-cover h-auto hover:shadow-lg  transition-shadow duration-200"
                       width={1300}
                       height={630} />
                   </Link>
+                  <div className='mt-14'>Conocé más sobre {post.title}</div>
                 </div>
               </div>
             </>
