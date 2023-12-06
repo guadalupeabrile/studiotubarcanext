@@ -1,5 +1,6 @@
 import ReactPlayer from "react-player";
 
+
 const ProjectVideo = () => {
     return (
         <section className='min-h-screen w-full'>
@@ -7,7 +8,7 @@ const ProjectVideo = () => {
                 <div className="">
                     <video autoPlay loop muted className="w-full h-screen object-cover">
                         <source
-                            src="/zensilla-video.mp4"
+                            src='/assets/blog/projects-videos/igiardini-video.mp4'
                             type="video/mp4"
                         />
                     </video>
