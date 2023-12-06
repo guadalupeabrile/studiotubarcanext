@@ -14,6 +14,12 @@ const ProjectVideo = () => {
                     </video>
 
                 </div>
+                <div className='md:hidden'>
+                    <video autoPlay muted loop playsInline className='absolute h-full w-full flex items-center justify-center -bottom-0 '>
+                        <source src='/assets/blog/projects-videos/igiardini-video-mobile.mp4' type="video/mp4" />
+                    </video>
+                </div>
+
             </div>
         </section>
     )
