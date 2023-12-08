@@ -39,10 +39,15 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
         </div>
 
         <Link as={`/`} href={`/`} aria-label='studiotubarca contact'>
-          <p>Contact</p>
+          <Image
+            src='/assets/blog/footer/contact-quiero.png'
+            alt='studiotubarca Home'
+            width={250}
+            height={250}
+          />
         </Link>
 
-        <Link as={`/`} href={`/`} aria-label='studiotubarca contact'>
+        <Link as={`/`} href={`/`} aria-label='studiotubarca manifiesto'>
           <Image
             src='/assets/blog/footer/flor-manifiesto.png'
             alt='studiotubarca Home'
