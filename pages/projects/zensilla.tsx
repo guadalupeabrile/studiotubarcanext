@@ -16,6 +16,7 @@ import bg2 from '../../public/assets/blog/zensilla-img/zensilla-bg-2.jpg'
 import bg3 from '../../public/assets/blog/zensilla-img/zensilla-bg-3.jpg'
 import logo from '../../public/assets/blog/zensilla-img/zensilla-name.png'
 import silla from '../../public/assets/blog/zensilla-img/zensilla-silla.png'
+import sillas from '../../public/assets/blog/zensilla-img/sillas-zensilla.png'
 
 
 type Props = {
@@ -69,7 +70,8 @@ export default function Igiardini({ post, preview }: Props) {
                                             </Image>
                                         </div>
                                     </motion.div>
-                                    <motion.div className='p-10 pt-0 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'>
+                                    <motion.div className='p-10 pt-0 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
+                                        variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                                         <p>Buscábamos un mobiliario adaptable,</p>
                                         <p>versátil y de gran utilidad</p>
                                         <p>Que sea lo que tenga que ser,</p>
@@ -92,6 +94,33 @@ export default function Igiardini({ post, preview }: Props) {
                                         placeholder="blur"
                                         priority
                                     />
+                                </div>
+                                <div className='absolute z-20 p-10 flex flex-col w-screen'>
+                                    <motion.div className='flex items-center md:gap-x-10'
+                                        variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
+                                        <div>
+                                            <Image
+                                                src={sillas}
+                                                alt='zensilla logo'
+                                                objectFit="cover"
+                                                quality={100}
+                                                placeholder="blur"
+                                                priority>
+
+                                            </Image>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div className='ml-20 mt-5 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
+                                        variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
+                                        <p>Fabricada en madera fenólica de la mejor calidad con</p>
+                                        <p>terminación laqueada. La Zensilla es un mueble encastrable.</p>
+                                        <p>Hay muchas formas de armarla. Vienen con un manual de</p>
+                                        <p>uso y las indicaciones para ponerse a jugar. Hicimos un</p>
+                                        <p>packaging no desechable, con una cuerda de yute, para</p>
+                                        <p>transportarla. Pesa 8 kg. se puede limpiar con un trapo</p>
+                                        <p>húmedo y stockear desarmada en un espacio pequeño,</p>
+                                        <p>acostada o parada.</p>
+                                    </motion.div>
                                 </div>
                             </div>
 
