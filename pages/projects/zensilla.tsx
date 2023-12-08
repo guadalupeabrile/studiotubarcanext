@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../utils/motionTransitions'
 import ErrorPage from 'next/error'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
@@ -12,6 +14,8 @@ import Footer from '../../components/footer'
 import bg1 from '../../public/assets/blog/zensilla-img/zensilla-bg-1.jpg'
 import bg2 from '../../public/assets/blog/zensilla-img/zensilla-bg-2.jpg'
 import bg3 from '../../public/assets/blog/zensilla-img/zensilla-bg-3.jpg'
+import logo from '../../public/assets/blog/zensilla-img/zensilla-name.png'
+import silla from '../../public/assets/blog/zensilla-img/zensilla-silla.png'
 
 
 type Props = {
@@ -38,18 +42,60 @@ export default function Igiardini({ post, preview }: Props) {
                             <meta property="og:image" content={post.ogImage.url} />
                         </Head>
                         <div className='relative z-10'>
-                            <div className=' overflow-scroll m-0'>
-                                <Image
-                                    src={bg1}
-                                    alt='fondo'
-                                    objectFit="cover"
-                                    quality={100}
-                                    placeholder="blur"
-                                    priority
-                                />
+                            <div className=''>
+                                <div className='absolute z-20'>
+                                    <motion.div className='flex items-center md:gap-x-10 p-10'
+                                        variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
+                                        <div>
+                                            <Image
+                                                src={logo}
+                                                alt='zensilla logo'
+                                                objectFit="cover"
+                                                quality={100}
+                                                placeholder="blur"
+                                                priority>
 
+                                            </Image>
+                                        </div>
+                                        <div>
+                                            <Image
+                                                src={silla}
+                                                alt='zensilla logo'
+                                                objectFit="cover"
+                                                quality={100}
+                                                placeholder="blur"
+                                                priority>
+
+                                            </Image>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div className='p-10 pt-0 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'>
+                                        <p>Buscábamos un mobiliario adaptable,</p>
+                                        <p>versátil y de gran utilidad</p>
+                                        <p>Que sea lo que tenga que ser,</p>
+                                        <p>listo para diversas situaciones.</p>
+                                        <p>A veces una mesa,</p>
+                                        <p>a veces un sillón,</p>
+                                        <p>y otras veces,</p>
+                                        <p>lo que quieras que sea.</p>
+                                        <p>Transportable, mutable, confortable.</p>
+                                        <p className='pt-5'>ZENSILLA</p>
+                                    </motion.div>
+                                </div>
+
+                                <div className=''>
+                                    <Image
+                                        src={bg1}
+                                        alt='fondo'
+                                        style={{ objectFit: "contain" }}
+                                        quality={100}
+                                        placeholder="blur"
+                                        priority
+                                    />
+                                </div>
                             </div>
-                            <div className=' overflow-scroll m-0 '>
+
+                            <div className='relative overflow-scroll '>
                                 <Image
                                     src={bg2}
                                     alt='fondo'
@@ -60,7 +106,7 @@ export default function Igiardini({ post, preview }: Props) {
                                 />
 
                             </div>
-                            <div className=' overflow-scroll m-0'>
+                            <div className='relative overflow-scroll '>
                                 <Image
                                     src={bg3}
                                     alt='fondo'
