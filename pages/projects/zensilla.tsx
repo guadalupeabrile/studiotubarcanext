@@ -45,7 +45,7 @@ export default function Igiardini({ post, preview }: Props) {
                         <div className='relative z-10'>
                             <div className=''>
                                 <div className='absolute z-20'>
-                                    <motion.div className='flex items-center md:gap-x-10 p-10'
+                                    <motion.div className='flex items-center md:gap-x-10 px-10 pt-10'
                                         variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                                         <div>
                                             <Image
@@ -70,7 +70,7 @@ export default function Igiardini({ post, preview }: Props) {
                                             </Image>
                                         </div>
                                     </motion.div>
-                                    <motion.div className='p-10 pt-0 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
+                                    <motion.div className='px-10 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
                                         variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                                         <p>Buscábamos un mobiliario adaptable,</p>
                                         <p>versátil y de gran utilidad</p>
