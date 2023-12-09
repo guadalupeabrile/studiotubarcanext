@@ -8,6 +8,7 @@ type PostType = {
   nameImage: string
   nameVideo: string
   video: string
+  videoMobile: string
   author: Author
   excerpt: string
   ogImage: {

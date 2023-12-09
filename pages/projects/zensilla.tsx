@@ -27,7 +27,7 @@ type Props = {
     preview?: boolean
 }
 
-export default function Igiardini({ post, preview }: Props) {
+export default function Zensilla({ post, preview }: Props) {
     const router = useRouter()
     const title = `${post.title} by studiotubarca`
     if (!router.isFallback && !post?.slug) {
@@ -113,7 +113,7 @@ export default function Igiardini({ post, preview }: Props) {
                                         </Image>
                                     </div>
                                 </motion.div>
-                                <motion.div className='ml-20 mt-5 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
+                                <motion.div className='md:ml-20 mt-5 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
                                     variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                                     <p>Fabricada en madera fenólica de la mejor calidad con</p>
                                     <p>terminación laqueada. La Zensilla es un mueble encastrable.</p>
@@ -130,7 +130,7 @@ export default function Igiardini({ post, preview }: Props) {
                                 <Image
                                     src={bg2}
                                     alt='fondo'
-                                    objectFit="cover"
+                                    objectFit="contain"
                                     quality={100}
                                     placeholder="blur"
                                     priority
@@ -188,8 +188,7 @@ export default function Igiardini({ post, preview }: Props) {
                             <div className='relative'>
 
                                 <video autoPlay muted controls loop playsInline className='h-full w-full flex items-center justify-center '
-                                    src="/assets/blog/projects-videos/zensilla-video.mp4"
-                                    type="video/mp4"></video>
+                                    src="/assets/blog/projects-videos/zensilla-video.mp4"></video>
                             </div>
 
                         </div>
@@ -218,6 +217,7 @@ export async function getStaticProps() {
         'nameImage',
         'nextProjectImg',
         'video',
+        'videoMobile',
         'nextProject'
     ])
     const content = await markdownToHtml(post.content || '')

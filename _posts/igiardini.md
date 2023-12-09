@@ -4,7 +4,8 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: '/assets/blog/projects-preview/igiardini-preview.png'
 nameImage: '/assets/blog/projects-name/igiardini-name.png'
 nameVideo: '/assets/blog/project-animation/igiardini-logo.mp4'
-video: '/assets/blog/projects-videos/zensilla-video.mp4'
+video: '/assets/blog/projects-videos/igiardini-video.mp4'
+videoMobile: '/assets/blog/projects-videos/igiardini-video-mobile.mp4'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Tim Neutkens
