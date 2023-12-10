@@ -7,11 +7,11 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
-import Carousel from '../../components/Carousel'
 import ProjectVideo from '../../components/project-video'
 import Footer from '../../components/footer'
 
 import HeroImg from '../../public/assets/blog/cava-img/cava-hero-img.jpg'
+import CarouselCava from '../../components/CarouselCava'
 
 type Props = {
     post: PostType
@@ -49,7 +49,7 @@ export default function Cava({ post, preview }: Props) {
 
                                 </div>
                                 <div className='z-10 sticky top-0'>
-                                    <Carousel />
+                                    <CarouselCava />
                                 </div>
                                 <div className='z-20 sticky'>
                                     <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
