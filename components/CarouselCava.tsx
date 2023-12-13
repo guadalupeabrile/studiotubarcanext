@@ -10,10 +10,10 @@ import { Navigation, EffectFade } from 'swiper/modules'
 import url1 from '../public/assets/blog/cava-img/cava-name.png';
 import url2 from '../public/assets/blog/cava-img/cava-grid-1.jpg';
 import url3 from '../public/assets/blog/cava-img/cava-grid-2.jpg';
-import url4 from '../public/assets/blog/igiardini-img/igiardini-04-min.webp';
-import url5 from '../public/assets/blog/igiardini-img/igiardini-05-min.webp';
-import url6 from '../public/assets/blog/igiardini-img/igiardini-06-min.webp';
-import url7 from '../public/assets/blog/igiardini-img/igiardini-07-min.webp';
+import url4 from '../public/assets/blog/cava-img/cava-grid-3.png';
+import url5 from '../public/assets/blog/cava-img/cava-grid-4.png';
+import url6 from '../public/assets/blog/cava-img/cava-grid-5.jpg';
+import url7 from '../public/assets/blog/cava-img/cava-grid-6.jpg';
 import url8 from '../public/assets/blog/igiardini-img/igiardini-08-min.webp';
 import url9 from '../public/assets/blog/igiardini-img/igiardini-09-min.webp';
 import url10 from '../public/assets/blog/igiardini-img/igiardini-10-min.webp';
@@ -35,7 +35,7 @@ export default function CarouselCava() {
                 <div className='fixed top-20 left-20 z-10'>
                     <Image
                         src={url1}
-                        alt={`Van Gogh Image`}
+                        alt={`Cava Name`}
                         style={{ objectFit: "cover" }}
                     />
                 </div>
@@ -62,7 +62,7 @@ export default function CarouselCava() {
                     >
                         <Image
                             src={url2}
-                            alt={`Van Gogh Image`}
+                            alt={`Imagen silla en cava`}
                             fill
                             style={{ objectFit: "cover" }}
                         />
@@ -77,7 +77,7 @@ export default function CarouselCava() {
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url3}
-                            alt={`Igiardini Adro Cultivando`}
+                            alt={`Felicitas caminando por cava`}
                             fill
                             style={{ objectFit: "cover" }}
 
@@ -85,42 +85,103 @@ export default function CarouselCava() {
                     </motion.div>
                 </div>
             </SwiperSlide>
+
             <SwiperSlide>
                 < div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 box-boder px-12 md:px-20 py-10 bg-custom-background" >
                     <motion.div
-                        className="row-span-3 relative"
+                        className="relative row-span-2 flex items-center justify-content"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
-                            src={url5}
-                            alt={`Igiardini plano y pintura`}
-                            fill
+                            src={url4}
+                            alt={`Cava mapa`}
+
                             style={{ objectFit: "cover" }}
 
                         />
                     </motion.div>
                     <motion.div
-                        className="hidden md:flex relative row-span-2"
+                        className="relative flex items-end"
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <Image
-                            src={url6}
-                            alt={`Igiardini madera`}
-                            fill
-                            style={{ objectFit: "cover" }}
-
-                        />
+                        <div className='text-xs md:text-sm text-center md:text-left text-gray-800'>
+                            <p className='leading-relaxed'>En lo técnico:</p>
+                            <p className='leading-relaxed'>Se propone una caja separada</p>
+                            <p className='leading-relaxed'>de las superficies de pared,</p>
+                            <p className='leading-relaxed'>techo y piso.</p>
+                            <p className='leading-relaxed'>Con maderas recicladas.</p>
+                            <p className='leading-relaxed'>Aplicamos técnicas tradicionales</p>
+                            <p className='leading-relaxed'>de construcción en madera.</p>
+                            <p className='leading-relaxed'>y envolvimos el espacio</p>
+                            <p className='leading-relaxed'>con LINO natural.</p>
+                        </div >
                     </motion.div>
 
                     <motion.div
                         className='flex items-center justify-center'
                         variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <div className='text-xs md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4 '>
-                            <p>MATERIALIZAMOS CONSCIENCIA, EN HUERTAS DISEÑADAS PARA LOGRAR EL BIENESTAR DEL USUARIO.</p>
-                            <p>UNA ESTRUCTURA DE MADERA TRATADA MEDIANTE "YAKISUGI", MÉTODO ANCESTRAL JAPONÉS.</p>
-                            <p>ALTURA DE TRABAJO ÓPTIMA, LLEVANDO LA TIERRA Y LA CULTURA AL ALCANCE DE LA MANO.</p>
-                            <p>ARQUITECTURA ADAPTABLE, MODULABLE, TIMELESS, MIRMA ESTRUCTURA/DIFERENTES FUNCIONES.</p>
-                            <p>PROCESOS AMIGABLES CON EL MEDIO AMBIENTE, APRENDIZAJE E INTERCAMBIO CONTÍNUO.</p>
-                            <p className="md:text-center">¿EN QUÉ ESPACIOS DE TU VIDA TE IMAGINÁS IGIARDINI?</p>
-                        </div >
+                        <Image
+                            src={url5}
+                            alt={`Cava mapa`}
+
+                            style={{ objectFit: "cover" }}
+
+                        />
+                    </motion.div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border px-12 md:px-20 py-10 m-0 bg-custom-background">
+                    <motion.div
+                        className=" col-span-3 relative"
+                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                    >
+                        <Image
+                            src={url6}
+                            alt={`Botellas en Cava`}
+                            fill
+                            style={{ objectFit: "cover" }}
+                        />
+                    </motion.div>
+                    <motion.div
+                        className='relative flex items-end'
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
+                    >
+                        <div className='text-xs text-center md:text-left md:text-sm text-gray-800'>
+
+                            <p className='leading-relaxed'>El mobiliario en donde se apoyan</p>
+                            <p className='leading-relaxed'>los vinos, fue creado por Rafael</p>
+                            <p className='leading-relaxed'>Iglesia y Gustavo Farias</p>
+                            <p className='leading-relaxed'>A quienes agradecemos por su</p>
+                            <p className='leading-relaxed'>humanidad y grandioso aporte a</p>
+                            <p className='leading-relaxed'>la materia.</p>
+                        </div>
+                    </motion.div>
+                </div>
+            </SwiperSlide>
+            <SwiperSlide>
+
+                <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-7 md:gap-x-10 box-border px-12 md:px-20 py-10 m-0 bg-custom-background">
+                    <motion.div
+                        className='flex items-end grid justify-items-end'
+                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
+                    >
+                        <div className='text-xs text-center md:text-left md:text-base text-gray-800'>
+                            <p className='leading-relaxed'>Encontramos </p>
+                            <p className='leading-relaxed'>un lugar</p>
+                            <p className='leading-relaxed'>en donde</p>
+                            <p className='leading-relaxed'>el tiempo</p>
+                            <p className='leading-relaxed'>se detiene.</p>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        className="col-span-6 relative"
+                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                    >
+                        <Image
+                            src={url7}
+                            alt={`Imagen silla en cava`}
+                            fill
+                            style={{ objectFit: "cover" }}
+                        />
                     </motion.div>
                 </div>
             </SwiperSlide>
