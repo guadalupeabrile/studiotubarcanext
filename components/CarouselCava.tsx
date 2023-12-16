@@ -44,8 +44,7 @@ export default function CarouselCava() {
                         className='row-end-5 text-xs text-center md:text-left md:text-base text-gray-800 leading-relaxed space-y-2 '
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
-                        <p>
-                            ÇAVA surge desde adentro, <span className="hidden md:inline"><br /></span> de la tierra, cómo si
+                        <p>ÇAVA surge desde adentro, de la tierra, cómo si
                         </p>
                         <p>habitásemos las profundidades.</p>
                         <p>A veces incómodas,</p>
@@ -185,107 +184,7 @@ export default function CarouselCava() {
                     </motion.div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
-                < div className="w-screen h-screen bg-custom-background grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-12 md:px-20 py-10" >
-                    <motion.div
-                        className="relative"
-                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <Image
-                            src={url7}
-                            alt={`Igiardini techo`}
-                            fill
-                            style={{ objectFit: "cover" }}
 
-                        />
-                    </motion.div>
-                    <motion.div
-                        className="relative"
-                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <Image
-                            src={url8}
-                            alt={`Igiardini techo 2`}
-                            fill
-                            style={{ objectFit: "cover" }}
-
-                        />
-                    </motion.div>
-                    <motion.div
-                        className="relative"
-                        variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <Image
-                            src={url12}
-                            alt={`Igiardini grafico`}
-                            fill
-                            style={{ objectFit: "cover" }}
-
-                        />
-                    </motion.div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div className="h-screen box-border w-screen grid px-12 md:px-20 py-10 bg-custom-background">
-                    <motion.div
-                        className='relative'
-                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <Image
-                            src={url9}
-                            alt={`Igiardini Fuego`}
-                            fill
-                            style={{ objectFit: "cover" }}
-
-                        />
-                    </motion.div>
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                < div className="w-screen h-screen bg-custom-background grid grid-cols-1 gap-y-10 md:grid-cols-3 md:gap-x-10 lg:gap-x-10 border-box px-12 md:px-20 py-10" >
-                    <motion.div
-                        className="relative"
-                        variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <Image
-                            src={url10}
-                            alt={`Igiardini Adro cultivando 3`}
-                            fill
-                            style={{ objectFit: "cover" }}
-
-                        />
-                    </motion.div>
-                    <div className='grid'>
-                        <motion.div
-                            className='text-xs md:text-sm text-center md:text-left leading-relaxed  text-gray-800 space-y-4'
-                            variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                            <p>IGIARDINI HACE FOCO EN LO QUE NO SE VE.</p>
-                            <p>UNAS BASES SÓLIDAS, HABITABLES, RESUELVEN EL PROYECTO: UNA HUERTA.</p>
-                            <p>EN UN PASEO CONTEMPLATIVO, BAJAMOS, CONECTAMOS CON LAS RAÍCES,</p>
-                            <p>Y GENERAMOS INTERCAMBIO CON LA TIERRA.</p>
-                            <p>LOS FRUTOS SON EL RESULTADO DE UN TRABAJO CONSCIENTE.</p>
-                        </motion.div>
-                        <motion.div
-                            className="relative row-span-6"
-                            variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                            <Image
-                                src={url13}
-                                alt={`Zanahoria Igiardini`}
-                                fill
-                                style={{ objectFit: "contain" }}
-
-                            />
-                        </motion.div>
-
-                    </div>
-                    <motion.div
-                        className="relative hidden md:flex"
-                        variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <Image
-                            src={url11}
-                            alt={`Igiardini Adro cultivando 4`}
-                            fill
-                            style={{ objectFit: "cover" }}
-
-                        />
-                    </motion.div>
-                </div>
-            </SwiperSlide>
         </Swiper>
 
         /* <div className='flex py-10'>

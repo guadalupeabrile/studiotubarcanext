@@ -43,12 +43,12 @@ export default function Ghee({ post, preview }: Props) {
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
                             <div className='w-screen'>
-                                <div className='relative grid justify-items-center w-screen  z-10 p-10 md:p-20 bg-custom-background'>
+                                <div className='relative grid justify-items-center z-10 p-10 md:p-20 bg-custom-background'>
                                     <Image
                                         src={HeroImg}
                                         alt='Ghee Logo'
-                                        quality={100}
                                         placeholder="blur"
+                                        style={{ objectFit: "cover" }}
                                         priority />
 
                                 </div>
