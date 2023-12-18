@@ -32,16 +32,23 @@ export default function CarouselCava() {
             className='h-screen bg-custom-background'
         >
             <SwiperSlide>
-                <div className='fixed top-20 left-20 z-10'>
+                <div className='hidden md:fixed md:top-20 md:left-20 z-10'>
                     <Image
                         src={url1}
                         alt={`Cava Name`}
                         style={{ objectFit: "cover" }}
                     />
                 </div>
-                <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border px-12 md:px-20 py-10 m-0">
+                <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border px-12 md:px-20 md:py-10 py-5 m-0">
+                    <div className=''>
+                        <Image
+                            src={url1}
+                            alt={`Cava Name`}
+                            style={{ objectFit: "cover" }}
+                        />
+                    </div>
                     <motion.div
-                        className='row-end-5 text-xs text-center md:text-left md:text-base text-gray-800 leading-relaxed space-y-2 '
+                        className='md:row-end-5 text-xs text-center md:text-left md:text-base text-gray-800 leading-relaxed space-y-2 '
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <p>ÇAVA surge desde adentro, de la tierra, cómo si
@@ -56,7 +63,7 @@ export default function CarouselCava() {
 
                     </motion.div>
                     <motion.div
-                        className="row-span-4 col-span-3 relative"
+                        className="row-span-4 md:col-span-3 relative"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <Image
@@ -99,9 +106,9 @@ export default function CarouselCava() {
                         />
                     </motion.div>
                     <motion.div
-                        className="relative flex items-end"
+                        className="relative md:flex md:items-end"
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                        <div className='text-xs md:text-sm text-center md:text-left text-gray-800'>
+                        <div className='text-xs md:text-sm text-left text-gray-800'>
                             <p className='leading-relaxed'>En lo técnico:</p>
                             <p className='leading-relaxed'>Se propone una caja separada</p>
                             <p className='leading-relaxed'>de las superficies de pared,</p>
@@ -115,7 +122,7 @@ export default function CarouselCava() {
                     </motion.div>
 
                     <motion.div
-                        className='flex items-center justify-center'
+                        className='hidden md:flex items-center justify-center'
                         variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url5}
@@ -130,7 +137,7 @@ export default function CarouselCava() {
             <SwiperSlide>
                 <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border px-12 md:px-20 py-10 m-0 bg-custom-background">
                     <motion.div
-                        className=" col-span-3 relative"
+                        className=" md:col-span-3 row-span-2 md:row-span-1 relative"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <Image
@@ -141,7 +148,7 @@ export default function CarouselCava() {
                         />
                     </motion.div>
                     <motion.div
-                        className='relative flex items-end'
+                        className='relative flex md:items-end items-center justify-center'
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <div className='text-xs text-center md:text-left md:text-sm text-gray-800'>
@@ -160,7 +167,7 @@ export default function CarouselCava() {
 
                 <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-7 md:gap-x-10 box-border px-12 md:px-20 py-10 m-0 bg-custom-background">
                     <motion.div
-                        className='flex items-end grid justify-items-end'
+                        className='flex items-end grid justify-items-end mb-5 md:mb-0'
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <div className='text-xs text-center md:text-left md:text-base text-gray-800'>
@@ -172,12 +179,12 @@ export default function CarouselCava() {
                         </div>
                     </motion.div>
                     <motion.div
-                        className="col-span-6 relative"
+                        className="md:col-span-6 row-span-6 md:row-span-1 relative"
                         variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <Image
                             src={url7}
-                            alt={`Imagen silla en cava`}
+                            alt={`Imagen Felo sentada`}
                             fill
                             style={{ objectFit: "cover" }}
                         />
