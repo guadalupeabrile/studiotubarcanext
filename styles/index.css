@@ -9,7 +9,7 @@
     /* Cubre toda la pantalla */
     background-attachment: fixed;
     /* Fija la imagen en la ventana gráfica */
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     /* Evita la repetición de la imagen */
     opacity: 1;
 }
