@@ -5,7 +5,7 @@
 .bg-custom-background {
     /* background-image: url('/assets/blog/texture/bg-texture-min.webp'); */
     background-color: rgb(242, 234, 218);
-    background-size: cover;
+    background-size: coner;
     /* Cubre toda la pantalla */
     background-attachment: fixed;
     /* Fija la imagen en la ventana gráfica */
