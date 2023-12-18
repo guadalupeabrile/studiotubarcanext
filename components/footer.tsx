@@ -12,7 +12,7 @@ type Props = {
 
 const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
   return (
-    <footer className={`z-1 border-t border-neutral-200 footer overflow-y-scroll`} >
+    <footer className={`z-1 border-t border-neutral-200 footer overflow-y-scroll bg-custom-background`} >
       <div className="pb-20 md:pb-0 mt-32 flex flex-col lg:flex-row items-center justify-content place-content-evenly gap-y-12">
         <div className='group'>
           <div className='relative'>
