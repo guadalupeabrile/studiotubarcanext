@@ -10,12 +10,12 @@ import type PostType from '../../interfaces/post'
 import ProjectVideo from '../../components/project-video'
 import Footer from '../../components/footer'
 
-import HeroImg from '../../public/assets/blog/ghee-img/ghee-hero.png'
-import GheeBg from '../../public/assets/blog/ghee-img/ghee-bg.png'
+import HeroImg from '../../public/assets/blog/ghee-img/ghee-hero.webp'
+import GheeBg from '../../public/assets/blog/ghee-img/ghee-bg.webp'
 import Flor from '../../public/assets/blog/footer/flor-manifiesto.png'
-import GheeSpoon from '../../public/assets/blog/ghee-img/gheeSpoon.png'
-import GheePot from '../../public/assets/blog/ghee-img/gheePot.png'
-import GheeSunset from '../../public/assets/blog/ghee-img/gheeSunset.png'
+import GheeSpoon from '../../public/assets/blog/ghee-img/gheeSpoon.webp'
+import GheePot from '../../public/assets/blog/ghee-img/gheePot.webp'
+import GheeSunset from '../../public/assets/blog/ghee-img/gheeSunset.webp'
 
 
 type Props = {
