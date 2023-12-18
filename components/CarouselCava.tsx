@@ -7,13 +7,13 @@ import 'swiper/css/navigation'
 import 'swiper/css/effect-fade';
 import { Navigation, EffectFade } from 'swiper/modules'
 
-import url1 from '../public/assets/blog/cava-img/cava-name.png';
-import url2 from '../public/assets/blog/cava-img/cava-grid-1.jpg';
-import url3 from '../public/assets/blog/cava-img/cava-grid-2.jpg';
-import url4 from '../public/assets/blog/cava-img/cava-grid-3.png';
-import url5 from '../public/assets/blog/cava-img/cava-grid-4.png';
-import url6 from '../public/assets/blog/cava-img/cava-grid-5.jpg';
-import url7 from '../public/assets/blog/cava-img/cava-grid-6.jpg';
+import url1 from '../public/assets/blog/cava-img/cava-name.webp';
+import url2 from '../public/assets/blog/cava-img/cava-grid-1.webp';
+import url3 from '../public/assets/blog/cava-img/cava-grid-2.webp';
+import url4 from '../public/assets/blog/cava-img/cava-grid-3.webp';
+import url5 from '../public/assets/blog/cava-img/cava-grid-4.webp';
+import url6 from '../public/assets/blog/cava-img/cava-grid-5.webp';
+import url7 from '../public/assets/blog/cava-img/cava-grid-6.webp';
 import url8 from '../public/assets/blog/igiardini-img/igiardini-08-min.webp';
 import url9 from '../public/assets/blog/igiardini-img/igiardini-09-min.webp';
 import url10 from '../public/assets/blog/igiardini-img/igiardini-10-min.webp';
