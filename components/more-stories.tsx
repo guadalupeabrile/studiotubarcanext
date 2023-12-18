@@ -13,17 +13,7 @@ const MoreStories = ({ posts }: Props) => {
 
 
   return (
-    <section className="md:fixed md:top-0 md:left-0 w-screen flex items-center justify-content h-screen">
-      <div className='bg'>
-        <Image
-          src='/assets/blog/texture/bg-texture-min.webp'
-          alt='fondo'
-          fill
-          style={{ objectFit: "cover" }}
-          priority
-        />
-
-      </div>
+    <section className="md:fixed md:top-0 md:left-0 w-screen flex items-center justify-content h-screen bg-custom-background">
       <div
         className="grid grid-cols-1 md:overflow-y-scroll flex h-screen items-center justify-content md:gap-y-10 p-10 md:p-10 md:grid-cols-4 md:gap-x-10 lg:gap-x-10 lg:gap-y-10 md:gap-y-10"
 
