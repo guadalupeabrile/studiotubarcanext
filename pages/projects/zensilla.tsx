@@ -11,7 +11,7 @@ import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import ProjectVideo from '../../components/project-video'
 import Footer from '../../components/footer'
-import bg1 from '../../public/assets/blog/zensilla-img/zensilla-perro.png'
+import bg1 from '../../public/assets/blog/zensilla-img/zensilla-bg-1.jpg'
 import bg2 from '../../public/assets/blog/zensilla-img/zensilla-bg-2.jpg'
 import bg3 from '../../public/assets/blog/zensilla-img/zensilla-bg-3.jpg'
 import logo from '../../public/assets/blog/zensilla-img/zensilla-name.png'
@@ -20,6 +20,7 @@ import sillas from '../../public/assets/blog/zensilla-img/sillas-zensilla.png'
 import grid1 from '../../public/assets/blog/zensilla-img/zensilla-grid-1.jpg'
 import grid2 from '../../public/assets/blog/zensilla-img/zensilla-grid-2.jpg'
 import grid3 from '../../public/assets/blog/zensilla-img/zensilla-grid-3.jpg'
+import grid4 from '../../public/assets/blog/zensilla-img/zensilla-grid-4.png'
 
 
 type Props = {
@@ -91,7 +92,6 @@ export default function Zensilla({ post, preview }: Props) {
                             <div className=''>
                                 <Image
                                     src={bg1}
-                                    className='h-screen w-full'
                                     alt='fondo'
                                     style={{ objectFit: "cover" }}
                                     quality={100}
@@ -131,7 +131,6 @@ export default function Zensilla({ post, preview }: Props) {
                                 <Image
                                     src={bg2}
                                     alt='fondo'
-                                    className='h-screen'
                                     objectFit="contain"
                                     quality={100}
                                     placeholder="blur"
@@ -176,12 +175,24 @@ export default function Zensilla({ post, preview }: Props) {
                                         </Image>
                                     </motion.div>
                                 </div>
+                                <div>
+                                    <motion.div className='hidden md:block pt-64'
+                                        variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
+                                        <Image
+                                            src={grid4}
+                                            alt='zensilla logo'
+                                            objectFit="cover"
+                                            quality={100}
+                                            placeholder="blur">
+
+                                        </Image>
+                                    </motion.div>
+                                </div>
                             </div>
 
                             <div className='relative'>
                                 <Image
                                     src={bg3}
-                                    className='h-screen'
                                     alt='fondo'
                                     objectFit="cover"
                                     quality={100}

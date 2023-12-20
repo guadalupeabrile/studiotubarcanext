@@ -10,7 +10,10 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <main className="bg-custom-background bg">{children}</main>
+      <div className='bg-custom-background bg'>
+      </div>
+      <main>{children}</main>
+
     </>
   )
 }
