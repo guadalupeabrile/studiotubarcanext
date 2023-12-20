@@ -10,21 +10,7 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <div className='bg-custom-background bg'>
-        {/* <Image
-          src={background}
-          alt='fondo'
-          layout='fill'
-          objectFit="cover"
-          quality={100}
-          sizes="100vw"
-          placeholder="blur"
-          priority
-        /> */}
-
-      </div>
-      <main>{children}</main>
-
+      <main className="bg-custom-background bg">{children}</main>
     </>
   )
 }

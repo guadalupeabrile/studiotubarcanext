@@ -55,12 +55,12 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
           <div className='relative'>
             <Link as={`/projects/${slug}`} href={`/projects/${slug}`} aria-label={title}>
 
-              {/* <Image
+              <Image
                 src={src}
                 alt='studiotubarca Home'
                 width={1300}
                 height={630}
-                className='group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200' /> */}
+                className='group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200' />
 
 
               <Image
@@ -68,7 +68,7 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
                 alt='studiotubarca Home'
                 width={1300}
                 height={630}
-                className='shadow-lg   h-full w-full flex items-center justify-center ' />
+                className='shadow-lg opacity-0 group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 ' />
 
 
               {/* {image} */}

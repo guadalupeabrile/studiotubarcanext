@@ -11,7 +11,7 @@ import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import ProjectVideo from '../../components/project-video'
 import Footer from '../../components/footer'
-import bg1 from '../../public/assets/blog/zensilla-img/zensilla-bg-1.jpg'
+import bg1 from '../../public/assets/blog/zensilla-img/zensilla-perro.png'
 import bg2 from '../../public/assets/blog/zensilla-img/zensilla-bg-2.jpg'
 import bg3 from '../../public/assets/blog/zensilla-img/zensilla-bg-3.jpg'
 import logo from '../../public/assets/blog/zensilla-img/zensilla-name.png'
@@ -91,8 +91,9 @@ export default function Zensilla({ post, preview }: Props) {
                             <div className=''>
                                 <Image
                                     src={bg1}
+                                    className='h-screen w-full'
                                     alt='fondo'
-                                    style={{ objectFit: "contain" }}
+                                    style={{ objectFit: "cover" }}
                                     quality={100}
                                     placeholder="blur"
                                     priority
@@ -130,6 +131,7 @@ export default function Zensilla({ post, preview }: Props) {
                                 <Image
                                     src={bg2}
                                     alt='fondo'
+                                    className='h-screen'
                                     objectFit="contain"
                                     quality={100}
                                     placeholder="blur"
@@ -179,6 +181,7 @@ export default function Zensilla({ post, preview }: Props) {
                             <div className='relative'>
                                 <Image
                                     src={bg3}
+                                    className='h-screen'
                                     alt='fondo'
                                     objectFit="cover"
                                     quality={100}
