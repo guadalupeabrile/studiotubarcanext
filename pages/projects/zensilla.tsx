@@ -89,6 +89,7 @@ export default function Zensilla({ post, preview }: Props) {
                                     <p className='pt-5'>ZENSILLA</p>
                                 </motion.div>
                             </div>
+
                             <div className='hidden md:block'>
                                 <Image
                                     src={bg1}
@@ -100,7 +101,7 @@ export default function Zensilla({ post, preview }: Props) {
                                     priority
                                 />
                             </div>
-                            <div className=''>
+                            <div className='md:hidden'>
                                 <Image
                                     src={bg1Mobile}
                                     className='h-screen w-full'
@@ -140,7 +141,7 @@ export default function Zensilla({ post, preview }: Props) {
                                 </motion.div>
                             </div>
 
-                            <div className='relative '>
+                            <div className='hidden md:block md:relative'>
                                 <Image
                                     src={bg2}
                                     alt='fondo'
@@ -149,7 +150,17 @@ export default function Zensilla({ post, preview }: Props) {
                                     placeholder="blur"
                                     priority
                                 />
-
+                            </div>
+                            <div className='md:hidden'>
+                                <Image
+                                    src={bg2}
+                                    className='h-screen w-full'
+                                    alt='fondo'
+                                    style={{ objectFit: "cover" }}
+                                    quality={100}
+                                    placeholder="blur"
+                                    priority
+                                />
                             </div>
 
                             <div className='absolute z-20 p-10 flex flex-col w-screen'>
@@ -203,7 +214,7 @@ export default function Zensilla({ post, preview }: Props) {
                                 </div>
                             </div>
 
-                            <div className='relative'>
+                            <div className='hidden md:relative md:block'>
                                 <Image
                                     src={bg3}
                                     alt='fondo'
@@ -212,6 +223,18 @@ export default function Zensilla({ post, preview }: Props) {
                                     placeholder="blur"
                                 />
                             </div>
+                            <div className='md:hidden'>
+                                <Image
+                                    src={bg3}
+                                    className='h-screen w-full'
+                                    alt='fondo'
+                                    style={{ objectFit: "cover" }}
+                                    quality={100}
+                                    placeholder="blur"
+                                    priority
+                                />
+                            </div>
+
                             <div className='relative'>
 
                                 <video autoPlay muted controls loop playsInline className='h-full w-full flex items-center justify-center '
