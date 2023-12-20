@@ -12,6 +12,7 @@ import type PostType from '../../interfaces/post'
 import ProjectVideo from '../../components/project-video'
 import Footer from '../../components/footer'
 import bg1 from '../../public/assets/blog/zensilla-img/zensilla-bg-1.jpg'
+import bg1Mobile from '../../public/assets/blog/zensilla-img/zensilla-perro.png'
 import bg2 from '../../public/assets/blog/zensilla-img/zensilla-bg-2.jpg'
 import bg3 from '../../public/assets/blog/zensilla-img/zensilla-bg-3.jpg'
 import logo from '../../public/assets/blog/zensilla-img/zensilla-name.png'
@@ -88,10 +89,10 @@ export default function Zensilla({ post, preview }: Props) {
                                     <p className='pt-5'>ZENSILLA</p>
                                 </motion.div>
                             </div>
-
-                            <div className=''>
+                            <div className='hidden md:block'>
                                 <Image
                                     src={bg1}
+                                    className=''
                                     alt='fondo'
                                     style={{ objectFit: "cover" }}
                                     quality={100}
@@ -99,6 +100,18 @@ export default function Zensilla({ post, preview }: Props) {
                                     priority
                                 />
                             </div>
+                            <div className=''>
+                                <Image
+                                    src={bg1Mobile}
+                                    className='h-screen w-full'
+                                    alt='fondo'
+                                    style={{ objectFit: "cover" }}
+                                    quality={100}
+                                    placeholder="blur"
+                                    priority
+                                />
+                            </div>
+
                             <div className='absolute z-20 p-10 flex flex-col w-screen'>
                                 <motion.div className='flex items-center md:gap-x-10'
                                     variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
