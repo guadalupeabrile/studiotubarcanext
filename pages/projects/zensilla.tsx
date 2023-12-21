@@ -75,16 +75,16 @@ export default function Zensilla({ post, preview }: Props) {
                                         </Image>
                                     </div>
                                 </motion.div>
-                                <motion.div className='px-10 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
+                                <motion.div className='py-10 md:py-0 px-10 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
                                     variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                                     <p>Buscábamos un mobiliario adaptable,</p>
                                     <p>versátil y de gran utilidad</p>
-                                    <p>Que sea lo que tenga que ser,</p>
-                                    <p>listo para diversas situaciones.</p>
-                                    <p>A veces una mesa,</p>
-                                    <p>a veces un sillón,</p>
-                                    <p>y otras veces,</p>
-                                    <p>lo que quieras que sea.</p>
+                                    <p className='hidden md:block'>Que sea lo que tenga que ser,</p>
+                                    <p className='hidden md:block'>listo para diversas situaciones.</p>
+                                    <p className='hidden md:block'>A veces una mesa,</p>
+                                    <p className='hidden md:block'>a veces un sillón,</p>
+                                    <p className='hidden md:block'>y otras veces,</p>
+                                    <p className='hidden md:block'>lo que quieras que sea.</p>
                                     <p>Transportable, mutable, confortable.</p>
                                     <p className='pt-5'>ZENSILLA</p>
                                 </motion.div>
@@ -128,16 +128,17 @@ export default function Zensilla({ post, preview }: Props) {
                                         </Image>
                                     </div>
                                 </motion.div>
-                                <motion.div className='md:ml-20 mt-5 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
+                                <motion.div className='mt-56 mr-24 md:mr-0 md:ml-20 md:mt-5 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
                                     variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                                    <p>Fabricada en madera fenólica de la mejor calidad con</p>
-                                    <p>terminación laqueada. La Zensilla es un mueble encastrable.</p>
-                                    <p>Hay muchas formas de armarla. Vienen con un manual de</p>
-                                    <p>uso y las indicaciones para ponerse a jugar. Hicimos un</p>
-                                    <p>packaging no desechable, con una cuerda de yute, para</p>
-                                    <p>transportarla. Pesa 8 kg. Se puede limpiar con un trapo</p>
-                                    <p>húmedo y stockear desarmada en un espacio pequeño,</p>
-                                    <p>acostada o parada.</p>
+                                    <p className='hidden md:block'>Fabricada en madera fenólica de la mejor calidad con</p>
+                                    <p className='hidden md:block'>terminación laqueada. La Zensilla es un mueble encastrable.</p>
+                                    <p className='md:hidden'>La Zensilla es un mueble encastrable.</p>
+                                    <p>Hay muchas formas de armarla. Vienen con un manual de <span className='md:hidden'>uso y las indicaciones para ponerse a jugar.</span></p>
+                                    <p className='hidden md:block'>uso y las indicaciones para ponerse a jugar. Hicimos un</p>
+                                    <p className='hidden md:block'>packaging no desechable, con una cuerda de yute, para</p>
+                                    <p className='hidden md:block'>transportarla. Pesa 8 kg. Se puede limpiar con un trapo</p>
+                                    <p className='hidden md:block'>húmedo y stockear desarmada en un espacio pequeño,</p>
+                                    <p className='hidden md:block'>acostada o parada.</p>
                                 </motion.div>
                             </div>
 
