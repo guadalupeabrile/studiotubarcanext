@@ -4,6 +4,7 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: '/assets/blog/projects-preview/cava-preview.png'
 nameImage: '/assets/blog/projects-name/cava-name.png'
 nameVideo: '/assets/blog/project-animation/cava-logo.mp4'
+nameGif: '/assets/blog/project-animation/cava-logo.gif'
 video: '/assets/blog/projects-videos/cava-gif.mp4'
 videoMobile: '/assets/blog/projects-videos/cava-video-mobile.mp4'
 date: '2020-03-16T05:35:07.322Z'

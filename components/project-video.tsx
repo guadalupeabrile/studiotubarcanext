@@ -17,7 +17,7 @@ const ProjectVideo = ({ video, videoMobile }: Props) => {
                     </video>
 
                 </div>
-                <div className='md:hidden'>
+                <div className='md:hidden relative'>
                     <video autoPlay muted controls loop playsInline className='absolute h-full w-full flex items-center justify-center -bottom-0 '>
                         <source src={videoMobile} type="video/mp4" />
                     </video>

@@ -46,6 +46,7 @@ export const getStaticProps = async () => {
     'coverImage',
     'nameImage',
     'nameVideo',
+    'nameGif',
     'excerpt',
   ])
 

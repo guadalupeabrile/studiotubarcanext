@@ -4,6 +4,7 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: '/assets/blog/projects-preview/zensilla-preview.png'
 nameImage: '/assets/blog/projects-name/zensilla-name.png'
 nameVideo: '/assets/blog/project-animation/zensilla-logo.gif'
+nameGif: '/assets/blog/project-animation/zensilla-logo.gif'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Tim Neutkens

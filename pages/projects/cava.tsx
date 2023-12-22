@@ -76,6 +76,7 @@ export async function getStaticProps() {
         'ogImage',
         'coverImage',
         'nameImage',
+        'nameGif',
         'nextProjectImg',
         'video',
         'videoMobile',

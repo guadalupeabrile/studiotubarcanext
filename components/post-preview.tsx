@@ -9,6 +9,7 @@ type Props = {
   coverImage: string
   nameImage: string
   nameVideo: string
+  nameGif: string
   date: string
   excerpt: string
   author: Author
@@ -20,6 +21,7 @@ const PostPreview = ({
   coverImage,
   nameImage,
   nameVideo,
+  nameGif,
   date,
   excerpt,
   author,
@@ -28,7 +30,7 @@ const PostPreview = ({
   return (
     <div>
       <div className="">
-        <CoverImage slug={slug} title={title} src={coverImage} nameI={nameImage} nameVideo={nameVideo} />
+        <CoverImage slug={slug} title={title} src={coverImage} nameI={nameImage} nameVideo={nameVideo} nameGif={nameGif} />
       </div>
     </div>
   )

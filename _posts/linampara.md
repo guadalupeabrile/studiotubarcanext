@@ -4,6 +4,7 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: '/assets/blog/projects-preview/linampara-preview.png'
 nameImage: '/assets/blog/projects-name/linampara-name.png'
 nameVideo: '/assets/blog/project-animation/linampara-logo.mp4'
+nameGif: '/assets/blog/project-animation/linampara-logo.gif'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Tim Neutkens

@@ -11,9 +11,10 @@ type Props = {
   slug?: string
   nameI: string
   nameVideo: string
+  nameGif: string
 }
 
-const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
+const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
   const image = (
     <Image
       src={src}
@@ -26,9 +27,9 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
 
   const gif = (
     <Image
-      src='/assets/blog/project-animation/zensilla-logo.gif'
+      src={nameGif}
       alt={`Gif Animation for ${title}`}
-      className=" w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
+      className=" w-full object-cover h-auto group-hover:shadow-lg  transition-shadow duration-200"
       width={1300}
       height={630}
     />
@@ -72,7 +73,7 @@ const CoverImage = ({ title, src, slug, nameVideo }: Props) => {
                 </video>
               </div>
 
-              <div ref={myRef} className={`${inView ? 'block' : 'hideen'}   md:hidden`}>
+              <div ref={myRef} className="md:hidden">
                 {gif}
               </div>
 
