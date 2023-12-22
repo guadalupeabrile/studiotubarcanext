@@ -20,8 +20,8 @@ const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
       src={src}
       alt={`Cover Image for ${title}`}
       className=" w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
-      width={1300}
-      height={630}
+      width={350}
+      height={350}
     />
   );
 
@@ -29,9 +29,9 @@ const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
     <Image
       src={nameGif}
       alt={`Gif Animation for ${title}`}
-      className=" w-full object-cover h-auto group-hover:shadow-lg  transition-shadow duration-200"
-      width={1300}
-      height={630}
+      className=" shadow opacity-0 group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 "
+      width={350}
+      height={350}
     />
   )
 
@@ -74,6 +74,7 @@ const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
               </div>
 
               <div ref={myRef} className="md:hidden">
+                {image}
                 {gif}
               </div>
 
