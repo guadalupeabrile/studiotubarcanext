@@ -21,8 +21,8 @@ export default function CarouselCava() {
         <>
 
 
-            <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border px-10 md:pl-20 md:py-10 py-5 m-0 bg-custom-background space-y-5 md:space-y-0">
-                <div className='md:absolute md:z-10 mt-10'>
+            <div className="flex w-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border  md:pl-20 md:py-10 py-10 m-0 bg-custom-background space-y-5 md:space-y-0">
+                <div className='md:absolute md:z-10 mt-10 p-5'>
                     <Image
                         src={url1}
                         alt={`Cava Name`}
@@ -45,19 +45,19 @@ export default function CarouselCava() {
 
                 </motion.div>
                 <motion.div
-                    className="row-span-6 md:row-span-4 md:col-span-3 relative"
+                    className="w-screen row-span-6 md:row-span-4 md:col-span-3 relative"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <Image
                         src={url2}
                         alt={`Imagen silla en cava`}
-
+                        className=''
                         style={{ objectFit: "cover" }}
                     />
                 </motion.div>
             </div>
 
-            <div className="w-screen h-screen grid grid-cols-1 md:pr-20 md:pl-0 py-10 bg-custom-background">
+            <div className="relative w-screen h-screen grid grid-cols-1 md:pr-20 md:pl-0 py-10 bg-custom-background">
                 <motion.div
                     className='relative'
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
