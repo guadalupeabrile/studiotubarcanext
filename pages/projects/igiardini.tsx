@@ -42,12 +42,6 @@ export default function Igiardini({ post, preview }: Props) {
                                 <title>{title}</title>
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
-                            {/* <PostHeader
-                                title={post.title}
-                                coverImage={post.coverImage}
-                                date={post.date}
-                                author={post.author}
-                            /> */}
                             <div>
                                 <div className='z-10 sticky top-0'>
                                     <Carousel />

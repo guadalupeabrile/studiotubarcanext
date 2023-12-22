@@ -6,7 +6,7 @@ const HeroPost = () => {
         <div className="">
           <video autoPlay loop muted playsInline className="absolute w-full h-screen object-cover">
             <source
-              src="assets/blog/videos/hero-video-studiotubarca.mp4"
+              src="assets/blog/videos/video-photos-studiotubarca.mp4"
               type="video/mp4"
             />
           </video>

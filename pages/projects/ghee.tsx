@@ -7,7 +7,6 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
-import ProjectVideo from '../../components/project-video'
 import Footer from '../../components/footer'
 
 import HeroImg from '../../public/assets/blog/ghee-img/ghee-hero.webp'
