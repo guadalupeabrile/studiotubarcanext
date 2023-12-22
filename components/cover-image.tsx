@@ -29,7 +29,7 @@ const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
     <Image
       src={nameGif}
       alt={`Gif Animation for ${title}`}
-      className=" shadow opacity-0 group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 "
+      className=" shadow absolute h-full w-full flex items-center justify-center "
       width={350}
       height={350}
     />
@@ -74,7 +74,6 @@ const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
               </div>
 
               <div ref={myRef} className="md:hidden">
-                {image}
                 {gif}
               </div>
 
