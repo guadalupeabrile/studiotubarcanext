@@ -43,3 +43,67 @@
 :root {
     --swiper-theme-color: grey !important
 }
+
+/*=============================================
+                Contact Us Page
+=============================================*/
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    height: 60px;
+    padding: 20px 30px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #212121;
+    border: 1px solid #eee;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    border-color: var(--main-color);
+}
+
+.contact-us p,
+.contact-us address {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contact-us h3 {
+    margin-top: 0;
+}
+
+.contact-us address {
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.contact-us address a {
+    color: var(--main-color);
+}
+
+.contact-us address a:hover {
+    color: #212121;
+}
+
+.search-submit {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: 20px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #e0e0e0;
+}
+
+.search-submit:hover {
+    color: var(--main-color);
+}
