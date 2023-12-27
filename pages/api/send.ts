@@ -12,9 +12,9 @@ export default async (req: NextApiRequest, res: NextApiResponse<Data>) => {
         const { name, email, message }: { name: string, email: string, message: string } = req.body
         const msg = {
             to: 'guadiabrile@gmail.com',
-            from: 'guadalupeabrile@gmail.com',
+            from: `guadalupeabrile@gmail.com`,
             subject: `${name.toUpperCase()} send you a message`,
-            text: `Email => ${email}`,
+            text: 'easy',
             html: `<strong>${message}</strong>`
         }
         try {

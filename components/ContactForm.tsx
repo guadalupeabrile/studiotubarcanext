@@ -24,7 +24,7 @@ const ContactForm = () => {
             return
         }
         try {
-            const res = await fetch('/../lib/send', {
+            const res = await fetch('/api/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -38,6 +38,7 @@ const ContactForm = () => {
         } catch (error) {
             console.error(error)
         }
+        console.log(values)
     }
 
     const onChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
