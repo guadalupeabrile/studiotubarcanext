@@ -49,7 +49,7 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
         <Link as={`/`} href={`/`} aria-label='studiotubarca manifiesto'>
           <Image
             src='/assets/blog/footer/flor-manifiesto.png'
-            alt='studiotubarca Home'
+            alt='studiotubarca Manifiesto'
             width={250}
             height={250}
           />

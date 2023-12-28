@@ -9,7 +9,6 @@ type Props = {
   coverImage: string
   nameImage: string
   nameVideo: string
-  nameGif: string
   date: string
   excerpt: string
   author: Author
