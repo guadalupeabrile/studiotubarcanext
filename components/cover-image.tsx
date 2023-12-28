@@ -11,10 +11,9 @@ type Props = {
   slug?: string
   nameI: string
   nameVideo: string
-  nameGif: string
 }
 
-const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
+const CoverImage = ({ title, src, slug, nameVideo, nameI }: Props) => {
   const image = (
     <Image
       src={src}
@@ -25,11 +24,11 @@ const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
     />
   );
 
-  const gif = (
+  const nameImage = (
     <Image
-      src={nameGif}
-      alt={`Gif Animation for ${title}`}
-      className=" shadow absolute h-full w-full flex items-center justify-center "
+      src={nameI}
+      alt={`Name Preview for ${title}`}
+      className=" shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0  "
       width={350}
       height={350}
     />
@@ -56,7 +55,6 @@ const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
 
 
 
-  const { ref: myRef, inView } = useInView();
 
   return (
     <>
@@ -73,8 +71,11 @@ const CoverImage = ({ title, src, slug, nameVideo, nameGif }: Props) => {
                 </video>
               </div>
 
-              <div ref={myRef} className="md:hidden">
-                {gif}
+              <div className="md:hidden">
+                <div>
+                  {image}
+                  {nameImage}
+                </div>
               </div>
 
             </Link>

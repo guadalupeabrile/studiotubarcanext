@@ -21,16 +21,12 @@ const PostPreview = ({
   coverImage,
   nameImage,
   nameVideo,
-  nameGif,
-  date,
-  excerpt,
-  author,
   slug,
 }: Props) => {
   return (
     <div>
       <div className="">
-        <CoverImage slug={slug} title={title} src={coverImage} nameI={nameImage} nameVideo={nameVideo} nameGif={nameGif} />
+        <CoverImage slug={slug} title={title} src={coverImage} nameI={nameImage} nameVideo={nameVideo} />
       </div>
     </div>
   )
