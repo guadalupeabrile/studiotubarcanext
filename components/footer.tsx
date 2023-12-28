@@ -46,10 +46,11 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
           />
         </Link>
 
-        <Link as={`/`} href={`/`} aria-label='studiotubarca manifiesto'>
+        <Link as={`/manifiesto`} href={`/manifiesto`} aria-label='studiotubarca manifiesto'>
           <Image
             src='/assets/blog/footer/flor-manifiesto.png'
             alt='studiotubarca Manifiesto'
+            className='hover:shadow-lg transition-shadow duration-200'
             width={250}
             height={250}
           />
