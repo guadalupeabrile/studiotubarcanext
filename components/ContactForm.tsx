@@ -1,55 +1,64 @@
+import React from 'react';
+import emailjs from "@emailjs/browser";
+import { useState, useRef } from 'react';
+import { validate } from '../utils/validate';
 import Input from "./input";
 import Textarea from "./text-area";
-import React from 'react';
-import { useState } from 'react';
-import { validate } from '../utils/validate';
+import Banner from "./banner";
 
 const ContactForm = () => {
-
+    const form = useRef();
     const [values, setValues] = useState({
         name: '',
         email: '',
         message: '',
     })
 
+    const [success, setSuccess] = useState(false)
+
+    const onChange = (e: { target: { name: any; value: any; }; }) => {
+        setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+    }
+
+    const closeButtonClicked = () => {
+        setSuccess(false)
+    }
+
     const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({})
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
+    const handleSubmit = async (e) => {
+        e.preventDefault();
         const errors = validate(values)
         const isError = Object.keys(errors).length
-
+        setErrors({ name: '', message: '' })
+        setSuccess(false)
         if (isError && isError > 0) {
             setErrors(errors)
             return
         }
         try {
-            const res = await fetch('/api/send', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(values)
+            emailjs.sendForm('service_ey18hlh', 'template_7t834mq', e.target, 'gH8gPEVte3skgnXsY')
+                .then((result) => {
+                    console.log(result.text);
+                    setSuccess(true);
+                    setValues({ name: '', message: '', email: '' })
 
-            })
-            if (!res.ok) {
-                setValues({ name: '', message: '', email: '' })
-            }
+                })
         } catch (error) {
             console.error(error)
-        }
-        console.log(values)
+        };
     }
 
-    const onChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
-        setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }))
-    }
+
 
     return (
 
-        <div className="w-full h-screen bg-custom-background">
-            <div className="px-3 pt-10">
-                <form onSubmit={handleSubmit} className="w-1/3 flex flex-col items-center w-full mx-auto">
+        <div className="w-full h-screen bg-custom-background flex items-center flex-col ">
+            <div className={success ? 'block' : 'hidden'}>
+                <Banner headline={undefined} text={undefined} width={undefined} maxWidth={undefined} height={undefined} maxHeight={undefined} backgroundColor={undefined} closeButtonClicked={closeButtonClicked}></Banner>
+            </div>
+            <div className="md:px-3 pt-10 md:w-1/3 ">
+                <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center w-full ">
                     <Input
                         error={!!errors.name}
                         errorMessage={errors.message}

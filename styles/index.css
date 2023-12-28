@@ -107,3 +107,12 @@
 .search-submit:hover {
     color: var(--main-color);
 }
+
+@media (max-width: 425px) {
+    .banner_centered {
+        width: 90% !important;
+        max-width: 90% !important;
+        height: 90% !important;
+        max-height: 90% !important;
+    }
+}
