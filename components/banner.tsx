@@ -10,7 +10,7 @@ export default function CenterBanner({
 }) {
     return (
         <div
-            className="banner_centered flex justify-center content-center flex-col items-center fixed z-50 inset-1/2 transform -translate-x-2/4 -translate-y-2/4 shadow-lg max-h-full overflow-auto max-w-full"
+            className="flex justify-center content-center flex-col items-center fixed z-50 inset-1/2 transform -translate-x-2/4 -translate-y-2/4 shadow-lg max-h-full overflow-auto max-w-full"
             style={{
                 backgroundColor: backgroundColor || "#fecaca",
                 height: height || "70%",
@@ -25,9 +25,9 @@ export default function CenterBanner({
             >
                 X
             </div>
-            <h1 className="my-0 uppercase">{headline}</h1>
+            <h1 className="text-7xl my-0 uppercase font-bold ">{headline}</h1>
             <div
-                className="my-0 text-center uppercase prose"
+                className="text-5xl my-5 text-center  prose"
                 dangerouslySetInnerHTML={{ __html: text }}
             ></div>
         </div>

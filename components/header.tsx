@@ -2,13 +2,15 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tightpt-10 text-center pt-10 md:pt-20">
-      <h1>Contactanos!</h1>
-      <Link href="/" className="hover:underline">
-        studiotubarca
-      </Link>
-      .
-    </h2>
+    <div className='text-2xl md:text-4xl  tracking-tight md:tracking-tighter leading-tight text-center pt-10 md:pt-20'>
+      <h1 className='tracking-wide font-bold'>Contactanos!</h1>
+      <h2 className="mt-5">
+        <Link href="/" className="hover:underline font-mono">
+          studiotubarca
+        </Link>
+        .
+      </h2>
+    </div>
   )
 }
 

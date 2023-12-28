@@ -14,6 +14,9 @@ const ContactForm = () => {
         message: '',
     })
 
+    const headline = 'Gracias!'
+    const text = 'Te responderemos en breve!'
+
     const [success, setSuccess] = useState(false)
 
     const onChange = (e: { target: { name: any; value: any; }; }) => {
@@ -55,7 +58,7 @@ const ContactForm = () => {
 
         <div className="w-full h-screen bg-custom-background flex items-center flex-col ">
             <div className={success ? 'block' : 'hidden'}>
-                <Banner headline={undefined} text={undefined} width={undefined} maxWidth={undefined} height={undefined} maxHeight={undefined} backgroundColor={undefined} closeButtonClicked={closeButtonClicked}></Banner>
+                <Banner headline={headline} text={text} width={undefined} maxWidth={undefined} height={undefined} maxHeight={undefined} backgroundColor={undefined} closeButtonClicked={closeButtonClicked}></Banner>
             </div>
             <div className="md:px-3 pt-10 md:w-1/3 ">
                 <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center w-full ">
