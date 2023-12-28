@@ -22,6 +22,7 @@ import grid1 from '../../public/assets/blog/zensilla-img/zensilla-grid-1.jpg'
 import grid2 from '../../public/assets/blog/zensilla-img/zensilla-grid-2.jpg'
 import grid3 from '../../public/assets/blog/zensilla-img/zensilla-grid-3.jpg'
 import grid4 from '../../public/assets/blog/zensilla-img/zensilla-grid-4.png'
+import florManifiesto from '../../public/assets/blog/footer/flor-manifiesto.png'
 
 
 type Props = {
@@ -213,6 +214,20 @@ export default function Zensilla({ post, preview }: Props) {
                                         </Image>
                                     </motion.div>
                                 </div>
+                                <a href='/assets/blog/pdf/ficha-tecnica-zensilla.pdf' download>
+                                    <motion.div className='hidden md:block pt-5 '
+                                        variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
+                                        <Image
+                                            src={florManifiesto}
+                                            alt='Flor Manifiesto'
+                                            className='hover:shadow cursor-pointer'
+                                            objectFit="cover"
+                                            quality={100}
+                                            placeholder="blur">
+
+                                        </Image>
+                                    </motion.div>
+                                </a>
                             </div>
 
                             <div className='hidden md:relative md:block'>
