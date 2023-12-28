@@ -15,7 +15,6 @@ const HeroPost = () => {
               type="video/mp4"
             />
           </video>
-
         </div>
         <div className="absolute h-screen z-10 bg-custom-background w-full flex flex-col items-center" id="hero-post">
           <Link as={`/`} href={`/`} aria-label='studiotubarca manifiesto' className="pt-20">

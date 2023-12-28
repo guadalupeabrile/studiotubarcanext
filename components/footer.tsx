@@ -41,6 +41,7 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
           <Image
             src='/assets/blog/footer/contact-quiero.png'
             alt='studiotubarca Contact Us'
+            className='hover:shadow-lg transition-shadow duration-200'
             width={250}
             height={250}
           />
