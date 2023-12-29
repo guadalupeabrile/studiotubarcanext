@@ -16,7 +16,7 @@
 
 .bg-manifiesto-flor {
     /* background-image: url('/assets/blog/texture/bg-texture-min.webp'); */
-    background-image: url(/assets/blog/footer/flor-manifiesto.png);
+    background-image: url(/assets/blog/manifiesto/flor-manifiesto-bg.png);
     background-color: rgb(223, 209, 167);
     background-size: contain;
     /* Cubre toda la pantalla */
@@ -24,8 +24,18 @@
     background-position: center;
 
     /* Evita la repetición de la imagen */
+}
 
+.bg-manifiesto-perro {
+    /* background-image: url('/assets/blog/texture/bg-texture-min.webp'); */
+    background-image: url(/assets/blog/manifiesto/foto-mackena.png);
+    background-color: rgb(223, 209, 167);
+    background-size: cover;
+    /* Cubre toda la pantalla */
+    background-repeat: no-repeat;
+    background-position: center;
 
+    /* Evita la repetición de la imagen */
 }
 
 .bg {
