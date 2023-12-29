@@ -42,7 +42,7 @@ export default function Igiardini({ post, preview }: Props) {
                                 <title>{title}</title>
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
-                            <div>
+                            <div className='font-mono'>
                                 <div className='z-10 sticky top-0'>
                                     <Carousel />
                                 </div>
