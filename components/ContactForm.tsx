@@ -40,7 +40,7 @@ const ContactForm = () => {
             return
         }
         try {
-            emailjs.sendForm('service_ey18hlh', 'template_7t834mq', e.target, 'gH8gPEVte3skgnXsY')
+            emailjs.sendForm('service_f2c5owm', 'template_ado3nd7', e.target, 'kShmHc8as5ncbJgfz')
                 .then((result) => {
                     console.log(result.text);
                     setSuccess(true);
