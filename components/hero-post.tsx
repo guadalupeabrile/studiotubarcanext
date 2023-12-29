@@ -9,7 +9,7 @@ const HeroPost = () => {
     <section className='min-h-screen h-auto w-full z-10' id='hero-video'>
       <div className="">
         <div className="">
-          <video autoPlay loop muted playsInline className="absolute w-full h-screen object-cover">
+          <video autoPlay loop muted playsInline controls className="absolute w-full h-screen object-cover">
             <source
               src="assets/blog/videos/video-photos-studiotubarca.mp4"
               type="video/mp4"
