@@ -182,7 +182,7 @@ export default function Carousel() {
                         />
                     </motion.div>
                     <motion.div
-                        className="relative"
+                        className="relative hidden md:block"
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                         <Image
                             src={url8}
