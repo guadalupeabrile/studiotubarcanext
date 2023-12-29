@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 import studio from '../public/assets/blog/manifiesto/studiotubarca.png';
-import contact from '../public/assets/blog/footer/contact-quiero.png'
+import contact from '../public/assets/blog/footer/contact.png'
 
 const HeroPost = () => {
   return (

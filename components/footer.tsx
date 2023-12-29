@@ -39,7 +39,7 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
 
         <Link as={`/contact`} href={`/contact/`} aria-label='studiotubarca contact'>
           <Image
-            src='/assets/blog/footer/contact-quiero.png'
+            src='/assets/blog/footer/contact.png'
             alt='studiotubarca Contact Us'
             className='hover:shadow-lg transition-shadow duration-200'
             width={250}
