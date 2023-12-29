@@ -16,18 +16,8 @@ const HeroPost = () => {
             />
           </video>
         </div>
-        <div className="absolute h-screen z-10 bg-custom-background w-full flex flex-col items-center" id="hero-post">
+        <div className="absolute h-screen z-10 bg-custom-background w-full flex items-center place-content-evenly" id="hero-post">
           <Link as={`/`} href={`/`} aria-label='studiotubarca manifiesto' className="pt-20">
-            <Image
-              src={studio}
-              alt='studiotubarca logo'
-              className='hover:shadow-lg transition-shadow duration-200'
-              width={450}
-              height={250}
-            />
-          </Link>
-
-          <Link as={`/manifiesto`} href={`/manifiesto`} aria-label='studiotubarca manifiesto' className="pt-20">
             <Image
               src='/assets/blog/footer/flor-manifiesto.png'
               alt='studiotubarca Manifiesto'
@@ -35,6 +25,17 @@ const HeroPost = () => {
               width={250}
               height={250}
             />
+          </Link>
+
+          <Link as={`/manifiesto`} href={`/manifiesto`} aria-label='studiotubarca manifiesto' className="pt-20">
+            <Image
+              src={studio}
+              alt='studiotubarca logo'
+              className='hover:shadow-lg transition-shadow duration-200'
+              width={450}
+              height={250}
+            />
+
           </Link>
 
           <Link as={`/contact`} href={`/contact`} aria-label='studiotubarca contact' className="pt-20">
