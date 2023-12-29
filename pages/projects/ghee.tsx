@@ -46,6 +46,7 @@ export default function Ghee({ post, preview }: Props) {
                                     <Image
                                         src={HeroImg}
                                         alt='Ghee Logo'
+                                        className='w-full'
                                         placeholder="blur"
                                         style={{ objectFit: "cover" }}
                                         priority />
@@ -149,11 +150,12 @@ export default function Ghee({ post, preview }: Props) {
                                             src={GheeBg}
                                             alt='Ghee Bg'
                                             quality={100}
+                                            className=''
                                             placeholder="blur"
-                                            style={{ objectFit: "contain" }}
+                                            style={{ objectFit: "cover" }}
                                             priority />
                                     </div>`
-                                    <div className='md:h-screen col-span-2 md:hidden'>
+                                    <div className='md:h-screen col-span-2  md:hidden'>
                                         <Image
                                             src={GheeSunset}
                                             alt='Ghee Pot'
