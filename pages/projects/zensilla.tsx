@@ -167,18 +167,19 @@ export default function Zensilla({ post, preview }: Props) {
 
                             <div className='absolute z-20 p-10 flex flex-col w-screen'>
                                 <div className='flex items-center grid gap-x-10 md:grid-cols-3'>
-                                    <motion.div className='hidden md:block'
+                                    <motion.div
                                         variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                                         <Image
                                             src={grid1}
                                             alt='zensilla logo'
+                                            className='h-max-screen'
                                             objectFit="cover"
                                             quality={100}
                                             placeholder="blur">
 
                                         </Image>
                                     </motion.div>
-                                    <motion.div
+                                    <motion.div className='hidden md:block'
                                         variants={fadeIn('up', 0.7)} initial="hidden" animate="show" exit='hidden'>
                                         <Image
                                             src={grid2}
