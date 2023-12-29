@@ -42,7 +42,7 @@ export default function Manifiesto() {
             <div className="relative bg-custom-background h-screen w-screen flex flex-col items-center justify-center">
                 <div className="bg-manifiesto-perro p-5 md:p-36 text-center font-light md:text-3xl">
                     <p className="leading-loose">I follow the path guided by my intuition and my purpose, centered on emboding insights from the opportunities that come my way. I aim to share teachings and knowledge as my mentors do with me, in a quest for mutual collaboration. I have crafted a curriculum based on study, travels, experimentation, and experiences that provide me with the tools on a daily basis. </p>
-                    <p className="leading-loose">Santiago Ruiz.</p>
+                    <p className="leading-loose pt-5">Santiago Ruiz.</p>
                 </div>
                 <div className="flex flex-col md:flex-row items-center space-y-5 md:space-x-5">
                     <Link as={`/`} href={`/`} aria-label='studiotubarca home'>
