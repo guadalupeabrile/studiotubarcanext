@@ -252,9 +252,7 @@ export default function Zensilla({ post, preview }: Props) {
                             </div>
 
                             <div className='relative'>
-
-                                <video autoPlay muted controls loop playsInline className='h-full w-full flex items-center justify-center '
-                                    src="/assets/blog/projects-videos/zensilla-video.mp4"></video>
+                                <ProjectVideo video={post.video} videoMobile={post.videoMobile} ></ProjectVideo>
                             </div>
 
                         </div>

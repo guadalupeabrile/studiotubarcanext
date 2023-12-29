@@ -46,7 +46,7 @@ export default function Igiardini({ post, preview }: Props) {
                                 <div className='z-10 sticky top-0'>
                                     <Carousel />
                                 </div>
-                                <div className='z-20 sticky'>
+                                <div className='z-20 sticky p-0 w-full'>
                                     <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
                                 </div>
                             </div>

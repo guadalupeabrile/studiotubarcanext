@@ -4,7 +4,7 @@
 
 .bg-custom-background {
     /* background-image: url('/assets/blog/texture/bg-texture-min.webp'); */
-    background-color: rgb(250, 226, 154);
+    background-color: rgb(223, 209, 167);
     background-size: cover;
     /* Cubre toda la pantalla */
     background-attachment: fixed;
@@ -17,7 +17,7 @@
 .bg-manifiesto-flor {
     /* background-image: url('/assets/blog/texture/bg-texture-min.webp'); */
     background-image: url(/assets/blog/footer/flor-manifiesto.png);
-    background-color: rgb(250, 226, 154);
+    background-color: rgb(223, 209, 167);
     background-size: contain;
     /* Cubre toda la pantalla */
     background-repeat: no-repeat;
