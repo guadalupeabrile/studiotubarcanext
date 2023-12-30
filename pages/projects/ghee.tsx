@@ -113,7 +113,7 @@ export default function Ghee({ post, preview }: Props) {
 
                                             </div>
                                         </div>
-                                        <div className='text-center text-sm  flex items-center grid justify-items-center p-5 col-span-2 md:hidden'>
+                                        <div className='text-center text-sm  flex items-center grid justify-items-center px-5 col-span-2 md:hidden'>
                                             <p className='md:leading-loose'>Es la cocina el corazón de cada hogar.</p>
                                             <p className='md:leading-loose'>En dónde se reúnen generaciones,</p>
                                             <p className='md:leading-loose'>se comparten historias,</p>
