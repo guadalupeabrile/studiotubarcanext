@@ -21,7 +21,7 @@ export default function CarouselCava() {
         <>
 
 
-            <div className="flex w-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border  md:pl-20 md:py-10 py-10 m-0 bg-custom-background space-y-5 md:space-y-0">
+            <div className="flex w-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border  md:pl-20 md:py-10 py-5 m-0 bg-custom-background space-y-5 md:space-y-0">
                 <div className='md:absolute md:z-10 mt-10 p-5'>
                     <Image
                         src={url1}
@@ -30,7 +30,7 @@ export default function CarouselCava() {
                     />
                 </div>
                 <motion.div
-                    className='md:row-end-5 text-xs text-center md:text-left md:text-base text-gray-800 leading-relaxed space-y-2 '
+                    className='md:row-end-5 text-sm text-center md:text-left md:text-lg text-gray-800 leading-relaxed space-y-2 '
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <p>ÇAVA surge desde adentro, de la tierra, cómo si
@@ -57,7 +57,7 @@ export default function CarouselCava() {
                 </motion.div>
             </div>
 
-            <div className="relative w-screen h-screen grid grid-cols-1 md:pr-20 md:pl-0 py-10 bg-custom-background">
+            <div className="relative w-screen h-screen grid grid-cols-1 md:pr-20 md:pl-0 md:py-10 bg-custom-background">
                 <motion.div
                     className='relative'
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
@@ -86,7 +86,7 @@ export default function CarouselCava() {
                 <motion.div
                     className="relative md:flex md:items-end"
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                    <div className='text-xs md:text-sm text-left text-gray-800'>
+                    <div className='text-sm md:text-lg text-left text-gray-800'>
                         <p className='leading-relaxed'>En lo técnico:</p>
                         <p className='leading-relaxed'>Se propone una caja separada</p>
                         <p className='leading-relaxed'>de las superficies de pared,</p>
@@ -128,7 +128,7 @@ export default function CarouselCava() {
                     className='relative flex md:items-end items-start  justify-center'
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
-                    <div className='text-xs text-center pt-10 md:text-left md:text-sm text-gray-800'>
+                    <div className='text-sm text-center pt-10 md:text-left md:text-lg text-gray-800'>
 
                         <p className='leading-relaxed'>El mobiliario en donde se apoyan</p>
                         <p className='leading-relaxed'>los vinos, fue creado por Rafael</p>
@@ -143,10 +143,10 @@ export default function CarouselCava() {
 
             <div className="flex items-end justify-center w-screen grid grid-cols-1 md:grid-cols-7 md:gap-x-10 md:py-10 pl-12 m-0 bg-custom-background">
                 <motion.div
-                    className='flex mb-5 md:mb-0'
+                    className='flex mb-5 md:mb-0 hidden md:block'
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
-                    <div className='text-xs text-center md:text-left md:text-base text-gray-800'>
+                    <div className='text-xs text-center md:text-left md:text-2xl text-gray-800'>
                         <p className='leading-relaxed'>Encontramos </p>
                         <p className='leading-relaxed'>un lugar</p>
                         <p className='leading-relaxed'>en donde</p>
@@ -163,6 +163,18 @@ export default function CarouselCava() {
                         alt={`Imagen Felo sentada`}
                         style={{ objectFit: "cover" }}
                     />
+                </motion.div>
+                <motion.div
+                    className='flex mb-5 md:mb-0 pt-5 md:hidden'
+                    variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
+                    <div className='text-sm text-left  text-gray-800'>
+                        <p className='leading-relaxed'>Encontramos </p>
+                        <p className='leading-relaxed'>un lugar</p>
+                        <p className='leading-relaxed'>en donde</p>
+                        <p className='leading-relaxed'>el tiempo</p>
+                        <p className='leading-relaxed'>se detiene.</p>
+                    </div>
                 </motion.div>
             </div>
             <div className="flex h-auto items-center md:items-end justify-center w-screen grid grid-cols-2 md:grid-cols-7 md:gap-x-10 box-border md:py-10 md:px-10 md:pr-0 md:pl-10 m-0 bg-custom-background">
