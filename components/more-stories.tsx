@@ -31,7 +31,7 @@ const MoreStories = ({ posts }: Props) => {
                     nameVideo={post.nameVideo}
                     date={post.date}
                     author={post.author}
-                    slug={post.slug}
+                    slug={post.urlName}
                     excerpt={post.excerpt} />
                 </div>
               </div>

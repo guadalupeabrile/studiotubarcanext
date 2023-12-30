@@ -3,6 +3,7 @@ import type Author from './author'
 type PostType = {
   slug: string
   title: string
+  urlName: string
   date: string
   coverImage: string
   nameImage: string

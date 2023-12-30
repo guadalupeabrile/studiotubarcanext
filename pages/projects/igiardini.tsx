@@ -71,6 +71,7 @@ export async function getStaticProps() {
 
     const post = getPostBySlug('igiardini', [
         'title',
+        'urlName',
         'date',
         'slug',
         'author',
