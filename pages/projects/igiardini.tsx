@@ -45,10 +45,15 @@ export default function Igiardini({ post, preview }: Props) {
                             <div className='font-mono'>
                                 <div className='z-10 sticky top-0'>
                                     <Carousel />
+                                    <div className='md:hidden relative w-full'>
+                                        <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
+                                    </div>
                                 </div>
-                                <div className='z-20 sticky p-0 w-full'>
+                                <div className='hidden md:block md:sticky md:z-20 md:p-0 md:w-full'>
                                     <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
                                 </div>
+
+
                             </div>
                             <Footer nextProject={post.nextProject} nextProjectImg={post.nextProjectImg} manifiesto=''></Footer>
                             <div className='footer-screen'></div>
