@@ -41,8 +41,8 @@ export default function Manifiesto() {
 
             <div className="relative bg-custom-background h-screen w-screen flex flex-col items-center justify-center">
                 <div className="bg-manifiesto-perro p-5 md:p-32 text-center font-light text-xs md:text-3xl">
-                    <p className="leading-loose">Sigo el camino guiado por mi intuición y mi propósito centrado en tomar el máximo aprendizaje <span className="hidden md:inline"><br /></span>de las propueestas que se me presentan. Busco compartir enseñanzas y conocimientos cómo <span className="hidden md:inline"><br /></span>mis maestros lo hacen conmigo, en una búsqueda de colaboración mutua.</p>
-                    <p className="leading-loose">Generê un Curriculum basado en el estudio, los viajes, la experimentación y las experiencias <span className="hidden md:inline"><br /></span>que me brindan herramientas a diario.</p>
+                    <p className="leading-loose">Sigo el camino guiado por mi intuición y mi propósito centrado en tomar el máximo aprendizaje <span className="hidden md:inline"><br /></span>de las propuestas que se me presentan. Busco compartir enseñanzas y conocimientos cómo <span className="hidden md:inline"><br /></span>mis maestros lo hacen conmigo, en una búsqueda de colaboración mutua.</p>
+                    <p className="leading-loose">Generé un Curriculum basado en el estudio, los viajes, la experimentación y las experiencias <span className="hidden md:inline"><br /></span>que me brindan herramientas a diario.</p>
                     <p className="leading-loose pt-5">Santiago Ruiz.</p>
                 </div>
                 <div className="flex flex-col md:flex-row items-center space-y-5 md:space-x-5 pb-5">
