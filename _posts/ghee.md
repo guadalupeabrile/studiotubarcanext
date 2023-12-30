@@ -6,6 +6,8 @@ coverImage: '/assets/blog/projects-preview/ghee-preview.png'
 nameImage: '/assets/blog/projects-name/ghee-name.png'
 nameVideo: '/assets/blog/project-animation/ghee-logo.mp4'
 nameGif: '/assets/blog/project-animation/ghee-logo.gif'
+video: '/assets/blog/projects-videos/zensilla-video.mp4'
+videoMobile: '/assets/blog/projects-videos/zensilla-mobile.mp4'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Tim Neutkens

@@ -8,6 +8,7 @@ import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import Footer from '../../components/footer'
+import ProjectVideo from '../../components/project-video'
 
 import HeroImg from '../../public/assets/blog/ghee-img/ghee-hero.webp'
 import GheeBg from '../../public/assets/blog/ghee-img/ghee-bg.webp'
@@ -52,9 +53,9 @@ export default function Ghee({ post, preview }: Props) {
                                         priority />
 
                                 </div>
-                                <div className='relative bg-custom-background z-10 grid justify-items-center'>
-                                    <div className='absolute z-20 grid grid-cols-2 w-full'>
-                                        <div className='grid grid-cols-2 items-center pt-20 md:pl-20 md:pt-96 md:mt-40 text-xs md:text-base'>
+                                <div className='relative bg-custom-background z-10 grid flex content-evenly'>
+                                    <div className=' z-20 grid grid-cols-2 w-full'>
+                                        <div className='grid grid-cols-2 items-center md:pl-20 md:mt-40 text-xs md:text-base'>
                                             <Image
                                                 src={Flor}
                                                 alt='Flor Manifiesto'
@@ -76,13 +77,13 @@ export default function Ghee({ post, preview }: Props) {
                                             />
                                             <p className='md:text-3xl'>Beneficios</p>
                                         </div>
-                                        <div className='pt-20 md:pt-96 flex justify-end '>
+                                        <div className='flex justify-end '>
                                             <Image
                                                 src={GheeSpoon}
                                                 alt='Ghee Spoon'
                                                 quality={100}
                                                 placeholder="blur"
-                                                style={{ objectFit: "cover" }}
+                                                style={{ objectFit: "contain" }}
                                                 priority
                                             />
                                         </div>
@@ -113,7 +114,7 @@ export default function Ghee({ post, preview }: Props) {
 
                                             </div>
                                         </div>
-                                        <div className='text-center text-sm  flex items-center grid justify-items-center px-5 col-span-2 md:hidden'>
+                                        <div className='text-center text-sm  flex items-center grid justify-items-center p-5 col-span-2 md:hidden'>
                                             <p className='md:leading-loose'>Es la cocina el corazón de cada hogar.</p>
                                             <p className='md:leading-loose'>En dónde se reúnen generaciones,</p>
                                             <p className='md:leading-loose'>se comparten historias,</p>
@@ -126,6 +127,9 @@ export default function Ghee({ post, preview }: Props) {
                                             <p className='md:leading-loose'>dónde cocinamos el mejor GHEE casero,</p>
                                             <p className='md:leading-loose'>con amor y pura autenticidad.</p>
                                         </div>
+
+                                    </div>
+                                    <div className='z-10 relative w-full'>
                                         <div className='hidden md:block md:col-span-2'>
                                             <div className='w-full md:h-screen col-span-2 '>
                                                 <Image
@@ -136,25 +140,9 @@ export default function Ghee({ post, preview }: Props) {
 
                                                 />
                                             </div>
-                                            <div className='col-span-2 pt-20'>
-                                                <div>
-                                                    <video autoPlay muted controls loop playsInline className='h-full w-full '
-                                                        src="/assets/blog/projects-videos/zensilla-video.mp4"></video>
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div>
-
-                                    <div className='bg-custom-background w-screen'>
-                                        <Image
-                                            src={GheeBg}
-                                            alt='Ghee Bg'
-                                            quality={100}
-                                            className='w-screen'
-                                            placeholder="blur"
-                                            style={{ objectFit: "cover" }}
-                                            priority />
-                                    </div>`
                                     <div className='md:h-screen col-span-2  md:hidden'>
                                         <Image
                                             src={GheeSunset}
@@ -164,15 +152,11 @@ export default function Ghee({ post, preview }: Props) {
 
                                         />
                                     </div>
-
-                                    <div className='col-span-2 md:hidden'>
-                                        <div>
-                                            <video autoPlay muted controls loop playsInline className='h-full '
-                                                src="/assets/blog/projects-videos/zensilla-video.mp4"></video>
-                                        </div>
-                                    </div>
                                 </div>
+                                <div className='z-10 relative w-full'>
 
+                                    <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
+                                </div>
                             </div>
                             <Footer nextProject={post.nextProject} nextProjectImg={post.nextProjectImg} manifiesto=''></Footer>
                             <div className='footer-screen'></div>
