@@ -96,7 +96,7 @@ export default function Ghee({ post, preview }: Props) {
                                                 priority
                                             />
                                         </div>
-                                        <div className='text-center text-sm md:text-3xl md:text-left flex items-center grid justify-content-center p-5 md:pl-20 hidden md:flex'>
+                                        <div className='text-center md:text-3xl md:text-left flex items-center grid justify-content-center p-5 md:pl-20 hidden md:flex'>
                                             <div>
                                                 <p className='md:leading-relax'>Es la cocina el corazón de cada hogar.</p>
                                                 <p className='md:leading-relax'>En dónde se reúnen generaciones,</p>
@@ -113,7 +113,7 @@ export default function Ghee({ post, preview }: Props) {
 
                                             </div>
                                         </div>
-                                        <div className='text-center text-xs  flex items-center grid justify-items-center p-5 col-span-2 md:hidden'>
+                                        <div className='text-center text-sm  flex items-center grid justify-items-center p-5 col-span-2 md:hidden'>
                                             <p className='md:leading-loose'>Es la cocina el corazón de cada hogar.</p>
                                             <p className='md:leading-loose'>En dónde se reúnen generaciones,</p>
                                             <p className='md:leading-loose'>se comparten historias,</p>
