@@ -136,7 +136,7 @@ export default function Ghee({ post, preview }: Props) {
                                                     src={GheeSunset}
                                                     alt='Ghee Pot'
                                                     placeholder="blur"
-                                                    style={{ objectFit: "cover" }}
+                                                    style={{ objectFit: "contain" }}
 
                                                 />
                                             </div>

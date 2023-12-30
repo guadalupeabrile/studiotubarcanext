@@ -6,7 +6,7 @@ type Props = {
 
 const ProjectVideo = ({ video, videoMobile }: Props) => {
     return (
-        <section className='min-h-screen w-screen'>
+        <section className='min-h-screen w-screen bg-custom-background'>
             <div className="w-screen ">
                 <div className="hidden md:block">
                     <video autoPlay controls loop muted className="w-screen h-screen object-cover">
