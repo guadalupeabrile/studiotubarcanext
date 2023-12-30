@@ -12,7 +12,7 @@ export default function Manifiesto() {
         <>
 
             <div className="relative bg-manifiesto-flor h-screen w-screen flex flex-col items-center justify-center">
-                <div className="p-5 md:p-20 text-center font-light md:text-3xl">
+                <div className="p-5 md:p-20 text-center font-light text-xs md:text-3xl">
                     <p className="leading-loose">De formación Arquitecto, Cocinero, de oficio Artista, Carpintero y Explorador.</p>
                     <p className="leading-loose ">Busco experiencias fértiles que alimenten mi quehacer diario. Soy un manifestador de <span className="hidden md:inline"><br /></span>propuestas que alegran la vida de las personas. Me enfoco en dar soluciones a problemas <span className="hidden md:inline"><br /></span>contemporáneos integrando variables indispensables para el crecimiento personal.</p>
                     <p className="leading-loose">Asi facilitar propuestas que potencien la calidad de las experiencias</p>
@@ -40,7 +40,7 @@ export default function Manifiesto() {
             </div>
 
             <div className="relative bg-custom-background h-screen w-screen flex flex-col items-center justify-center">
-                <div className="bg-manifiesto-perro p-5 md:p-32 text-center font-light md:text-3xl">
+                <div className="bg-manifiesto-perro p-5 md:p-32 text-center font-light text-xs md:text-3xl">
                     <p className="leading-loose">Sigo el camino guiado por mi intuición y mi propósito centrado en tomar el máximo aprendizaje <span className="hidden md:inline"><br /></span>de las propueestas que se me presentan. Busco compartir enseñanzas y conocimientos cómo <span className="hidden md:inline"><br /></span>mis maestros lo hacen conmigo, en una búsqueda de colaboración mutua.</p>
                     <p className="leading-loose">Generê un Curriculum basado en el estudio, los viajes, la experimentación y las experiencias <span className="hidden md:inline"><br /></span>que me brindan herramientas a diario.</p>
                     <p className="leading-loose pt-5">Santiago Ruiz.</p>
