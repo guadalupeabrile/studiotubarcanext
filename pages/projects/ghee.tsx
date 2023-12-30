@@ -56,25 +56,30 @@ export default function Ghee({ post, preview }: Props) {
                                 <div className='relative bg-custom-background z-10 grid flex content-evenly'>
                                     <div className=' z-20 grid grid-cols-2 w-full'>
                                         <div className='grid grid-cols-2 items-center md:pl-20 md:mt-40 text-xs md:text-base'>
-                                            <Image
-                                                src={Flor}
-                                                alt='Flor Manifiesto'
-                                                quality={100}
-                                                placeholder="blur"
-                                                style={{ objectFit: "contain" }}
-                                                priority
-                                            />
+                                            <a href='/assets/blog/pdf/que-es-ghee.pdf' download>
+                                                <Image
+                                                    src={Flor}
+                                                    alt='Flor Manifiesto'
+                                                    quality={100}
+                                                    placeholder="blur"
+                                                    className='hover:shadow-lg transition-shadow duration-200'
+                                                    style={{ objectFit: "contain" }}
+                                                    priority
+                                                />
+                                            </a>
 
                                             <p className='md:text-3xl'>Qué es Gheemegold?</p>
-
-                                            <Image
-                                                src={Flor}
-                                                alt='Flor Manifiesto'
-                                                quality={100}
-                                                placeholder="blur"
-                                                style={{ objectFit: "contain" }}
-                                                priority
-                                            />
+                                            <a href='/assets/blog/pdf/beneficios-ghee.pdf' download>
+                                                <Image
+                                                    src={Flor}
+                                                    alt='Flor Manifiesto'
+                                                    quality={100}
+                                                    placeholder="blur"
+                                                    className='hover:shadow-lg transition-shadow duration-200'
+                                                    style={{ objectFit: "contain" }}
+                                                    priority
+                                                />
+                                            </a>
                                             <p className='md:text-3xl'>Beneficios</p>
                                         </div>
                                         <div className='flex justify-end '>
