@@ -82,7 +82,7 @@ export default function Ghee({ post, preview }: Props) {
                                                 alt='Ghee Spoon'
                                                 quality={100}
                                                 placeholder="blur"
-                                                style={{ objectFit: "cover" }}
+
                                                 priority
                                             />
                                         </div>
