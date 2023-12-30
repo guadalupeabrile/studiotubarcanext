@@ -154,7 +154,6 @@ export default function Ghee({ post, preview }: Props) {
                                     </div>
                                 </div>
                                 <div className='z-10 relative w-full'>
-
                                     <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
                                 </div>
                             </div>
