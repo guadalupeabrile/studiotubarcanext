@@ -16,7 +16,7 @@ const ContactForm = () => {
     })
 
     const headline = 'Gracias!'
-    const text = 'Te responderemos en breve!'
+    const text = 'Te responderemos en breve.'
 
     const [success, setSuccess] = useState(false)
 

@@ -12,7 +12,7 @@ export default function CenterBanner({
         <div
             className="flex justify-center content-center flex-col items-center fixed z-50 inset-1/2 transform -translate-x-2/4 -translate-y-2/4 shadow-lg max-h-full overflow-auto max-w-full"
             style={{
-                backgroundColor: backgroundColor || "#fecaca",
+                backgroundColor: backgroundColor || "#B65FCF",
                 height: height || "70%",
                 maxHeight: maxHeight || "550px",
                 width: width || "80%",
