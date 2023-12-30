@@ -13,7 +13,7 @@ const ComingSoon = () => {
     return (
         <>
             <div className='w-screen h-screen bg-custom-background'>
-                <div className='hiden md:block'>
+                <div className='hidden md:block'>
                     <Image
                         src={proximamente}
                         alt='proximamente'
@@ -21,7 +21,7 @@ const ComingSoon = () => {
                         fill
                     />
                 </div>
-                <div className='md:hiden'>
+                <div className='md:hidden'>
                     <Image
                         src={proximamenteMob}
                         alt='proximamente'
