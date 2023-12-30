@@ -53,8 +53,8 @@ export default function Ghee({ post, preview }: Props) {
                                         priority />
 
                                 </div>
-                                <div className='relative bg-custom-background z-10 '>
-                                    <div className=' z-20 grid grid-cols-2 w-full pl-5 space-x-5'>
+                                <div className='relative bg-custom-background z-10 grid flex content-evenly'>
+                                    <div className=' z-20 grid grid-cols-2 w-full'>
                                         <div className='grid grid-cols-2 items-center md:pl-20 md:mt-40 text-xs md:text-base'>
                                             <Image
                                                 src={Flor}
@@ -87,47 +87,47 @@ export default function Ghee({ post, preview }: Props) {
                                                 priority
                                             />
                                         </div>
-
-                                    </div>
-                                    <div className='col-span-2 md:col-span-1 p-5'>
-                                        <Image
-                                            src={GheePot}
-                                            alt='Ghee Pot'
-                                            quality={100}
-                                            placeholder="blur"
-                                            style={{ objectFit: "contain" }}
-                                            priority
-                                        />
-                                    </div>
-                                    <div className='text-center md:text-3xl md:text-left flex items-center grid justify-content-center p-5 md:pl-20 hidden md:flex'>
-                                        <div>
-                                            <p className='md:leading-relax'>Es la cocina el corazón de cada hogar.</p>
-                                            <p className='md:leading-relax'>En dónde se reúnen generaciones,</p>
-                                            <p className='md:leading-relax'>se comparten historias,</p>
-                                            <p className='md:leading-relax'>y se vierte amor en cada plato.</p>
-
-                                            <p className='mt-5 md:mt-10 md:leading-relax'>En una búsqueda por conectar tradiciones,</p>
-                                            <p className='md:leading-relax'>encontrar la pureza</p>
-                                            <p className='md:leading-relax'>y resaltar la esencia de cada hogar.</p>
-
-                                            <p className='mt-5 md:mt-10 md:leading-relax'>Abrimos las puertas de GHEE ME GOLD,</p>
-                                            <p className='md:leading-relax'>dónde cocinamos el mejor GHEE casero,</p>
-                                            <p className='md:leading-relax'>con amor y pura autenticidad.</p>
-
+                                        <div className='col-span-2 md:col-span-1 p-5'>
+                                            <Image
+                                                src={GheePot}
+                                                alt='Ghee Pot'
+                                                quality={100}
+                                                placeholder="blur"
+                                                style={{ objectFit: "contain" }}
+                                                priority
+                                            />
                                         </div>
-                                    </div>
-                                    <div className='text-center text-sm  flex items-center grid justify-items-center p-5 col-span-2 md:hidden'>
-                                        <p className='md:leading-loose'>Es la cocina el corazón de cada hogar.</p>
-                                        <p className='md:leading-loose'>En dónde se reúnen generaciones,</p>
-                                        <p className='md:leading-loose'>se comparten historias,</p>
-                                        <p className='md:leading-loose'>y se vierte amor en cada plato.</p>
-                                        <p className='mt-5 md:mt-10 md:leading-loose'>En una búsqueda por conectar tradiciones,</p>
-                                        <p className='md:leading-loose'>encontrar la pureza</p>
-                                        <p className='md:leading-loose'>y resaltar la esencia de cada hogar.</p>
+                                        <div className='text-center md:text-3xl md:text-left flex items-center grid justify-content-center p-5 md:pl-20 hidden md:flex'>
+                                            <div>
+                                                <p className='md:leading-relax'>Es la cocina el corazón de cada hogar.</p>
+                                                <p className='md:leading-relax'>En dónde se reúnen generaciones,</p>
+                                                <p className='md:leading-relax'>se comparten historias,</p>
+                                                <p className='md:leading-relax'>y se vierte amor en cada plato.</p>
 
-                                        <p className='mt-5 md:mt-10 md:leading-loose'>Abrimos las puertas de GHEE ME GOLD,</p>
-                                        <p className='md:leading-loose'>dónde cocinamos el mejor GHEE casero,</p>
-                                        <p className='md:leading-loose'>con amor y pura autenticidad.</p>
+                                                <p className='mt-5 md:mt-10 md:leading-relax'>En una búsqueda por conectar tradiciones,</p>
+                                                <p className='md:leading-relax'>encontrar la pureza</p>
+                                                <p className='md:leading-relax'>y resaltar la esencia de cada hogar.</p>
+
+                                                <p className='mt-5 md:mt-10 md:leading-relax'>Abrimos las puertas de GHEE ME GOLD,</p>
+                                                <p className='md:leading-relax'>dónde cocinamos el mejor GHEE casero,</p>
+                                                <p className='md:leading-relax'>con amor y pura autenticidad.</p>
+
+                                            </div>
+                                        </div>
+                                        <div className='text-center text-sm  flex items-center grid justify-items-center p-5 col-span-2 md:hidden'>
+                                            <p className='md:leading-loose'>Es la cocina el corazón de cada hogar.</p>
+                                            <p className='md:leading-loose'>En dónde se reúnen generaciones,</p>
+                                            <p className='md:leading-loose'>se comparten historias,</p>
+                                            <p className='md:leading-loose'>y se vierte amor en cada plato.</p>
+                                            <p className='mt-5 md:mt-10 md:leading-loose'>En una búsqueda por conectar tradiciones,</p>
+                                            <p className='md:leading-loose'>encontrar la pureza</p>
+                                            <p className='md:leading-loose'>y resaltar la esencia de cada hogar.</p>
+
+                                            <p className='mt-5 md:mt-10 md:leading-loose'>Abrimos las puertas de GHEE ME GOLD,</p>
+                                            <p className='md:leading-loose'>dónde cocinamos el mejor GHEE casero,</p>
+                                            <p className='md:leading-loose'>con amor y pura autenticidad.</p>
+                                        </div>
+
                                     </div>
                                     <div className='z-10 relative w-full'>
                                         <div className='hidden md:block md:col-span-2'>
