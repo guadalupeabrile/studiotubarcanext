@@ -73,7 +73,7 @@ export default function CarouselCava() {
 
             < div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 box-boder px-12 md:px-20 py-10 bg-custom-background" >
                 <motion.div
-                    className="relative row-span-2 flex items-center justify-content"
+                    className="relative row-span-2 flex items-end justify-content"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
                     <Image
                         src={url4}
@@ -100,7 +100,7 @@ export default function CarouselCava() {
                 </motion.div>
 
                 <motion.div
-                    className='hidden md:flex items-center justify-center'
+                    className='hidden md:flex items-end justify-center'
                     variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
                     <Image
                         src={url5}
