@@ -1,3 +1,5 @@
+"use client"
+
 import PostPreview from './post-preview'
 import type Post from '../interfaces/post'
 import Image from 'next/image'
