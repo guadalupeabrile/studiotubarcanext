@@ -3,17 +3,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import proximamente from "../../public/assets/blog/coming-soon/proximamente.png"
+import proximamenteMob from "../../public/assets/blog/coming-soon/proximamente-mobile.png"
 import studiotubarca from "../../public/assets/blog/manifiesto/studiotubarca.png"
 import home from '../../public/assets/blog/footer/home-foto.gif'
+
 
 const ComingSoon = () => {
 
     return (
         <>
             <div className='w-screen h-screen bg-custom-background'>
-                <div>
+                <div className='hiden md:block'>
                     <Image
                         src={proximamente}
+                        alt='proximamente'
+                        className='w-screen h-screen'
+                        fill
+                    />
+                </div>
+                <div className='md:hiden'>
+                    <Image
+                        src={proximamenteMob}
                         alt='proximamente'
                         className='w-screen h-screen'
                         fill
