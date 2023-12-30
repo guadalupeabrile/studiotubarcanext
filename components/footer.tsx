@@ -3,6 +3,7 @@ import type Post from '../interfaces/post'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import firmaStudio from "../public/assets/blog/manifiesto/firma-studiotubarca.png"
 
 type Props = {
   nextProject: string
@@ -49,9 +50,9 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
 
         <Link as={`/manifiesto`} href={`/manifiesto`} aria-label='studiotubarca manifiesto'>
           <Image
-            src='/assets/blog/footer/flor-manifiesto.png'
+            src={firmaStudio}
             alt='studiotubarca Manifiesto'
-            className='hover:shadow-lg transition-shadow duration-200'
+            className='hover:shadow-lg transition-shadow duration-200 p-5'
             width={250}
             height={250}
           />

@@ -1,22 +1,19 @@
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
-import Post from '../../interfaces/post'
 import Carousel from '../../components/Carousel'
 import ProjectVideo from '../../components/project-video'
-import HeroPost from '../../components/hero-post'
+
 import Footer from '../../components/footer'
+
+import igiardiniGif from "../../public/assets/blog/igiardini-img/igiardini-gif.gif"
+import florManifiesto from "../../public/assets/blog/footer/flor-manifiesto.png"
 
 type Props = {
     post: PostType
@@ -32,7 +29,7 @@ export default function Igiardini({ post, preview }: Props) {
     return (
         <Layout>
             <section className='min-h-screen'>
-                {/* <Header /> */}
+
                 {router.isFallback ? (
                     <PostTitle>Loading…</PostTitle>
                 ) : (
@@ -47,10 +44,40 @@ export default function Igiardini({ post, preview }: Props) {
                                     <Carousel />
                                     <div className='md:hidden relative w-full'>
                                         <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
+                                        <div className='w-full bg-custom-background'>
+                                            <Image
+                                                src={igiardiniGif}
+                                                alt={'Igiardini gif'}
+                                                width={1920} />
+                                        </div>
+                                        <div className='w-full bg-custom-background flex justify-center'>
+                                            <a href='/assets/blog/pdf/ficha-tecnica-igiardini.pdf' download>
+                                                <Image
+                                                    src={florManifiesto}
+                                                    alt={"Flor descarga ficha tecnica"}
+                                                    width={100}
+                                                    className='hover:shadow-lg transition-shadow duration-200' />
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='hidden md:block md:sticky md:z-20 md:p-0 md:w-full'>
                                     <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
+                                    <div className='h-screen w-full bg-custom-background'>
+                                        <Image
+                                            src={igiardiniGif}
+                                            alt={'Igiardini gif'}
+                                            width={1920} />
+                                    </div>
+                                    <div className='w-full bg-custom-background'>
+                                        <a href='/assets/blog/pdf/ficha-tecnica-igiardini.pdf' download>
+                                            <Image
+                                                src={florManifiesto}
+                                                alt={"Flor descarga ficha tecnica"}
+                                                className='hover:shadow-lg transition-shadow duration-200' />
+                                        </a>
+                                    </div>
+
                                 </div>
 
 
