@@ -13,7 +13,7 @@ import HeroImg from '../../public/assets/blog/ghee-img/ghee-hero.webp'
 import GheeBg from '../../public/assets/blog/ghee-img/ghee-bg.webp'
 import Flor from '../../public/assets/blog/footer/flor-manifiesto.png'
 import GheeSpoon from '../../public/assets/blog/ghee-img/gheeSpoon.webp'
-import GheePot from '../../public/assets/blog/ghee-img/gheePot.webp'
+import GheePot from '../../public/assets/blog/ghee-img/gheePot.png'
 import GheeSunset from '../../public/assets/blog/ghee-img/gheeSunset.webp'
 
 
@@ -86,7 +86,7 @@ export default function Ghee({ post, preview }: Props) {
                                                 priority
                                             />
                                         </div>
-                                        <div className='col-span-2 md:col-span-1'>
+                                        <div className='col-span-2 md:col-span-1 p-5'>
                                             <Image
                                                 src={GheePot}
                                                 alt='Ghee Pot'
