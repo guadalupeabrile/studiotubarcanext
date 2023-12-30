@@ -86,7 +86,7 @@ export default function CarouselCava() {
                 <motion.div
                     className="relative md:flex md:items-end"
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                    <div className='text-sm md:text-lg text-left text-gray-800'>
+                    <div className='text-sm md:text-lg text-right text-gray-800 w-full pr-5'>
                         <p className='leading-relaxed'>En lo técnico:</p>
                         <p className='leading-relaxed'>Se propone una caja separada</p>
                         <p className='leading-relaxed'>de las superficies de pared,</p>
@@ -100,7 +100,7 @@ export default function CarouselCava() {
                 </motion.div>
 
                 <motion.div
-                    className='hidden md:flex items-end justify-center'
+                    className='hidden md:flex items-end justify-center w-full'
                     variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
                     <Image
                         src={url5}
