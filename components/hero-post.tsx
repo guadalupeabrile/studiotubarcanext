@@ -2,7 +2,10 @@ import Link from "next/link"
 import Image from "next/image"
 
 import studio from '../public/assets/blog/manifiesto/studiotubarca.png';
-import contact from '../public/assets/blog/footer/contact.png'
+import contact from '../public/assets/blog/footer/contact.png';
+import homeGif from '../public/assets/blog/footer/home-gif.gif';
+import home from '../public/assets/blog/footer/home-foto.gif';
+
 
 const HeroPost = () => {
   return (
@@ -17,15 +20,28 @@ const HeroPost = () => {
           </video>
         </div>
         <div className="absolute h-screen z-10 bg-custom-background w-full flex items-center place-content-evenly" id="hero-post">
-          <Link as={`/`} href={`/`} aria-label='studiotubarca manifiesto' className="pt-20">
-            <Image
-              src='/assets/blog/footer/flor-manifiesto.png'
-              alt='studiotubarca Manifiesto'
-              className='hover:shadow-lg transition-shadow duration-200'
-              width={250}
-              height={250}
-            />
-          </Link>
+          <div className='group'>
+            <div className='relative'>
+              <Link as={`/`} href={`/`} aria-label='studiotubarca homepage'>
+
+                <Image
+                  src={home}
+                  alt='studiotubarca Home'
+                  width={200}
+                  height={200}
+                  className='group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200' />
+
+
+                <Image
+                  src={homeGif}
+                  alt='studiotubarca Home'
+                  width={200}
+                  height={200}
+                  className='shadow-lg opacity-0 group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 ' />
+
+              </Link>
+            </div>
+          </div>
 
           <Link as={`/manifiesto`} href={`/manifiesto`} aria-label='studiotubarca manifiesto' className="pt-20">
             <Image
