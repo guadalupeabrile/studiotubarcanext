@@ -46,7 +46,7 @@ export default function Ghee({ post, preview }: Props) {
                                     <Image
                                         src={HeroImg}
                                         alt='Ghee Logo'
-                                        className='w-full'
+                                        className='w-screen'
                                         placeholder="blur"
                                         style={{ objectFit: "cover" }}
                                         priority />
@@ -64,7 +64,7 @@ export default function Ghee({ post, preview }: Props) {
                                                 priority
                                             />
 
-                                            <p>Qué es Gheemegold?</p>
+                                            <p className='md:text-3xl'>Qué es Gheemegold?</p>
 
                                             <Image
                                                 src={Flor}
@@ -74,7 +74,7 @@ export default function Ghee({ post, preview }: Props) {
                                                 style={{ objectFit: "contain" }}
                                                 priority
                                             />
-                                            <p>Beneficios</p>
+                                            <p className='md:text-3xl'>Beneficios</p>
                                         </div>
                                         <div className='pt-20 md:pt-96 flex justify-end '>
                                             <Image
@@ -96,20 +96,20 @@ export default function Ghee({ post, preview }: Props) {
                                                 priority
                                             />
                                         </div>
-                                        <div className='text-center text-xs md:text-base md:text-left flex items-center grid justify-items-center p-5 md:pl-20 hidden md:flex'>
+                                        <div className='text-center text-sm md:text-3xl md:text-left flex items-center grid justify-content-center p-5 md:pl-20 hidden md:flex'>
                                             <div>
-                                                <p className='md:leading-loose'>Es la cocina el corazón de cada hogar.</p>
-                                                <p className='md:leading-loose'>En dónde se reúnen generaciones,</p>
-                                                <p className='md:leading-loose'>se comparten historias,</p>
-                                                <p className='md:leading-loose'>y se vierte amor en cada plato.</p>
+                                                <p className='md:leading-relax'>Es la cocina el corazón de cada hogar.</p>
+                                                <p className='md:leading-relax'>En dónde se reúnen generaciones,</p>
+                                                <p className='md:leading-relax'>se comparten historias,</p>
+                                                <p className='md:leading-relax'>y se vierte amor en cada plato.</p>
 
-                                                <p className='mt-5 md:mt-10 md:leading-loose'>En una búsqueda por conectar tradiciones,</p>
-                                                <p className='md:leading-loose'>encontrar la pureza</p>
-                                                <p className='md:leading-loose'>y resaltar la esencia de cada hogar.</p>
+                                                <p className='mt-5 md:mt-10 md:leading-relax'>En una búsqueda por conectar tradiciones,</p>
+                                                <p className='md:leading-relax'>encontrar la pureza</p>
+                                                <p className='md:leading-relax'>y resaltar la esencia de cada hogar.</p>
 
-                                                <p className='mt-5 md:mt-10 md:leading-loose'>Abrimos las puertas de GHEE ME GOLD,</p>
-                                                <p className='md:leading-loose'>dónde cocinamos el mejor GHEE casero,</p>
-                                                <p className='md:leading-loose'>con amor y pura autenticidad.</p>
+                                                <p className='mt-5 md:mt-10 md:leading-relax'>Abrimos las puertas de GHEE ME GOLD,</p>
+                                                <p className='md:leading-relax'>dónde cocinamos el mejor GHEE casero,</p>
+                                                <p className='md:leading-relax'>con amor y pura autenticidad.</p>
 
                                             </div>
                                         </div>
@@ -150,7 +150,7 @@ export default function Ghee({ post, preview }: Props) {
                                             src={GheeBg}
                                             alt='Ghee Bg'
                                             quality={100}
-                                            className=''
+                                            className='w-screen'
                                             placeholder="blur"
                                             style={{ objectFit: "cover" }}
                                             priority />
