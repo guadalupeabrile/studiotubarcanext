@@ -4,7 +4,7 @@ urlName: 'proximamente'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/projects-preview/lovesther-preview.png'
 nameImage: '/assets/blog/projects-name/lovesther-name.png'
-nameVideo: '/assets/blog/project-animation/igiardini-logo.mp4'
+nameVideo: '/assets/blog/project-animation/lovesther-logo.mp4'
 nameGif: '/assets/blog/project-animation/igiardini-logo.gif'
 date: '2020-03-16T05:35:07.322Z'
 author:
