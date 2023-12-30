@@ -76,7 +76,7 @@ export default function Ghee({ post, preview }: Props) {
                                             />
                                             <p>Beneficios</p>
                                         </div>
-                                        <div className='pt-20 md:pt-96 '>
+                                        <div className='pt-20 md:pt-96 flex justify-end '>
                                             <Image
                                                 src={GheeSpoon}
                                                 alt='Ghee Spoon'
