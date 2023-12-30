@@ -47,8 +47,8 @@ const ComingSoon = () => {
                             src={home}
                             alt='studiotubarca Manifiesto'
                             className='hover:shadow-lg transition-shadow duration-200'
-                            width={100}
-                            height={100}
+                            width={200}
+                            height={224}
                         />
                     </Link>
                 </div>
