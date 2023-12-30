@@ -6,10 +6,10 @@ type Props = {
 
 const ProjectVideo = ({ video, videoMobile }: Props) => {
     return (
-        <section className='min-h-screen w-full'>
-            <div className="w-full ">
+        <section className='min-h-screen w-screen'>
+            <div className="w-screen ">
                 <div className="hidden md:block">
-                    <video autoPlay controls loop muted className="w-full h-screen object-cover">
+                    <video autoPlay controls loop muted className="w-screen h-screen object-cover">
                         <source
                             src={video}
                             type="video/mp4"
@@ -17,8 +17,8 @@ const ProjectVideo = ({ video, videoMobile }: Props) => {
                     </video>
 
                 </div>
-                <div className='md:hidden w-full'>
-                    <video autoPlay muted controls loop playsInline className='h-full w-full flex items-center justify-center '>
+                <div className='md:hidden w-screen h-screen'>
+                    <video autoPlay muted controls loop playsInline className='h-screen w-screen '>
                         <source src={videoMobile} type="video/mp4" />
                     </video>
                 </div>
