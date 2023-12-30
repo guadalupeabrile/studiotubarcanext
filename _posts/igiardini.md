@@ -14,7 +14,7 @@ author:
   picture: '/assets/blog/authors/tim.jpeg'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
-nextProject: 'linampara'
+nextProject: 'proximamente'
 nextProjectImg: '/assets/blog/projects-name/linampara-name.png'
 ---
 
