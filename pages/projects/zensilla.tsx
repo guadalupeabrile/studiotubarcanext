@@ -223,6 +223,8 @@ export default function Zensilla({ post, preview }: Props) {
                                             alt='Flor Manifiesto'
                                             className='hover:shadow cursor-pointer'
                                             objectFit="cover"
+                                            width={200}
+                                            height={200}
                                             quality={100}
                                             placeholder="blur">
 

@@ -77,6 +77,8 @@ export default function Ghee({ post, preview }: Props) {
                                                     placeholder="blur"
                                                     className='hover:shadow-lg transition-shadow duration-200'
                                                     style={{ objectFit: "contain" }}
+                                                    width={200}
+                                                    height={200}
                                                     priority
                                                 />
                                             </a>

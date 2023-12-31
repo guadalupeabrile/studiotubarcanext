@@ -187,6 +187,8 @@ export default function CarouselCava() {
                             src={flor}
                             alt={`Flor manifiesto`}
                             style={{ objectFit: "cover" }}
+                            width={200}
+                            height={200}
                         />
                     </motion.div>
                 </a>

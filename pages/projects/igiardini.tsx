@@ -74,7 +74,9 @@ export default function Igiardini({ post, preview }: Props) {
                                             <Image
                                                 src={florManifiesto}
                                                 alt={"Flor descarga ficha tecnica"}
-                                                className='hover:shadow-lg transition-shadow duration-200' />
+                                                className='hover:shadow-lg transition-shadow duration-200'
+                                                width={200}
+                                                height={200} />
                                         </a>
                                     </div>
 
