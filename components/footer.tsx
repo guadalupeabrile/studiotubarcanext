@@ -53,8 +53,8 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
             src={firmaStudio}
             alt='studiotubarca Manifiesto'
             className='hover:shadow-lg transition-shadow duration-200 p-5'
-            width={250}
-            height={250}
+            width={200}
+            height={200}
           />
         </Link>
 
