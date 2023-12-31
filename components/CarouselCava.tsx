@@ -30,7 +30,7 @@ export default function CarouselCava() {
                     />
                 </div>
                 <motion.div
-                    className='md:row-end-5 text-sm text-center md:text-left md:text-lg text-gray-800 leading-relaxed space-y-2 '
+                    className='md:row-end-5 text-sm text-center md:text-left md:text-2xl text-gray-800 leading-relaxed space-y-2 '
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <p>ÇAVA surge desde adentro, de la tierra, cómo si
@@ -86,7 +86,7 @@ export default function CarouselCava() {
                 <motion.div
                     className="relative md:flex md:items-end"
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                    <div className='text-sm md:text-lg text-right text-gray-800 w-full pr-5'>
+                    <div className='text-sm md:text-2xl text-right text-gray-800 w-full pr-5'>
                         <p className='leading-relaxed'>En lo técnico:</p>
                         <p className='leading-relaxed'>Se propone una caja separada</p>
                         <p className='leading-relaxed'>de las superficies de pared,</p>
@@ -128,7 +128,7 @@ export default function CarouselCava() {
                     className='relative flex md:items-end items-start  justify-center'
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
-                    <div className='text-sm text-center pt-10 md:text-left md:text-lg text-gray-800'>
+                    <div className='text-sm text-center pt-10 md:text-left md:text-2xl text-gray-800'>
 
                         <p className='leading-relaxed'>El mobiliario en donde se apoyan</p>
                         <p className='leading-relaxed'>los vinos, fue creado por Rafael</p>
