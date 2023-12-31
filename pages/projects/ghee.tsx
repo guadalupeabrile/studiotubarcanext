@@ -138,28 +138,19 @@ export default function Ghee({ post, preview }: Props) {
                                         </div>
 
                                     </div>
-                                    <div className='z-10 relative w-full'>
-                                        <div className='hidden md:block md:col-span-2'>
-                                            <div className='w-full md:h-screen col-span-2 '>
-                                                <Image
-                                                    src={GheeSunset}
-                                                    alt='Ghee Pot'
-                                                    placeholder="blur"
-                                                    style={{ objectFit: "contain" }}
+                                </div>
+                                <div className='bg-custom-background z-10 relative w-full'>
+                                    <div className='md:col-span-2'>
+                                        <div className='w-full md:h-screen'>
+                                            <Image
+                                                src={GheeSunset}
+                                                alt='Ghee Pot'
+                                                placeholder="blur"
+                                                style={{ objectFit: "contain" }}
 
-                                                />
-                                            </div>
-
+                                            />
                                         </div>
-                                    </div>
-                                    <div className='md:h-screen col-span-2  md:hidden'>
-                                        <Image
-                                            src={GheeSunset}
-                                            alt='Ghee Pot'
-                                            placeholder="blur"
-                                            style={{ objectFit: "cover" }}
 
-                                        />
                                     </div>
                                 </div>
                                 <div className='z-10 relative w-full'>
