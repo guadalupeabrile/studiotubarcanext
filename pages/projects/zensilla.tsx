@@ -76,7 +76,7 @@ export default function Zensilla({ post, preview }: Props) {
                                         </Image>
                                     </div>
                                 </motion.div>
-                                <motion.div className='py-10 md:py-0 px-10 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
+                                <motion.div className='py-10 md:py-0 px-10 text-xs text-left md:text-xl text-gray-800 md:leading-relaxed'
                                     variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                                     <p>Buscábamos un mobiliario adaptable,</p>
                                     <p>versátil y de gran utilidad</p>
@@ -129,7 +129,7 @@ export default function Zensilla({ post, preview }: Props) {
                                         </Image>
                                     </div>
                                 </motion.div>
-                                <motion.div className='mt-56 mr-24 md:mr-0 md:ml-20 md:mt-5 text-xs text-left md:text-base text-gray-800 md:leading-relaxed'
+                                <motion.div className='mt-56 mr-24 md:mr-0 md:ml-20 md:mt-5 text-xs text-left md:text-xl text-gray-800 md:leading-relaxed'
                                     variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit='hidden'>
                                     <p className='hidden md:block'>Fabricada en madera fenólica de la mejor calidad con</p>
                                     <p className='hidden md:block'>terminación laqueada. La Zensilla es un mueble encastrable.</p>
