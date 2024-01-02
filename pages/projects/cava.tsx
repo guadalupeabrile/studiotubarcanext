@@ -50,7 +50,7 @@ export default function Cava({ post, preview }: Props) {
                                 </div>
                                 <div className='z-10 sticky top-0'>
                                     <CarouselCava />
-                                    <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
+                                    {/* <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo> */}
                                 </div>
                             </div>
                             <Footer nextProject={post.nextProject} nextProjectImg={post.nextProjectImg} manifiesto=''></Footer>
