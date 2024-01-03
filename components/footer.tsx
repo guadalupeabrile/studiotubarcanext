@@ -23,7 +23,7 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
                 src='/assets/blog/footer/home-foto.gif'
                 alt='studiotubarca Home'
                 width={200}
-                height={200}
+                height={220}
                 className='group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200' />
 
 
@@ -43,8 +43,8 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
             src='/assets/blog/footer/contact.png'
             alt='studiotubarca Contact Us'
             className='hover:shadow-lg transition-shadow duration-200'
-            width={250}
-            height={250}
+            width={200}
+            height={200}
           />
         </Link>
 

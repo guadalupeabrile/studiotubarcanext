@@ -28,7 +28,7 @@ const HeroPost = () => {
                   src={home}
                   alt='studiotubarca Home'
                   width={200}
-                  height={200}
+                  height={250}
                   className='group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200' />
 
 
@@ -36,7 +36,7 @@ const HeroPost = () => {
                   src={homeGif}
                   alt='studiotubarca Home'
                   width={200}
-                  height={200}
+                  height={250}
                   className='shadow-lg opacity-0 group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0 ' />
 
               </Link>
@@ -49,7 +49,7 @@ const HeroPost = () => {
               alt='studiotubarca logo'
               className='hover:shadow-lg transition-shadow duration-200'
               width={450}
-              height={250}
+              height={100}
             />
 
           </Link>
