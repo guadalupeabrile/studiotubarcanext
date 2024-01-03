@@ -44,12 +44,21 @@ const CoverImage = ({ title, src, slug, nameVideo, nameI }: Props) => {
     const anim = document.getElementById(videoId) as HTMLVideoElement;
 
     anim.addEventListener("mouseover", function () {
-      anim.play();
+      try {
+        anim.play();
+      } catch (err) {
+        console.log(err)
+      }
     });
 
     anim.addEventListener("mouseout", function () {
-      anim.pause();
-      anim.currentTime = 0; // Reiniciar el video al principio al salir del área del video
+      try {
+
+        anim.pause();
+        anim.currentTime = 0; // Reiniciar el video al principio al salir del área del video
+      } catch (err) {
+        console.log(err)
+      }
     });
   }, [])
 

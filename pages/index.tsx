@@ -4,10 +4,12 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
+import type { Metadata } from 'next'
 
 type Props = {
   allPosts: Post[]
 }
+
 
 export default function Index({ allPosts }: Props) {
 
