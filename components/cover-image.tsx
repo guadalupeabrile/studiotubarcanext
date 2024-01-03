@@ -21,6 +21,7 @@ const CoverImage = ({ title, src, slug, nameVideo, nameI }: Props) => {
       className=" w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
       width={350}
       height={350}
+      priority
     />
   );
 
@@ -31,6 +32,7 @@ const CoverImage = ({ title, src, slug, nameVideo, nameI }: Props) => {
       className=" shadow md:opacity-0 md:group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0  "
       width={350}
       height={350}
+      priority
     />
   )
 
