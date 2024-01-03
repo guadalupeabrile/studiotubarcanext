@@ -52,8 +52,7 @@ export default function Carousel() {
                         <Image
                             src={nameLogo}
                             alt={`Logo Igiardini`}
-
-                            objectFit='cover w-full'
+                            className='cover w-full'
 
                         />
 

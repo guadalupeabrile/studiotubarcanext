@@ -18,22 +18,18 @@ const MoreStories = ({ posts }: Props) => {
       >
         {
           posts.map((post) => (
-            <>
-              <div className='flex flex-col items-center justify-center md:place-content-evenly'>
-                <div className=''>
-                  <PostPreview
-                    key={post.slug}
-                    title={post.title}
-                    coverImage={post.coverImage}
-                    nameImage={post.nameImage}
-                    nameVideo={post.nameVideo}
-                    date={post.date}
-                    author={post.author}
-                    slug={post.urlName}
-                    excerpt={post.excerpt} />
-                </div>
-              </div>
-            </>
+            <div key={post.title} className='flex flex-col items-center justify-center md:place-content-evenly'>
+              <PostPreview
+                title={post.title}
+                coverImage={post.coverImage}
+                nameImage={post.nameImage}
+                nameVideo={post.nameVideo}
+                date={post.date}
+                author={post.author}
+                slug={post.urlName}
+                excerpt={post.excerpt} />
+            </div>
+
           ))
         }
       </div >

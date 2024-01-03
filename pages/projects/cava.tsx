@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Layout from '../../components/layout'
 import Image from 'next/image'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getPostBySlug } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
@@ -11,7 +11,7 @@ import ProjectVideo from '../../components/project-video'
 import Footer from '../../components/footer'
 
 import HeroImg from '../../public/assets/blog/cava-img/cava-hero-img.jpg'
-import CarouselCava from '../../components/CarouselCava'
+import CarouselCava from '../../components/carousel-cava'
 
 type Props = {
     post: PostType

@@ -57,7 +57,7 @@ export default function Zensilla({ post, preview }: Props) {
                                         <Image
                                             src={logo}
                                             alt='zensilla logo'
-                                            objectFit="cover"
+                                            style={{ objectFit: "cover" }}
                                             quality={100}
                                             placeholder="blur"
                                             priority>
@@ -68,7 +68,7 @@ export default function Zensilla({ post, preview }: Props) {
                                         <Image
                                             src={silla}
                                             alt='zensilla logo'
-                                            objectFit="cover"
+                                            style={{ objectFit: "cover" }}
                                             quality={100}
                                             placeholder="blur"
                                             priority>
@@ -121,7 +121,7 @@ export default function Zensilla({ post, preview }: Props) {
                                         <Image
                                             src={sillas}
                                             alt='zensilla logo'
-                                            objectFit="cover"
+                                            style={{ objectFit: "cover" }}
                                             quality={100}
                                             placeholder="blur"
                                             priority>
@@ -147,7 +147,7 @@ export default function Zensilla({ post, preview }: Props) {
                                 <Image
                                     src={bg2}
                                     alt='fondo'
-                                    objectFit="contain"
+                                    style={{ objectFit: "contain" }}
                                     quality={100}
                                     placeholder="blur"
                                     priority
@@ -173,7 +173,7 @@ export default function Zensilla({ post, preview }: Props) {
                                             src={grid1}
                                             alt='zensilla logo'
                                             className='h-max-screen'
-                                            objectFit="cover"
+                                            style={{ objectFit: "cover" }}
                                             quality={100}
                                             placeholder="blur">
 
@@ -184,7 +184,7 @@ export default function Zensilla({ post, preview }: Props) {
                                         <Image
                                             src={grid2}
                                             alt='zensilla logo'
-                                            objectFit="cover"
+                                            style={{ objectFit: "cover" }}
                                             quality={100}
                                             placeholder="blur">
 
@@ -196,7 +196,7 @@ export default function Zensilla({ post, preview }: Props) {
                                         <Image
                                             src={grid3}
                                             alt='zensilla logo'
-                                            objectFit="cover"
+                                            style={{ objectFit: "cover" }}
                                             quality={100}
                                             placeholder="blur">
                                         </Image>
@@ -208,7 +208,7 @@ export default function Zensilla({ post, preview }: Props) {
                                         <Image
                                             src={grid4}
                                             alt='zensilla logo'
-                                            objectFit="cover"
+                                            style={{ objectFit: "cover" }}
                                             quality={100}
                                             placeholder="blur">
 
@@ -222,7 +222,7 @@ export default function Zensilla({ post, preview }: Props) {
                                             src={florManifiesto}
                                             alt='Flor Manifiesto'
                                             className='hover:shadow cursor-pointer'
-                                            objectFit="cover"
+                                            style={{ objectFit: "cover" }}
                                             width={200}
                                             height={200}
                                             quality={100}
@@ -237,7 +237,7 @@ export default function Zensilla({ post, preview }: Props) {
                                 <Image
                                     src={bg3}
                                     alt='fondo'
-                                    objectFit="cover"
+                                    style={{ objectFit: "cover" }}
                                     quality={100}
                                     placeholder="blur"
                                 />

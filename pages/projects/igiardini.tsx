@@ -7,7 +7,7 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
-import Carousel from '../../components/Carousel'
+import Carousel from '../../components/carousel-igiardini'
 import ProjectVideo from '../../components/project-video'
 
 import Footer from '../../components/footer'

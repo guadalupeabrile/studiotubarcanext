@@ -1,4 +1,4 @@
-import ContactForm from "../../components/ContactForm"
+import ContactForm from "../../components/contact-form"
 import Layout from "../../components/layout"
 import Header from "../../components/header"
 
