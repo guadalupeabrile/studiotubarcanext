@@ -177,10 +177,16 @@ export default function CarouselCava() {
                     </div>
                 </motion.div>
             </div>
-            <div className="flex h-auto items-center md:items-end justify-center w-screen grid grid-cols-2 md:grid-cols-7 md:gap-x-10 box-border md:py-10 md:px-10 md:pr-0 md:pl-10 m-0 bg-custom-background">
+            <div className="flex items-center justify-center grid bg-custom-background">
+                <motion.div
+                    className=" "
+                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
+                    <video className='' autoPlay muted loop playsInline src="/assets/blog/projects-videos/cava-gif.mp4"></video>
+                </motion.div>
                 <a href='/assets/blog/pdf/ficha-tecnica-cava.pdf' download>
                     <motion.div
-                        className='flex mb-5 md:mb-0 p-10 md:p-0'
+                        className='flex items-center justify-center'
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                     >
                         <Image
@@ -192,12 +198,6 @@ export default function CarouselCava() {
                         />
                     </motion.div>
                 </a>
-                <motion.div
-                    className="md:col-span-6 flex items-center md:justify-self-end"
-                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
-                >
-                    <video autoPlay muted loop playsInline src="/assets/blog/projects-videos/cava-gif.mp4"></video>
-                </motion.div>
             </div>
 
 

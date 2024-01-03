@@ -42,7 +42,7 @@ export default function Cava({ post, preview }: Props) {
                                     <Image
                                         src={HeroImg}
                                         alt='Cava'
-                                        objectFit="cover"
+                                        style={{ objectFit: "cover" }}
                                         quality={100}
                                         placeholder="blur"
                                         priority />
