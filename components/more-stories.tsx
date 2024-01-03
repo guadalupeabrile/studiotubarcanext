@@ -2,10 +2,6 @@
 
 import PostPreview from './post-preview'
 import type Post from '../interfaces/post'
-import Image from 'next/image'
-import Link from 'next/link'
-
-import florImage from '../public/assets/blog/footer/flor-manifiesto.png'
 
 type Props = {
   posts: Post[]

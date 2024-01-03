@@ -1,8 +1,8 @@
 import cn from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRef, useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+
 
 
 type Props = {
@@ -50,9 +50,6 @@ const CoverImage = ({ title, src, slug, nameVideo, nameI }: Props) => {
       anim.currentTime = 0; // Reiniciar el video al principio al salir del área del video
     });
   }, [])
-
-  //InView autoPlay for mobile 
-
 
 
 

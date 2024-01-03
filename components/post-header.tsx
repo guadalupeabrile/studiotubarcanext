@@ -1,6 +1,3 @@
-import Avatar from './avatar'
-import DateFormatter from './date-formatter'
-import Image from 'next/image'
 import PostTitle from './post-title'
 import type Author from '../interfaces/author'
 
