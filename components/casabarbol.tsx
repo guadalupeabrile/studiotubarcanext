@@ -5,9 +5,9 @@ import { fadeIn } from '../utils/motionTransitions'
 import url1 from '../public/assets/blog/casabarbol-img/nido.png';
 import url2 from '../public/assets/blog/casabarbol-img/croquis.png';
 import url3 from '../public/assets/blog/casabarbol-img/algodon.png';
-import url4 from '../public/assets/blog/cava-img/cava-grid-3.webp';
-import url5 from '../public/assets/blog/cava-img/cava-grid-4.webp';
-import url6 from '../public/assets/blog/cava-img/cava-grid-5.webp';
+import url4 from '../public/assets/blog/casabarbol-img/casabarbol-graph.png';
+import url5 from '../public/assets/blog/casabarbol-img/casabarbol-esquema.png';
+import url6 from '../public/assets/blog/casabarbol-img/casabarbol-gif.gif';
 import url7 from '../public/assets/blog/cava-img/cava-grid-6.webp';
 import flor from '../public/assets/blog/footer/flor-manifiesto.png';
 
@@ -20,59 +20,102 @@ export default function Casabarbol() {
         <>
 
 
-            <div className="bg-custom-background flex w-screen items-center justify-content place-content-evenly grid grid-cols-1 md:grid-cols-3 md:space-x-5 p-10">
+            <div className="font-mono bg-custom-background flex w-screen items-center justify-content place-content-evenly grid grid-cols-1 md:grid-cols-3 md:space-x-5 md:space-y-0 space-y-20 px-32 md:p-10">
 
                 <motion.div
-                    className="flex justify-center"
+                    className="flex items-center justify-center flex-col"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <Image
                         src={url1}
-                        alt={`Imagen silla en cava`}
+                        alt={`Nido`}
                         width={250}
                         height={250}
 
                     />
+                    <p className='pt-5 text-center'>Nido de Hornero</p>
                 </motion.div>
                 <motion.div
-                    className="flex justify-center"
+                    className="flex items-center justify-center flex-col"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <Image
                         src={url2}
-                        alt={`Imagen silla en cava`}
+                        alt={`Croquis`}
                         width={250}
                         height={250}
 
                     />
+                    <p className='pt-5 text-center'>Croquis idea madre</p>
                 </motion.div>
                 <motion.div
-                    className="flex justify-center"
+                    className="flex items-center justify-center flex-col pb-10 md:pb-0"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <Image
                         src={url3}
-                        alt={`Imagen silla en cava`}
+                        alt={`algodon`}
                         width={250}
                         height={250}
 
                     />
+                    <p className='pt-5 text-center'>Campo de algodón</p>
                 </motion.div>
             </div>
 
-            <div className="relative w-screen h-screen grid grid-cols-1 md:pr-20 md:pl-0 md:py-10 bg-custom-background">
+            <div className="relative w-screen grid grid-cols-1 0 md:pl-0 md:py-10 bg-custom-background">
                 <motion.div
                     className='relative'
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
                     <Image
-                        src={url3}
-                        alt={`Felicitas caminando por cava`}
-                        fill
+                        src={url4}
+                        alt={`Casabarbol Croquis`}
                         style={{ objectFit: "cover" }}
-
                     />
                 </motion.div>
             </div>
+
+            <div className="relative w-screen grid grid-cols-1 px-5 md:px-10 py-10 bg-custom-background">
+                <motion.div
+                    className='relative'
+                    variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
+                    <Image
+                        src={url5}
+                        alt={`Casabarbol Esquema`}
+                        style={{ objectFit: "cover" }}
+                    />
+                </motion.div>
+            </div>
+
+            <div className="font-mono flex w-screen h-auto grid grid-cols-1 md:grid-cols-3  md:pr-10 bg-custom-background">
+                <motion.div
+                    className="md:col-span-2 md:row-span-1 relative flex items-center"
+                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
+                    <Image
+                        src={url6}
+                        alt={`Casabarbol Gif`}
+                        className='pl-5'
+                        width={1200}
+                        style={{ objectFit: "cover" }}
+                    />
+                </motion.div>
+                <motion.div
+                    className='relative flex md:col-span-1 items-start justify-end pr-10 md:pr-0 '
+                    variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
+                    <div className='text-sm pt-20 md:pt-0 text-right md:text-lg text-gray-800'>
+
+                        <p className=''>Proyectar como un niño, para <span><br /></span> un niño.</p>
+                        <p className=' pt-5'>La analogía entre <span><br /></span>sentirse protegido en el <span><br /></span>momento previo al <span><br /></span>nacimiento, en el vientre <span><br /></span>materno.</p>
+                        <p className=''>Luego, como si de una <span><br /></span>ventana se tratase, la luz se <span><br /></span>presenta y nos muestra <span><br /></span>elementos tangibles, a <span><br /></span>partir de los cuales <span><br /></span>contruimos una realidad, <span><br /></span>o nuestra propia ilusión.</p>
+                        <p className=' pt-5'>Una envolvente resuelve el <span><br /></span>espacio. Aparte algunos <span><br /></span>elementos estructurales, <span><br /></span>el àrbol, la escalera, las <span><br /></span>vigas.</p>
+                        <p className=''>Arriba una superficie <span><br /></span>traslúcida y la copa del <span><br /></span>árbol.</p>
+
+                    </div>
+                </motion.div>
+            </div>
+
 
             < div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 box-boder px-12 md:px-20 py-10 bg-custom-background" >
                 <motion.div
@@ -115,33 +158,6 @@ export default function Casabarbol() {
                 </motion.div>
             </div>
 
-            <div className="flex w-screen h-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 md:pr-20  m-0 bg-custom-background">
-                <motion.div
-                    className=" md:col-span-3 row-span-6 md:row-span-1 relative"
-                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
-                >
-                    <Image
-                        src={url6}
-                        alt={`Botellas en Cava`}
-                        fill
-                        style={{ objectFit: "cover" }}
-                    />
-                </motion.div>
-                <motion.div
-                    className='relative flex md:items-end items-start  justify-center'
-                    variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
-                >
-                    <div className='text-sm text-center pt-10 md:text-left md:text-2xl text-gray-800'>
-
-                        <p className='leading-relaxed'>El mobiliario en donde se apoyan</p>
-                        <p className='leading-relaxed'>los vinos, fue creado por Rafael</p>
-                        <p className='leading-relaxed'>Iglesia y Gustavo Farias</p>
-                        <p className='leading-relaxed'>A quienes agradecemos por su</p>
-                        <p className='leading-relaxed'>humanidad y grandioso aporte a</p>
-                        <p className='leading-relaxed'>la materia.</p>
-                    </div>
-                </motion.div>
-            </div>
 
 
             <div className="flex items-end justify-center w-screen grid grid-cols-1 md:grid-cols-7 md:gap-x-10 md:py-10 pl-12 m-0 bg-custom-background">
