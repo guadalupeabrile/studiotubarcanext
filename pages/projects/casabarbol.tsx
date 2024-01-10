@@ -39,7 +39,7 @@ export default function Casabarbol({ post, preview }: Props) {
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
                             <div>
-                                <div className='hidden md:block relative bg-custom-background h-screen z-10 w-screen flex items-center  justify-center'>
+                                <div className='hidden md:flex relative bg-custom-background h-screen z-10 w-screen items-center justify-center'>
                                     <Image
                                         src={NameLogo}
                                         alt='Cava'

@@ -2,9 +2,9 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../utils/motionTransitions'
 
-import url1 from '../public/assets/blog/cava-img/cava-name.webp';
-import url2 from '../public/assets/blog/cava-img/cava-grid-1.webp';
-import url3 from '../public/assets/blog/cava-img/cava-grid-2.webp';
+import url1 from '../public/assets/blog/casabarbol-img/nido.png';
+import url2 from '../public/assets/blog/casabarbol-img/croquis.png';
+import url3 from '../public/assets/blog/casabarbol-img/algodon.png';
 import url4 from '../public/assets/blog/cava-img/cava-grid-3.webp';
 import url5 from '../public/assets/blog/cava-img/cava-grid-4.webp';
 import url6 from '../public/assets/blog/cava-img/cava-grid-5.webp';
@@ -20,38 +20,42 @@ export default function Casabarbol() {
         <>
 
 
-            <div className="flex w-screen grid grid-cols-1 md:grid-cols-4 md:gap-x-10 box-border  md:pl-20 md:py-10 py-5 m-0 bg-custom-background space-y-5 md:space-y-0">
-                <div className='md:absolute md:z-10 mt-10 p-5'>
+            <div className="bg-custom-background flex w-screen items-center justify-content place-content-evenly grid grid-cols-1 md:grid-cols-3 md:space-x-5 p-10">
+
+                <motion.div
+                    className="flex justify-center"
+                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
                     <Image
                         src={url1}
-                        alt={`Cava Name`}
-                        style={{ objectFit: "cover" }}
-                    />
-                </div>
-                <motion.div
-                    className='md:row-end-5 text-sm text-center md:text-left md:text-2xl text-gray-800 leading-relaxed space-y-2 '
-                    variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
-                >
-                    <p>ÇAVA surge desde adentro, de la tierra, cómo si
-                    </p>
-                    <p>habitásemos las profundidades.</p>
-                    <p>A veces incómodas,</p>
-                    <p>paradójicamente desconocidas</p>
-                    <p>pero seguras,</p>
-                    <p>nos proporcionan una temperatura</p>
-                    <p>casi invariable,</p>
-                    <p>nos generan seguridad y abrigo</p>
+                        alt={`Imagen silla en cava`}
+                        width={250}
+                        height={250}
 
+                    />
                 </motion.div>
                 <motion.div
-                    className="w-screen row-span-6 md:row-span-4 md:col-span-3 relative"
+                    className="flex justify-center"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <Image
                         src={url2}
                         alt={`Imagen silla en cava`}
-                        className=''
-                        style={{ objectFit: "cover" }}
+                        width={250}
+                        height={250}
+
+                    />
+                </motion.div>
+                <motion.div
+                    className="flex justify-center"
+                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
+                    <Image
+                        src={url3}
+                        alt={`Imagen silla en cava`}
+                        width={250}
+                        height={250}
+
                     />
                 </motion.div>
             </div>
