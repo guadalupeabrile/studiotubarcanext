@@ -8,7 +8,6 @@ const Header = () => {
         <Link href="/" className="hover:underline font-mono">
           studiotubarca
         </Link>
-        .
       </h2>
     </div>
   )
