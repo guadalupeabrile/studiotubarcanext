@@ -8,8 +8,11 @@ import url3 from '../public/assets/blog/casabarbol-img/algodon.png';
 import url4 from '../public/assets/blog/casabarbol-img/casabarbol-graph.png';
 import url5 from '../public/assets/blog/casabarbol-img/casabarbol-esquema.png';
 import url6 from '../public/assets/blog/casabarbol-img/casabarbol-gif.gif';
-import url7 from '../public/assets/blog/cava-img/cava-grid-6.webp';
-import flor from '../public/assets/blog/footer/flor-manifiesto.png';
+import url7 from '../public/assets/blog/casabarbol-img/casabarbol-desgloce.png';
+import url8 from '../public/assets/blog/casabarbol-img/grid1.png';
+import url9 from '../public/assets/blog/casabarbol-img/grid2.png';
+import url10 from '../public/assets/blog/casabarbol-img/grid3.png';
+import url11 from '../public/assets/blog/casabarbol-img/grid4.png';
 
 
 
@@ -115,113 +118,85 @@ export default function Casabarbol() {
                     </div>
                 </motion.div>
             </div>
-
-
-            < div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 md:gap-x-10 lg:gap-x-10 box-boder px-12 md:px-20 py-10 bg-custom-background" >
+            <div className="font-mono relative w-screen grid grid-cols-1 pt-20 md:pl-0 md:pt-10 bg-custom-background">
+                <div className='hidden md:block absolute top-0 left-0 text-left pt-20 pl-10 text-lg text-gray-800'>
+                    <p>Buscamos entablar una <span><br /></span> conversación, entre <span><br /></span>nosotros y la naturaleza, <span><br /></span>mediante el lenguaje del <span><br /></span>arte y la arquitectura.</p>
+                    <p>Definimos el proyecto <span><br /></span>entre algunos arquetipos, <span><br /></span>un árbol, y la voluntad de <span><br /></span>SER, con todas nuestras <span><br /></span>fuerzas.</p>
+                    <p className='pt-5'>"No puede haber amor si no <span><br /></span>se es uno con todas sus <span><br /></span>fuerzas".</p>
+                    <p>Ítalo Calvino, "El Barón <span><br /></span>rampante.</p>
+                    <p className='pt-5'> 3d y edición: Ana Clara Pinasco</p>
+                </div>
                 <motion.div
-                    className="relative row-span-2 flex items-end justify-content"
-                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                    <Image
-                        src={url4}
-                        alt={`Cava mapa`}
-
-                        style={{ objectFit: "cover" }}
-
-                    />
-                </motion.div>
-                <motion.div
-                    className="relative md:flex md:items-end"
+                    className='relative'
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                    <div className='text-sm md:text-2xl pt-5 md:pt-0 text-right text-gray-800 w-full pr-5'>
-                        <p className='leading-relaxed'>En lo técnico:</p>
-                        <p className='leading-relaxed'>Se propone una caja separada</p>
-                        <p className='leading-relaxed'>de las superficies de pared,</p>
-                        <p className='leading-relaxed'>techo y piso.</p>
-                        <p className='leading-relaxed'>Con maderas recicladas.</p>
-                        <p className='leading-relaxed'>Aplicamos técnicas tradicionales</p>
-                        <p className='leading-relaxed'>de construcción en madera.</p>
-                        <p className='leading-relaxed'>y envolvimos el espacio</p>
-                        <p className='leading-relaxed'>con LINO natural.</p>
-                    </div >
-                </motion.div>
-
-                <motion.div
-                    className='hidden md:flex items-end justify-center w-full'
-                    variants={fadeIn('left', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                    <Image
-                        src={url5}
-                        alt={`Cava mapa`}
-
-                        style={{ objectFit: "cover" }}
-
-                    />
-                </motion.div>
-            </div>
-
-
-
-            <div className="flex items-end justify-center w-screen grid grid-cols-1 md:grid-cols-7 md:gap-x-10 md:py-10 pl-12 m-0 bg-custom-background">
-                <motion.div
-                    className='flex mb-5 md:mb-0 hidden md:block'
-                    variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
-                >
-                    <div className='text-xs text-center md:text-left md:text-2xl text-gray-800'>
-                        <p className='leading-relaxed'>Encontramos </p>
-                        <p className='leading-relaxed'>un lugar</p>
-                        <p className='leading-relaxed'>en donde</p>
-                        <p className='leading-relaxed'>el tiempo</p>
-                        <p className='leading-relaxed'>se detiene.</p>
-                    </div>
-                </motion.div>
-                <motion.div
-                    className="col-span-6 relative flex items-center justify-self-end"
-                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
-                >
                     <Image
                         src={url7}
-                        alt={`Imagen Felo sentada`}
+                        alt={`Casabarbol Desgloce`}
                         style={{ objectFit: "cover" }}
                     />
                 </motion.div>
-                <motion.div
-                    className='flex mb-5 md:mb-0 pt-5 md:hidden'
-                    variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
-                >
-                    <div className='text-sm text-left  text-gray-800'>
-                        <p className='leading-relaxed'>Encontramos </p>
-                        <p className='leading-relaxed'>un lugar</p>
-                        <p className='leading-relaxed'>en donde</p>
-                        <p className='leading-relaxed'>el tiempo</p>
-                        <p className='leading-relaxed'>se detiene.</p>
-                    </div>
-                </motion.div>
+                <div className='md:hidden text-sm text-left py-5 pl-10 text-gray-800'>
+                    <p>Buscamos entablar una <span><br /></span> conversación, entre <span><br /></span>nosotros y la naturaleza, <span><br /></span>mediante el lenguaje del <span><br /></span>arte y la arquitectura.</p>
+                    <p>Definimos el proyecto <span><br /></span>entre algunos arquetipos, <span><br /></span>un árbol, y la voluntad de <span><br /></span>SER, con todas nuestras <span><br /></span>fuerzas.</p>
+                    <p className='pt-5'>"No puede haber amor si no <span><br /></span>se es uno con todas sus <span><br /></span>fuerzas".</p>
+                    <p>Ítalo Calvino, "El Barón <span><br /></span>rampante.</p>
+                    <p className='pt-5'> 3d y edición: Ana Clara Pinasco</p>
+                </div>
             </div>
-            <div className="flex items-center justify-center grid bg-custom-background">
+
+
+            <div className="bg-custom-background flex w-screen items-center justify-content place-content-evenly grid grid-cols-2 md:grid-cols-4">
                 <motion.div
-                    className=" "
+                    className="hidden md:flex items-center justify-center flex-col"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
-                    <video className='w-screen' autoPlay muted loop playsInline src="/assets/blog/projects-videos/cava-gif.mp4"></video>
+                    <Image
+                        src={url8}
+                        alt={`Casabarbol Foto 1`}
+                        width={400}
+                        height={400}
+
+                    />
                 </motion.div>
-                <a href='/assets/blog/pdf/ficha-tecnica-cava.pdf' download>
-                    <motion.div
-                        className='flex items-center justify-center'
-                        variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
-                    >
-                        <Image
-                            src={flor}
-                            alt={`Flor manifiesto`}
-                            style={{ objectFit: "cover" }}
-                            width={200}
-                            height={200}
-                        />
-                    </motion.div>
-                </a>
+                <motion.div
+                    className="flex items-center justify-center flex-col"
+                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
+                    <Image
+                        src={url9}
+                        alt={`Casabarbol Foto 2`}
+                        width={400}
+                        height={400}
+
+                    />
+                </motion.div>
+                <motion.div
+                    className="hidden md:flex items-center justify-center flex-col"
+                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
+                    <Image
+                        src={url10}
+                        alt={`Casabarbol Foto 3`}
+                        width={400}
+                        height={400}
+
+                    />
+                </motion.div>
+                <motion.div
+                    className="flex items-center justify-center flex-col"
+                    variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
+                >
+                    <Image
+                        src={url11}
+                        alt={`Casabarbol Foto 4`}
+                        width={400}
+                        height={400}
+
+                    />
+                </motion.div>
             </div>
 
-
         </>
-
 
     )
 

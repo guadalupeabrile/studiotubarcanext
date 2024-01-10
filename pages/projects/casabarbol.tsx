@@ -101,7 +101,7 @@ export default function Casabarbol({ post, preview }: Props) {
 
 export async function getStaticProps() {
 
-    const post = getPostBySlug('cava', [
+    const post = getPostBySlug('casabarbol', [
         'title',
         'date',
         'slug',
