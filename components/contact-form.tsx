@@ -61,8 +61,8 @@ const ContactForm = () => {
             <div className={success ? 'block' : 'hidden'}>
                 <Banner headline={headline} text={text} width={undefined} maxWidth={undefined} height={undefined} maxHeight={undefined} backgroundColor={undefined} closeButtonClicked={closeButtonClicked}></Banner>
             </div>
-            <div className="pt-10 ">
-                <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center w-screen px-5">
+            <div className="pt-10 md:w-1/3">
+                <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center w-screen md:w-full px-5 ">
                     <Input
                         error={!!errors.name}
                         errorMessage={errors.message}
