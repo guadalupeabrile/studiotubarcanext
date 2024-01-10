@@ -86,7 +86,7 @@ export default function CarouselCava() {
                 <motion.div
                     className="relative md:flex md:items-end"
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'>
-                    <div className='text-sm md:text-2xl text-right text-gray-800 w-full pr-5'>
+                    <div className='text-sm md:text-2xl pt-5 md:pt-0 text-right text-gray-800 w-full pr-5'>
                         <p className='leading-relaxed'>En lo técnico:</p>
                         <p className='leading-relaxed'>Se propone una caja separada</p>
                         <p className='leading-relaxed'>de las superficies de pared,</p>
@@ -182,7 +182,7 @@ export default function CarouselCava() {
                     className=" "
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
-                    <video className='' autoPlay muted loop playsInline src="/assets/blog/projects-videos/cava-gif.mp4"></video>
+                    <video className='w-screen' autoPlay muted loop playsInline src="/assets/blog/projects-videos/cava-gif.mp4"></video>
                 </motion.div>
                 <a href='/assets/blog/pdf/ficha-tecnica-cava.pdf' download>
                     <motion.div
