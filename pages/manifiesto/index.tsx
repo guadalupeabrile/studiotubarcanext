@@ -16,7 +16,7 @@ export default function Manifiesto() {
                     <p className="leading-loose">Sobre mí. De formación Arquitecto, Cocinero,<span className="inline md:hidden"><br /></span> de oficio Artista, Carpintero y Explorador.</p>
                     <p className="leading-relaxed">Busco experiencias fértiles que alimenten mi quehacer diario. </p>
                     <p className="leading-relaxed">Soy un manifestador de propuestas que alegran la vida de las personas.</p>
-                    <p className="leading-relaxed">Me enfoco en dar soluciones a problemas contemporáneos  <span className="hidden md:inline"><br /></span>integrando variables indispensables para el crecimiento personal.</p>
+                    <p className="leading-relaxed">Me enfoco en dar soluciones a problemas contemporáneos  <span className="inline"><br /></span>integrando variables indispensables para el crecimiento personal.</p>
                     <p className="leading-loose">Así facilitar propuestas que potencien la calidad de las experiencias.</p>
                 </div>
                 <div>
@@ -43,19 +43,37 @@ export default function Manifiesto() {
 
             <div className="relative bg-custom-background h-screen w-screen flex flex-col items-center justify-center">
                 <div className="bg-manifiesto-perro p-5 md:p-32 text-center font-light text-xs md:text-3xl">
-                    <p className="leading-relaxed">Sigo el camino guiado por mi intuición y mi propósito centrado en tomar <span className="hidden md:inline"><br /></span>el máximo aprendizaje de las propuestas que se me presentan.</p>
-                    <p className="leading-relaxed">Busco compartir enseñanzas y conocimientos cómo <span className="hidden md:inline"><br /></span>mis maestros lo hacen conmigo, en una búsqueda de colaboración mutua.</p>
-                    <p className="leading-relaxed pt-5">Generé un Curriculum basado en el estudio, los viajes,  <span className="hidden md:inline"><br /></span>la experimentación y las experiencias que me brindan herramientas a diario.</p>
-                    <p className="leading-loodr pt-10">Santiago Ruiz.</p>
+                    <p className="leading-relaxed">Sigo el camino guiado por mi intuición y mi propósito <span className="inline md:hidden"><br /></span>centrado en tomar <span className="hidden md:inline"><br /></span>el máximo aprendizaje de las propuestas<span className="inline md:hidden"><br /></span>  que se me presentan.</p>
+                    <p className="leading-relaxed">Busco compartir enseñanzas y conocimientos<span className="inline md:hidden"><br /></span>  cómo <span className="hidden md:inline"><br /></span>mis maestros lo hacen conmigo,<span className="inline md:hidden"><br /></span>  en una búsqueda de colaboración mutua.</p>
+                    <p className="leading-relaxed pt-5">Generé un Curriculum basado en el estudio, los viajes,  <span className="inline"><br /></span>la experimentación y las experiencias<span className="inline md:hidden"><br /></span>  que me brindan herramientas a diario.</p>
+                    <p className="leading-loodr pt-5 md:pt-10">Santiago Ruiz.</p>
                 </div>
-                <div className="flex flex-col md:flex-row items-center space-y-5 md:space-x-5 pb-5">
+                <div className="md:hidden flex flex-col md:flex-row items-center space-y-5 md:space-x-5 pb-5">
+                    <Link as={`/`} href={`/`} aria-label='studiotubarca home'>
+                        <Image
+                            src={studio}
+                            className="hover:shadow-lg"
+                            alt={"Logo studiotubarca"}
+                            width={200}
+                            height={100} />
+                    </Link>
+                    <Link as={`/`} href={`/`} aria-label='studiotubarca home'>
+                        <Image
+                            src={artedi}
+                            alt={"Arte di Construire"}
+                            className="hover:shadow-lg"
+                            width={100}
+                            height={100} />
+                    </Link>
+                </div>
+                <div className="hidden md:flex flex flex-row items-center  space-x-10 pb-32">
                     <Link as={`/`} href={`/`} aria-label='studiotubarca home'>
                         <Image
                             src={studio}
                             className="hover:shadow-lg"
                             alt={"Logo studiotubarca"}
                             width={450}
-                            height={150} />
+                            height={450} />
                     </Link>
                     <Link as={`/`} href={`/`} aria-label='studiotubarca home'>
                         <Image
