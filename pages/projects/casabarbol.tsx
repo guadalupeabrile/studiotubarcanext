@@ -39,22 +39,47 @@ export default function Casabarbol({ post, preview }: Props) {
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
                             <div>
-                                <Image
-                                    src={HeroImg}
-                                    alt='Cava'
-                                    style={{ objectFit: "cover" }}
-                                    className='absolute top-left'
-                                    quality={100}
-                                    placeholder="blur"
-                                    priority />
-                                <div className='relative z-10 w-screen'>
+                                <div className='hidden md:block relative bg-custom-background h-screen z-10 w-screen flex items-center  justify-center'>
                                     <Image
-                                        src={HeroImg}
+                                        src={NameLogo}
                                         alt='Cava'
                                         style={{ objectFit: "cover" }}
+                                        className='absolute top-0 right-0 z-15'
+                                        width={550}
                                         quality={100}
                                         placeholder="blur"
                                         priority />
+                                    <Image
+                                        src={HeroImg}
+                                        alt='Casabarbol'
+                                        className=''
+                                        quality={100}
+                                        placeholder="blur"
+                                        width={800}
+                                        priority />
+
+
+                                </div>
+                                <div className='md:hidden relative bg-custom-background z-10 w-screen h-auto flex items-center  justify-center pt-24 pb-32'>
+                                    <Image
+                                        src={NameLogo}
+                                        alt='Cava'
+                                        style={{ objectFit: "cover" }}
+                                        className='absolute top-0 right-0 z-15'
+                                        width={200}
+                                        quality={100}
+                                        placeholder="blur"
+                                        priority />
+                                    <Image
+                                        src={HeroImg}
+                                        alt='Casabarbol'
+                                        className=''
+                                        quality={100}
+                                        placeholder="blur"
+                                        width={250}
+
+                                        priority />
+
 
                                 </div>
                                 <div className='z-10 sticky top-0'>
