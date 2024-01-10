@@ -57,11 +57,11 @@ const ContactForm = () => {
 
     return (
 
-        <div className="w-full h-screen bg-custom-background flex items-center flex-col">
+        <div className="w-screen h-screen bg-custom-background flex items-center flex-col">
             <div className={success ? 'block' : 'hidden'}>
                 <Banner headline={headline} text={text} width={undefined} maxWidth={undefined} height={undefined} maxHeight={undefined} backgroundColor={undefined} closeButtonClicked={closeButtonClicked}></Banner>
             </div>
-            <div className="pt-10">
+            <div className="pt-10 px-5">
                 <form ref={form} onSubmit={handleSubmit} className="flex flex-col items-center w-full ">
                     <Input
                         error={!!errors.name}

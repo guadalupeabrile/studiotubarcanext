@@ -4,9 +4,7 @@ import Meta from '../components/meta'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
-        <Meta />
-      </Head>
+      <Head />
       <body className='font-pro'>
         <Main />
         <NextScript />
