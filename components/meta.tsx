@@ -10,7 +10,7 @@ const Meta = () => {
         name="studiotubarca"
         content={`Creative. Arquitecture. Carpintry.`}
       />
-      <meta property="og:image" />
+      <meta property="og:image" content='/assets/blog/manifiesto/arte-di-construire.png' />
     </Head>
   )
 }
