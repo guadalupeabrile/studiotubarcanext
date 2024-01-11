@@ -109,10 +109,10 @@ export default function Casabarbol() {
                 >
                     <div className='text-sm pt-20 md:pt-0 text-right md:text-lg text-gray-800'>
 
-                        <p className=''>Proyectar como un niño, para <span><br /></span> un niño.</p>
-                        <p className=' pt-5'>La analogía entre <span><br /></span>sentirse protegido en el <span><br /></span>momento previo al <span><br /></span>nacimiento, en el vientre <span><br /></span>materno.</p>
-                        <p className=''>Luego, como si de una <span><br /></span>ventana se tratase, la luz se <span><br /></span>presenta y nos muestra <span><br /></span>elementos tangibles, a <span><br /></span>partir de los cuales <span><br /></span>contruimos una realidad, <span><br /></span>o nuestra propia ilusión.</p>
-                        <p className=' pt-5'>Una envolvente resuelve el <span><br /></span>espacio. Aparte algunos <span><br /></span>elementos estructurales, <span><br /></span>el àrbol, la escalera, las <span><br /></span>vigas.</p>
+                        <p className=''>Proyectar como un niño,<span><br /></span>para un niño.</p>
+                        <p className=' pt-5'>La analogía entre<span><br /></span>sentirse protegido<span><br /></span>en el momento previo<span><br /></span>al nacimiento,<span><br /></span> en el vientre materno.</p>
+                        <p className=''>Luego, como si de una <span><br /></span>ventana se tratase, la luz<span><br /></span>se presenta y nos muestra<span><br /></span>elementos tangibles,<span><br /></span>a partir de los cuales<span><br /></span>contruimos una realidad,<span><br /></span>o nuestra propia ilusión.</p>
+                        <p className=' pt-5'>Una envolvente resuelve el<span><br /></span>espacio. Aparte<span><br /></span>algunos elementos estructurales,<span><br /></span>el àrbol,<span><br /></span>la escalera,<span><br /></span>las vigas.</p>
                         <p className=''>Arriba una superficie <span><br /></span>traslúcida y la copa del <span><br /></span>árbol.</p>
 
                     </div>
