@@ -19,16 +19,6 @@ export default function Manifiesto() {
                     <p className="leading-relaxed">Me enfoco en dar soluciones a problemas contemporáneos  <span className="inline"><br /></span>integrando variables indispensables para el crecimiento personal.</p>
                     <p className="leading-loose">Así facilitar propuestas que potencien la calidad de las experiencias.</p>
                 </div>
-                <div>
-                    <Link as={`/`} href={`/`} aria-label='studiotubarca home'>
-                        <Image
-                            src={firma}
-                            alt={"Firma studiotubarca"}
-                            className="hover:shadow-lg"
-                            width={150}
-                            height={150} />
-                    </Link>
-                </div>
             </div>
 
 
