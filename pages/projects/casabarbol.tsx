@@ -39,7 +39,7 @@ export default function Casabarbol({ post, preview }: Props) {
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
                             <div>
-                                <div className='hidden md:flex relative bg-custom-background h-screen z-10 w-screen items-center justify-center'>
+                                <div className='hidden md:block md:relative md:flex md:sticky top-0 bg-custom-background h-screen z-20 w-screen items-center justify-center'>
                                     <Image
                                         src={NameLogo}
                                         alt='Cava'
@@ -60,7 +60,7 @@ export default function Casabarbol({ post, preview }: Props) {
 
 
                                 </div>
-                                <div className='md:hidden relative bg-custom-background z-10 w-screen h-auto flex items-center  justify-center pt-24 pb-32'>
+                                <div className='md:hidden relative block sticky top-0 bg-custom-background z-10 w-screen h-auto flex items-center  justify-center pt-24 pb-32'>
                                     <Image
                                         src={NameLogo}
                                         alt='Cava'
@@ -82,7 +82,7 @@ export default function Casabarbol({ post, preview }: Props) {
 
 
                                 </div>
-                                <div className='z-10 sticky top-0'>
+                                <div className='z-20 relative' >
                                     <CasabarbolContent />
                                     {/* <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo> */}
                                 </div>
