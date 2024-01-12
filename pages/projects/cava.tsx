@@ -38,7 +38,7 @@ export default function Cava({ post, preview }: Props) {
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
                             <div>
-                                <div className='relative z-10 w-screen'>
+                                <div className='relative block sticky top-0 z-10 w-screen'>
                                     <Image
                                         src={HeroImg}
                                         alt='Cava'
