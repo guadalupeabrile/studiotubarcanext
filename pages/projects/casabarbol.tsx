@@ -60,7 +60,7 @@ export default function Casabarbol({ post, preview }: Props) {
 
 
                                 </div>
-                                <div className='md:hidden relative block sticky top-0 bg-custom-background z-10 w-screen h-auto flex items-center  justify-center pt-24 pb-32'>
+                                <div className='md:hidden relative block sticky top-0 bg-custom-background z-10 w-screen h-auto flex items-center  justify-center pt-24 md:pb-32 pb-16'>
                                     <Image
                                         src={NameLogo}
                                         alt='Cava'

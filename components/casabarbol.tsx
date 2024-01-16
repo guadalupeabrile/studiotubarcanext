@@ -23,7 +23,7 @@ export default function Casabarbol() {
         <>
 
 
-            <div className="font-mono bg-custom-background flex w-screen items-center justify-content place-content-evenly grid grid-cols-3 md:space-x-5 md:space-y-0 md:p-10 pb-5">
+            <div className="text-sm md:text-lg font-mono bg-custom-background flex w-screen items-center justify-content place-content-evenly grid grid-cols-3 md:space-x-5 md:space-y-0  md:px-10 pb-5">
 
                 <motion.div
                     className="flex items-center justify-center flex-col"
