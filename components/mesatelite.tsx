@@ -81,9 +81,9 @@ export default function Mesat() {
                     />
                 </motion.div>
             </div>
-            <div className="flex w-screen box-border bg-custom-background grid grid-cols-5">
+            <div className="flex w-screen box-border bg-custom-background grid grid-cols-5 md:grid-cols-3">
                 <motion.div
-                    className="relative col-span-3"
+                    className="relative col-span-3 md:col-span-2"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <Image
@@ -94,7 +94,7 @@ export default function Mesat() {
                     />
                 </motion.div>
                 <motion.div
-                    className="relative col-span-2"
+                    className="relative col-span-2 md:col-span-1"
                     variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <div className='w-full absolute top-0 left-0 flex flex-col text-center items-center justify-center  text-xs md:text-xl md:text-left md:items-end md:pr-10'>
