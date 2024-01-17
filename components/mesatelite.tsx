@@ -23,7 +23,7 @@ export default function Mesat() {
         <>
 
 
-            <div className="flex w-screen box-border bg-custom-background grid grid-cols-2 md:grid-cols-3 ">
+            <div className="flex w-screen box-border bg-custom-background grid grid-cols-2 md:grid-cols-3">
                 <motion.div
                     className="md:h-screen relative"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
@@ -57,7 +57,7 @@ export default function Mesat() {
                 </motion.div>
             </div>
 
-            <div className="flex w-screen box-border bg-custom-background grid grid-cols-3 ">
+            <div className="flex w-screen box-border bg-custom-background grid grid-cols-3 pb-5 md:pb-28">
                 <motion.div
                     className="relative col-span-2 pl-5 md:pl-32"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
@@ -81,7 +81,7 @@ export default function Mesat() {
                     />
                 </motion.div>
             </div>
-            <div className="flex w-screen box-border bg-custom-background grid grid-cols-5 md:grid-cols-3">
+            <div className="flex w-screen box-border bg-custom-background grid grid-cols-5 md:grid-cols-3 pb-5 md:pb-28">
                 <motion.div
                     className="relative col-span-3 md:col-span-2"
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
@@ -114,7 +114,7 @@ export default function Mesat() {
                 </motion.div>
             </div>
 
-            <div className="flex w-screen box-border bg-custom-background grid grid-cols-5 pl-5 md:pl-32">
+            <div className="flex w-screen box-border bg-custom-background grid grid-cols-5 pl-5 md:pl-32 pb-5 md:pb-28">
                 <a href='/assets/blog/pdf/ficha-tecnica-mesatelite.pdf' download>
                     <motion.div
                         className='p-3 '
