@@ -23,9 +23,9 @@ export default function Mesat() {
         <>
 
 
-            <div className="relative flex w-screen box-border bg-custom-background grid grid-cols-2 md:grid-cols-3">
+            <div className="relative h-auto flex w-screen box-border bg-custom-background grid grid-cols-2 md:grid-cols-3">
                 <motion.div
-                    className="md:h-screen relative"
+                    className=""
                     variants={fadeIn('right', 0.5)} initial="hidden" animate="show" exit='hidden'
                 >
                     <Image
