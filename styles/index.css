@@ -14,6 +14,17 @@
     opacity: 1;
 }
 
+.bg-love-background {
+    background-image: url('/assets/blog/love-img/love-background.png');
+    background-size: cover;
+    /* Cubre toda la pantalla */
+    background-attachment: fixed;
+    /* Fija la imagen en la ventana gráfica */
+    background-repeat: repeat;
+    /* Evita la repetición de la imagen */
+    opacity: 1;
+}
+
 .bg-manifiesto-flor {
     /* background-image: url('/assets/blog/texture/bg-texture-min.webp'); */
     background-image: url(/assets/blog/manifiesto/flor-manifiesto-bg.png);

@@ -10,15 +10,14 @@ import type PostType from '../../interfaces/post'
 import ProjectVideo from '../../components/project-video'
 import Footer from '../../components/footer'
 
-import HeroImg from '../../public/assets/blog/mesatelite-img/mesat-hero.jpg'
-import MesatContent from '../../components/mesatelite'
+import HeroImg from '../../public/assets/blog/love-img/love-hero.png'
+import LoveContent from '../../components/lovesther'
 
 type Props = {
     post: PostType
-    preview?: boolean
 }
 
-export default function Mesatelite({ post, preview }: Props) {
+export default function Lovesther({ post }: Props) {
     const router = useRouter()
     const title = `${post.title} by studiotubarca`
     if (!router.isFallback && !post?.slug) {
@@ -32,24 +31,29 @@ export default function Mesatelite({ post, preview }: Props) {
                     <PostTitle>Loading…</PostTitle>
                 ) : (
                     <>
-                        <article>
+                        <article >
                             <Head>
                                 <title>{title}</title>
                                 <meta property="og:image" content={post.ogImage.url} />
                             </Head>
                             <div>
-                                <div className='relative block sticky top-0 z-10 w-screen'>
+
+                                <div className='bg-custom-background relative z-10 border-box  w-screen md:h-screen p-5 '>
                                     <Image
                                         src={HeroImg}
-                                        alt='Mesatelite Hero Image'
-                                        style={{ objectFit: "cover" }}
+                                        alt='Lovesther Logo'
+                                        style={{ objectFit: "contain" }}
+                                        className='h-full'
                                         quality={100}
                                         placeholder="blur"
                                         priority />
 
                                 </div>
-                                <div className='z-10 sticky top-0'>
-                                    <MesatContent />
+                                <div className='relative z-10 bg-custom-background pb-52 md:pb-96'>
+
+                                </div>
+                                <div className='relative z-10'>
+                                    <LoveContent />
                                     {/* <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo> */}
                                 </div>
                             </div>
@@ -67,7 +71,7 @@ export default function Mesatelite({ post, preview }: Props) {
 
 export async function getStaticProps() {
 
-    const post = getPostBySlug('mesatelite', [
+    const post = getPostBySlug('lovesther', [
         'title',
         'date',
         'slug',
