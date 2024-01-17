@@ -44,7 +44,7 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
             alt='studiotubarca Contact Us'
             className='hover:shadow-lg transition-shadow duration-200'
             width={200}
-            height={200}
+            height={220}
           />
         </Link>
 
@@ -54,7 +54,7 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
             alt='studiotubarca Manifiesto'
             className='hover:shadow-lg transition-shadow duration-200 p-5'
             width={200}
-            height={200}
+            height={220}
           />
         </Link>
 
@@ -63,7 +63,7 @@ const Footer = ({ nextProjectImg, nextProject, manifiesto }: Props) => {
             src={nextProjectImg}
             alt='studiotubarca next project image'
             width={200}
-            height={200}
+            height={220}
             className='hover:shadow-lg transition-shadow duration-200' />
         </Link>
 
