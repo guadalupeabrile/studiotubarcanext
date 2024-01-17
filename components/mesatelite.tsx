@@ -115,7 +115,7 @@ export default function Mesat() {
             </div>
 
             <div className="flex w-screen box-border bg-custom-background grid grid-cols-5 pl-5 md:pl-32">
-                <a href='/assets/blog/pdf/ficha-tecnica-cava.pdf' download>
+                <a href='/assets/blog/pdf/ficha-tecnica-mesatelite.pdf' download>
                     <motion.div
                         className='p-3 '
                         variants={fadeIn('down', 0.5)} initial="hidden" animate="show" exit='hidden'
