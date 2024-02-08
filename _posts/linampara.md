@@ -12,7 +12,7 @@ author:
   picture: '/assets/blog/authors/tim.jpeg'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
-nextProject: 'proximamente' 
+nextProject: 'lovesther' 
 nextProjectImg: '/assets/blog/projects-preview/lovesther-preview.png'
 ---
 
