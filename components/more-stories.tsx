@@ -1,7 +1,10 @@
 "use client"
 
 import PostPreview from './post-preview'
+import CoverImage from './cover-image'
 import type Post from '../interfaces/post'
+import Link from 'next/link'
+import Image from 'next/image'
 
 type Props = {
   posts: Post[]
@@ -32,6 +35,26 @@ const MoreStories = ({ posts }: Props) => {
 
           ))
         }
+        <div key="manifiesto" className='md:hidden flex flex-col items-center justify-center md:place-content-evenly relative group'>
+          <Link as={`/manifiesto`} href={`/manifiesto`} aria-label="manifiesto">
+            <Image
+              src='/assets/blog/manifiesto/firma-studiotubarca.png'
+              alt={`Cover Image for Manifiesto`}
+              className="p-5 w-full object-cover h-auto group-hover:shadow-lg group-hover:opacity-0  transition-shadow duration-200"
+              width={350}
+              height={350}
+              priority
+            />
+            <Image
+              src='/assets/blog/manifiesto/arte-di-costruire.png'
+              alt={`Name Preview for Manifiesto`}
+              className="p-5 shadow opacity-50 group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0  "
+              width={350}
+              height={350}
+              priority
+            />
+          </Link>
+        </div>
       </div >
     </section >
   )
