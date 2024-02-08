@@ -9,7 +9,7 @@ import home from '../public/assets/blog/footer/home-foto.gif';
 
 const HeroPost = () => {
   return (
-    <section className='min-h-screen h-auto w-full z-10' id='hero-video'>
+    <section className='min-h-screen w-full z-10' id='hero-video'>
       <div className="">
         <div className="">
           <video autoPlay loop muted playsInline controls className="absolute w-full h-screen object-cover">

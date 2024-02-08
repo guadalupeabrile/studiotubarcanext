@@ -28,7 +28,7 @@ export default function Index({ allPosts }: Props) {
           </video>
         </div>
         <MoreStories posts={allPosts} />
-        <div className='hidden md:block'>
+        <div className='hidden md:block h-screen'>
           <HeroPost></HeroPost>
         </div>
       </Layout>
