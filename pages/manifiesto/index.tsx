@@ -22,9 +22,7 @@ export default function Manifiesto() {
             </div> */}
             <div className="relative bg-manifiesto-flor h-screen w-screen flex flex-col items-center justify-center">
                 <div className="p-5 md:p-20 text-center font-light text-xs md:text-3xl">
-                    <p className="leading-loose">Brindamos soluciones<span className="inline md:hidden"><br /></span> a problemas contemporáneos<span><br /></span> integrando variables indispensables<span className="inline md:hidden"><br /></span> para el crecimiento personal.</p>
-                    <p className="leading-relaxed">Generamos propuestas<span className="inline md:hidden"><br /></span> que potencian<span className="inline md:hidden"><br /></span> la calidad de las experiencias.</p>
-                    <p className="leading-relaxed pt-5 uppercase">Mediante procesos creativos interactuamos<span><br /></span> entre nuestra voluntad,<span className="inline md:hidden"><br /></span> y los elementos disponibles, </p>
+                    <p className="leading-relaxed pt-5 uppercase">Mediante procesos creativos interactuamos<span><br /></span> entre nuestra voluntad,<span className="inline md:hidden"><br /></span> y los elementos disponibles.</p>
                     <p className="leading-relaxed uppercase">Materializando espacios<span className="inline md:hidden"><br /></span> que guíen a la contemplación.</p>
                     <p className="leading-loose uppercase">En una búsqueda<span className="inline md:hidden"><br /></span> de complementarnos<span className="inline md:hidden"><br /></span> con el entorno natural,<span><br /></span> encontrándonos, potenciándonos.</p>
                 </div>
