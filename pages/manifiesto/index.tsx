@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import firma from '../../public/assets/blog/manifiesto/firma-studiotubarca.png'
 import studio from '../../public/assets/blog/manifiesto/studiotubarca.png'
-import artedi from '../../public/assets/blog/manifiesto/arte-di-costruire.png'
+import artedi from '../../public/assets/blog/manifiesto/arte-di-construire.png'
 import fuego from '../../public/assets/blog/igiardini-img/igiardini-09-min.webp'
 
 export default function Manifiesto() {

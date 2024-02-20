@@ -46,7 +46,7 @@ const MoreStories = ({ posts }: Props) => {
               priority
             />
             <Image
-              src='/assets/blog/manifiesto/arte-di-costruire.png'
+              src='/assets/blog/manifiesto/arte-di-construire.png'
               alt={`Name Preview for Manifiesto`}
               className="p-5 shadow opacity-50 group-hover:opacity-90  absolute h-full w-full flex items-center justify-center -bottom-0  "
               width={350}
