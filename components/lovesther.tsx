@@ -24,7 +24,7 @@ export default function Lovesther() {
                 >
                     <Image
                         src={url1}
-                        alt={`Diagramas Mesatelites`}
+                        alt={`LOV langosta`}
                         className=''
                         style={{ objectFit: "cover" }}
                         width={200}
@@ -37,7 +37,7 @@ export default function Lovesther() {
                 >
                     <Image
                         src={url1}
-                        alt={`Diagramas Mesatelites`}
+                        alt={`LOV Langosta`}
                         className=''
                         style={{ objectFit: "cover" }}
                         width={400}

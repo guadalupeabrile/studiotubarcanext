@@ -54,7 +54,7 @@ export default function Lovesther({ post }: Props) {
                                 </div>
                                 <div className='relative z-10'>
                                     <LoveContent />
-                                    {/* <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo> */}
+                                    <ProjectVideo video={post.video} videoMobile={post.videoMobile}></ProjectVideo>
                                 </div>
                             </div>
                             <Footer nextProject={post.nextProject} nextProjectImg={post.nextProjectImg} manifiesto=''></Footer>
